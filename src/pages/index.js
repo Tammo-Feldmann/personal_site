@@ -1,4 +1,5 @@
 import React from "react"
+// eslint-disable-next-line
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
@@ -9,12 +10,25 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Tammo Feldmann</h1>
-    <p>Welcome to my professional page.</p>
-    <p>Skills in my current work.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
+      <p>Hi, I am @Tammo-Feldmann.</p>
+      <p>Skills in my current work.</p>
     </div>
-    <Link to="/page-2/">About (page 2)</Link>
+    
+    <h3>Education</h3>
+      <p>Stanford PhD in German Studies</p>
+      <p>Carl von Ossietzky Universität, Oldenburg, Germany, MA, in Exercise Physiology</p>
+    <h3>Experience</h3>
+      <p>Full-Stack Intern, March 2019 - Present, Datamago</p>
+      <p>Learning from friends, Last years of Stanford time</p>
+    <h3>Expertise</h3>
+      <p>JavaScript, Python, React, Flask</p>
+      <p>HTML & CSS</p>
+      <p>Machine Learning</p>
+      <p>Time Series Forcasting</p>
+    <h3>Contact</h3>
+      <p>Email: tammo.feldmann@gmail.com</p>
   </Layout>
 )
 
