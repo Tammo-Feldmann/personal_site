@@ -25,7 +25,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} >
+      </Header>
       <div
         style={{
           margin: `0 auto`,
@@ -35,7 +36,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer style={{ margin:'0px' }}>
           © {new Date().getFullYear()}, Tammo Feldmann
           {` `}
         </footer>

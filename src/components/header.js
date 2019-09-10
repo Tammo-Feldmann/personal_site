@@ -5,8 +5,9 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `white`,
+      background: `#2F3854`,
       marginBottom: `1.45rem`,
+      listStyle: 'none'
     }}
   >
     <div
@@ -25,7 +26,9 @@ const Header = ({ siteTitle }) => (
           }}
         >
           {siteTitle}
+          
         </Link>
+       
       </h1>
     </div>
   </header>

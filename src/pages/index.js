@@ -9,11 +9,11 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Tammo Feldmann</h1>
+    <h1>About Me</h1>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
       <p>Hi, I am @Tammo-Feldmann.</p>
-      <p>Skills in my current work.</p>
+      <p>Skills Construction hours per month -- working on my development stack</p>
     </div>
     
     <h3>Education</h3>
