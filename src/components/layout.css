@@ -13,7 +13,9 @@ aside,
 details,
 figcaption,
 figure,
-footer,
+footer {
+  padding: 1.5rem;
+}
 header,
 main,
 menu,
