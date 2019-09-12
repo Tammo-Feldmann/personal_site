@@ -36,11 +36,14 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer style={{ margin:'0px' }}>
+      </div>
+      <footer style={{ 
+          margin:'0px',
+          color: `white`,
+          backgroundColor: `#2F3854` }}>
           © {new Date().getFullYear()}, Tammo Feldmann
           {` `}
         </footer>
-      </div>
     </>
   )
 }
