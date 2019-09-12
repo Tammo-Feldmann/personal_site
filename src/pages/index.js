@@ -11,7 +11,10 @@ import Projects from "../components/projects"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{ display: `flex` }}>
+    <div style={{ 
+      display: `flex`,
+      marginTop: `6rem`,
+      marginBottom: `4rem` }}>
       <div> 
       <h1 style={{
         color: `#353848`
@@ -38,7 +41,12 @@ const IndexPage = () => (
     <hr style={{
       borderColor: '#d'
     }}></hr>
+    <div style={{
+      marginTop: `4rem`,
+      marginBottom: `4rem`
+      }}> 
     <Skills></Skills>
+    </div>
     <Projects></Projects>
     <h3>Education</h3>
       <p> - Stanford University, PhD in German Studies, 2018</p>

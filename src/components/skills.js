@@ -1,8 +1,10 @@
 import React from 'react'
+import Graph from './graph'
 
 const Skills = () => (
   <skills>
     <h3>Skill Development</h3>
+    <Graph></Graph>
       <p>- - - -Skills Construction hours per month -- working on my development stack</p>
       <p>JavaScript, Python, React, Flask</p>
       <p>HTML & CSS</p>
