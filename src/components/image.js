@@ -18,15 +18,25 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "work_selfy.JPG" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 300, height: 300) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <div>
+    <Img 
+    fixed={data.placeholderImage.childImageSharp.fixed}
+    style={{
+      borderRadius:180,
+      border: `4px solid #D5B386`
+
+      
+    }}
+    />
+  </div>
 }
 
 export default Image

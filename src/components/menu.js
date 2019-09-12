@@ -8,9 +8,7 @@ const Menu = () => (
     }}>
 
       <ul style={{ 
-        listStyle: 'none',
-        display: 'flex',
-        justifyContent: 'space-evenly'
+        display: 'inline'
       }}>
 
         <li>about</li>
