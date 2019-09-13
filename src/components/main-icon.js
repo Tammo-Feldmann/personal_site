@@ -2,12 +2,12 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const Graph = () => {
+const MainIcon = () => {
   const data = useStaticQuery(graphql`
   query {
-    placeholderImage: file(relativePath: { eq: "skills-graph.png" }) {
+    placeholderImage: file(relativePath: { eq: "MeIcon.png" }) {
       childImageSharp {
-        fixed(width: 600) {
+        fixed(width: 45) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -19,11 +19,11 @@ const Graph = () => {
     <Img 
     fixed={data.placeholderImage.childImageSharp.fixed}
     style={{
-      margin: `2rem`
-      
+      display:'inline-flex',
+      margin: `0 auto`
     }}
     />
   </div>
 }
 
-export default Graph
+export default MainIcon

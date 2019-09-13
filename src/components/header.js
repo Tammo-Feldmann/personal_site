@@ -2,6 +2,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import MainIcon from "./main-icon"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -13,30 +14,26 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        margin: `0 auto`,
+        marginLeft: `12rem`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        display: `inline-flex`,
+        justifyContent: `center`,
+        alignItems: 'baseline'
       }}
     >
-  
-      <h1 style={{ display:'inline',
-      paddingRight: '112px'
-        }}
-      >TF
-      </h1>
+      <MainIcon></MainIcon>
 
-      <ul style={{ display:'inline',
-      paddingRight: '60px'
+      <ul style={{
         }}
       >about
       </ul>
-      <ul style={{ display:'inline',
-      paddingRight: '60px'
+
+      <ul style={{
         }}
       >expertise
       </ul>
-      <ul style={{ display:'inline',
-      paddingRight: '60px'
+      <ul style={{
         }}
       >projects
       </ul>
