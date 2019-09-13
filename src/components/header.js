@@ -3,6 +3,9 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import MainIcon from "./main-icon"
+import EmailLogo from "../images/email.svg"
+import LinkedIn from "../images/LinkedIn.svg"
+import GitHub from "../images/GitHub.svg"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -12,32 +15,25 @@ const Header = ({ siteTitle }) => (
       color: 'white'
     }}
   >
-    <div
-      style={{
+    <div style={{
         marginLeft: `12rem`,
-        maxWidth: 960,
+        marginRight: `12rem`,
         padding: `1.45rem 1.0875rem`,
-        display: `inline-flex`,
-        justifyContent: `center`,
-        alignItems: 'baseline'
+        display: `flex`,
+        alignItems: 'baseline',
+        justifyContent: 'space-between'
       }}
+      
     >
       <MainIcon></MainIcon>
 
-      <ul style={{
-        }}
-      >about
-      </ul>
-
-      <ul style={{
-        }}
-      >expertise
-      </ul>
-      <ul style={{
-        }}
-      >projects
-      </ul>
-
+      <ul>about</ul>
+      <ul>expertise</ul>
+      <ul>projects</ul>
+      
+        <img src={EmailLogo} alt="email logo"/>
+        <img src={LinkedIn} alt="LinkedIn logo"/>
+        <img src={GitHub} alt="GitHub logo"/>
 
     </div>
   </header>
