@@ -3,44 +3,16 @@ import React from "react"
 //import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import Skills from "../components/skills"
 import Projects from "../components/projects"
+import About from "../components/about"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div style={{ 
-      display: `flex`,
-      marginTop: `6rem`,
-      marginBottom: `4rem` }}>
-      <div> 
-      <h1 style={{
-        color: `#353848`
 
-      }}
-      >About Me</h1>
-      
-      <div style={{ 
-        maxWidth: `300px`, 
-        marginBottom: `1.45rem`, 
-        marginTop: `2rem`, 
-        color: `#575964`
-       }}>
-        <p>
-          I am stoked about learning everything related to coding.
-        </p>
-        </div>
-      </div>
-      <div style={{ marginLeft: `335px`}}>
-        <Image />
-        <p>Hi, I am @Tammo-Feldmann</p>
-      </div>
-    </div>
-    <hr style={{
-      borderColor: '#d'
-    }}></hr>
+    <About></About>
     <div style={{
       marginTop: `4rem`,
       marginBottom: `4rem`
