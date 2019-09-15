@@ -2,7 +2,7 @@ import React from 'react'
 import Graph from './graph'
 
 const Skills = () => (
-  <skills>
+  <div>
     <h3>Skill Development</h3>
     <Graph></Graph>
       <p>- - - -Skills Construction hours per month -- working on my development stack</p>
@@ -13,7 +13,7 @@ const Skills = () => (
       <hr style={{
       borderColor: 'green'
       }}></hr>
-  </skills>
+  </div>
 )
 
 export default Skills

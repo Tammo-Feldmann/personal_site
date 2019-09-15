@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "../components/image"
 
 const About = () => (
-  <about>
+  <div>
     <div style={{
       marginTop: `6rem`,
       marginBottom: `4rem`,
@@ -32,10 +32,8 @@ const About = () => (
         <p>Hi, I am @Tammo-Feldmann</p>
       </div>
     </div>
-    <hr style={{
-      borderColor: '#d'
-    }}></hr>
-  </about>
+    <hr style={{}}></hr>
+  </div>
 )
 
 export default About

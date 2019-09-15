@@ -38,12 +38,12 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <footer style={{ 
-          margin:'0px',
-          color: `white`,
-          backgroundColor: `#2F3854` }}>
-          © {new Date().getFullYear()}, Tammo Feldmann
-          {` `}
-        </footer>
+        margin:'0px',
+        color: `white`,
+        backgroundColor: `#2F3854` }}>
+        © {new Date().getFullYear()}, Tammo Feldmann
+        {` `}
+      </footer>
     </>
   )
 }

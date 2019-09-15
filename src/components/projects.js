@@ -1,13 +1,13 @@
 import React from 'react'
 
 const Projects = () => (
-  <projects>
+  <div>
     <h3>current projects</h3>
       <p>Here I will be including a bunch of screenshots from stuff that I am working on ...</p>
       <hr style={{
       borderColor: 'green'
       }}></hr>
-  </projects>
+  </div>
 )
 
 export default Projects
