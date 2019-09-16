@@ -16,25 +16,50 @@ const Header = ({ siteTitle }) => (
     }}
   >
     <div style={{
-        marginLeft: `12rem`,
-        marginRight: `12rem`,
-        padding: `1.45rem 1.0875rem`,
+        marginLeft: `13.5rem`,
+        marginRight: `13.5rem`,
+        padding: `1.5rem 1rem`,
         display: `flex`,
-        alignItems: 'baseline',
-        justifyContent: 'space-between'
+        alignItems: 'baseline'
       }}
-      
     >
       <MainIcon></MainIcon>
-
-      <ul>about</ul>
-      <ul>expertise</ul>
-      <ul>projects</ul>
+      <div style={{
+        display: `flex`,
+        alignContent: `space-between`,
+        }}
+      >
       
-        <img src={EmailLogo} alt="email logo"/>
-        <img src={LinkedIn} alt="LinkedIn logo"/>
-        <img src={GitHub} alt="GitHub logo"/>
+      <div style={{
+        display: `flex`,
+        alignItems: 'baseline',
+        justifyContent: 'space-between',
+        marginRight: `1rem`
+        }}
+      >
+        <ul>about</ul>
+        <ul>expertise</ul>
+        <ul>projects</ul>
+      </div>
 
+        <div style={{
+          display: `flex`,
+          minWidth: `6rem`,
+          alignItems: 'baseline',
+          justifyContent: 'space-between'
+        }}
+      >
+        <Link to="/">
+        <img src={EmailLogo} alt="email logo"/>
+        </Link>
+        <a href="https://www.linkedin.com/in/tammo-feldmann/">
+          <img src={LinkedIn} alt="LinkedIn logo"/>
+        </a>
+        <a href="https://github.com/Tammo-Feldmann">
+          <img src={GitHub} alt="GitHub logo"/>
+        </a>
+      </div>
+      </div>
     </div>
   </header>
 )
