@@ -20,15 +20,11 @@ const Header = ({ siteTitle }) => (
         marginRight: `13.5rem`,
         padding: `1.5rem 1rem`,
         display: `flex`,
-        alignItems: 'baseline'
+        alignItems: 'baseline',
+        justifyContent: `space-between`
       }}
     >
       <MainIcon></MainIcon>
-      <div style={{
-        display: `flex`,
-        alignContent: `space-between`,
-        }}
-      >
       
       <div style={{
         display: `flex`,
@@ -36,29 +32,26 @@ const Header = ({ siteTitle }) => (
         justifyContent: 'space-between',
         marginRight: `1rem`
         }}
-      >
+        >
         <ul>about</ul>
         <ul>expertise</ul>
         <ul>projects</ul>
       </div>
 
-        <div style={{
-          display: `flex`,
-          minWidth: `6rem`,
-          alignItems: 'baseline',
-          justifyContent: 'space-between'
+      <div style={{
+        display: `flex`,
+        justifyContent: 'space-between'
         }}
       >
-        <Link to="/">
-        <img src={EmailLogo} alt="email logo"/>
+        <Link to="/page-2">
+          <img src={EmailLogo} alt="email logo"/>
         </Link>
-        <a href="https://www.linkedin.com/in/tammo-feldmann/">
+        <a href="https://www.linkedin.com/in/tammo-feldmann/" style={{marginLeft:`.5rem`}}>
           <img src={LinkedIn} alt="LinkedIn logo"/>
         </a>
         <a href="https://github.com/Tammo-Feldmann">
           <img src={GitHub} alt="GitHub logo"/>
         </a>
-      </div>
       </div>
     </div>
   </header>
