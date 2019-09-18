@@ -6,6 +6,7 @@ import MainIcon from "./main-icon"
 import EmailLogo from "../images/email.svg"
 import LinkedIn from "../images/LinkedIn.svg"
 import GitHub from "../images/GitHub.svg"
+import Clipboard from "../components/clipboard"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -25,6 +26,7 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <MainIcon></MainIcon>
+      <Clipboard></Clipboard>
       
       <div style={{
         display: `flex`,
