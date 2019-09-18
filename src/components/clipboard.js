@@ -12,7 +12,9 @@ class CopyText extends React.Component {
          onCopy={() => {
            //do stuff here, like summon a confirmation prompt
          }}>
-          <img src={EmailLogo} alt="email logo"/>
+           <div>
+            <img src={EmailLogo} alt="email logo"/>
+          </div>
       </CopyToClipboard>
     );
   }

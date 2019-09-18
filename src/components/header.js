@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import MainIcon from "./main-icon"
-import EmailLogo from "../images/email.svg"
 import LinkedIn from "../images/LinkedIn.svg"
 import GitHub from "../images/GitHub.svg"
 import Clipboard from "../components/clipboard"
@@ -26,7 +25,6 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <MainIcon></MainIcon>
-      <Clipboard></Clipboard>
       
       <div style={{
         display: `flex`,
@@ -45,9 +43,7 @@ const Header = ({ siteTitle }) => (
         justifyContent: 'space-between'
         }}
       >
-        <Link to="/page-2">
-          <img src={EmailLogo} alt="email logo"/>
-        </Link>
+        <Clipboard></Clipboard>
         <a href="https://www.linkedin.com/in/tammo-feldmann/" style={{marginLeft:`.5rem`}}>
           <img src={LinkedIn} alt="LinkedIn logo"/>
         </a>
