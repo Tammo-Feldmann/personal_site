@@ -29,28 +29,26 @@ const Header = ({ siteTitle }) => (
       
       <div style={{
         display: `flex`,
+        minWidth: '20rem',
         alignItems: 'baseline',
         justifyContent: 'space-between',
         marginRight: `1rem`
         }}
         >
-        <HoverText>
-          <ul>about</ul>
-        </HoverText>
-        <HoverText>
-          <ul>expertise</ul>
-        </HoverText>
-        <HoverText>
-          <ul>projects</ul>
-        </HoverText>
+        <HoverText>about</HoverText>
+        <HoverText>expertise</HoverText>
+        <HoverText>projects</HoverText>
       </div>
 
       <div style={{
         display: `flex`,
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
+        minWidth: '6rem'
         }}
       >
-        <Clipboard></Clipboard>
+        <p style={{cursor: 'pointer'}}>
+          <Clipboard></Clipboard>
+        </p>
         <a href="https://www.linkedin.com/in/tammo-feldmann/" style={{marginLeft:`.5rem`}}>
           <img src={LinkedIn} alt="LinkedIn logo"/>
         </a>
