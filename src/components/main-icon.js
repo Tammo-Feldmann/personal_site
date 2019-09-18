@@ -18,11 +18,7 @@ const MainIcon = () => {
   return <div>
     <Img 
     fixed={data.placeholderImage.childImageSharp.fixed}
-    style={{
-      display:'inline-flex',
-      margin: `0 auto`
-    }}
-    />
+    style={{}}/>
   </div>
 }
 
