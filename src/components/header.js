@@ -6,6 +6,7 @@ import MainIcon from "./main-icon"
 import LinkedIn from "../images/LinkedIn.svg"
 import GitHub from "../images/GitHub.svg"
 import Clipboard from "../components/clipboard"
+import HoverText from "../components/hover-text"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -33,9 +34,15 @@ const Header = ({ siteTitle }) => (
         marginRight: `1rem`
         }}
         >
-        <ul>about</ul>
-        <ul>expertise</ul>
-        <ul>projects</ul>
+        <HoverText>
+          <ul>about</ul>
+        </HoverText>
+        <HoverText>
+          <ul>expertise</ul>
+        </HoverText>
+        <HoverText>
+          <ul>projects</ul>
+        </HoverText>
       </div>
 
       <div style={{
