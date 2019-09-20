@@ -27,9 +27,14 @@ const About = () => (
       </div>
       
       <div style={{
-        color: `#353848`}}>
+        color: `#353848`,
+        marginRight: `6rem`
+        }}>
         <Image />
-        <p>Hi, I am @Tammo-Feldmann</p>
+        <h2 style ={{marginTop: `1rem`, marginBottom: `.5rem`}}>Tammo Feldmann</h2>
+        <h3 style={{color: `#575964`, 
+        textAlign: `center`
+      }}>Full-Stack Developer</h3>
       </div>
     </div>
     <hr style={{}}></hr>
