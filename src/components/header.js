@@ -11,14 +11,14 @@ import HoverText from "../components/hover-text"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#2F3854`,
+      background: `white`,
       marginBottom: `1.45rem`,
       color: 'white'
     }}
   >
     <div style={{
-        marginLeft: `13.5rem`,
-        marginRight: `13.5rem`,
+        marginLeft: `8.5rem`,
+        marginRight: `1.5rem`,
         padding: `1.5rem 1rem`,
         display: `flex`,
         alignItems: 'baseline',
@@ -28,6 +28,7 @@ const Header = ({ siteTitle }) => (
       <MainIcon></MainIcon>
       
       <div style={{
+        color: `blue`,
         display: `flex`,
         minWidth: '20rem',
         alignItems: 'baseline',
