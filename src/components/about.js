@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "../components/image"
 
 const About = () => (
-  <div>
+  <div id="about-section">
     <div style={{
       paddingTop: `6rem`,
       paddingBottom: `4.4rem`,
