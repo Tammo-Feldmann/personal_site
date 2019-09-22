@@ -18,7 +18,7 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "work_selfy.JPG" }) {
         childImageSharp {
-          fixed(width: 220, height: 220) {
+          fixed(width: 180, height: 180) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -31,7 +31,7 @@ const Image = () => {
     fixed={data.placeholderImage.childImageSharp.fixed}
     style={{
       borderRadius:180,
-      border: `4px solid #D5B386`,
+      border: `2px solid #525D7D`,
       marginTop: `2rem`
     }}
     />

@@ -4,8 +4,8 @@ import Image from "../components/image"
 const About = () => (
   <div>
     <div style={{
-      marginTop: `6rem`,
-      marginBottom: `4rem`,
+      paddingTop: `6rem`,
+      paddingBottom: `4.4rem`,
       display: `flex`,
       justifyContent: 'space-between'
        }}>
@@ -19,24 +19,33 @@ const About = () => (
         <div style={{ 
           maxWidth: `300px`, 
           marginBottom: `1.45rem`, 
-          marginTop: `2rem`, 
+          marginTop: `1.5rem`, 
           color: `#575964`
         }}>
           <p>I am stoked about learning everything related to coding.</p>
         </div>
       </div>
+   
       
-      <div style={{
-        color: `#353848`,
-        marginRight: `6rem`
-        }}>
-        <Image />
-        <h2 style ={{marginTop: `1rem`, marginBottom: `.5rem`}}>Tammo Feldmann</h2>
-        <h3 style={{color: `#575964`, 
-        textAlign: `center`
-      }}>Full-Stack Developer</h3>
+    <div style={{float: `right`, paddingTop: `3.4rem`}}>
+      <div style={{textAlign: `center`}}>
+        <Image style= {{margin: `0`, padding: `0`}}/>
       </div>
-    </div>
+      
+        <h2 style ={{
+          marginTop: `1.4rem`, 
+          marginBottom: `.4rem`, 
+          color: `#353848`,
+          textAlign: `center`,
+          fontSize: `24px`
+          }}>Tammo Feldmann</h2>
+        <h3 style={{
+          color: `#575964`, 
+          textAlign: `center`,
+          fontSize: `20px`
+          }}>Full-Stack Developer</h3>
+      </div>
+      </div>
     <hr style={{}}></hr>
   </div>
 )

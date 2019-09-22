@@ -11,15 +11,15 @@ import HoverText from "../components/hover-text"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `white`,
-      marginBottom: `1.45rem`,
+      background: `#F3F3F6`,
       color: 'white'
     }}
   >
     <div style={{
-        marginLeft: `8.5rem`,
-        marginRight: `1.5rem`,
-        padding: `1.5rem 1rem`,
+        marginLeft: `6.5rem`,
+        marginRight: `6.5rem`,
+        paddingTop: `2rem`,
+        paddingBottom: `.5rem`,
         display: `flex`,
         alignItems: 'baseline',
         justifyContent: `space-between`
@@ -30,10 +30,9 @@ const Header = ({ siteTitle }) => (
       <div style={{
         color: `blue`,
         display: `flex`,
-        minWidth: '20rem',
+        minWidth: '28rem',
         alignItems: 'baseline',
-        justifyContent: 'space-between',
-        marginRight: `1rem`
+        justifyContent: 'space-between'
         }}
         >
         <HoverText>about</HoverText>
@@ -44,16 +43,16 @@ const Header = ({ siteTitle }) => (
       <div style={{
         display: `flex`,
         justifyContent: 'space-between',
-        minWidth: '6rem'
+        minWidth: '5.5rem'
         }}
       >
         <p style={{cursor: 'pointer'}}>
           <Clipboard></Clipboard>
         </p>
-        <a href="https://www.linkedin.com/in/tammo-feldmann/" style={{marginLeft:`.5rem`}}>
+        <a href="https://www.linkedin.com/in/tammo-feldmann/">
           <img src={LinkedIn} alt="LinkedIn logo"/>
         </a>
-        <a href="https://github.com/Tammo-Feldmann">
+        <a href="https://github.com/Tammo-Feldmann" style={{color:`blue`}}>
           <img src={GitHub} alt="GitHub logo"/>
         </a>
       </div>
