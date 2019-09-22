@@ -25,9 +25,8 @@ const About = () => (
           <p>I am stoked about learning everything related to coding.</p>
         </div>
       </div>
-   
       
-    <div style={{float: `right`, paddingTop: `3.4rem`}}>
+    <div style={{float: `right`, paddingTop: `6.4rem`}}>
       <div style={{textAlign: `center`}}>
         <Image style= {{margin: `0`, padding: `0`}}/>
       </div>
@@ -37,12 +36,11 @@ const About = () => (
           marginBottom: `.4rem`, 
           color: `#353848`,
           textAlign: `center`,
-          fontSize: `24px`
+          fontSize: "34px"
           }}>Tammo Feldmann</h2>
         <h3 style={{
           color: `#575964`, 
-          textAlign: `center`,
-          fontSize: `20px`
+          textAlign: `center`
           }}>Full-Stack Developer</h3>
       </div>
       </div>
