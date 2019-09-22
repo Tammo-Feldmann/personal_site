@@ -31,8 +31,7 @@ const Image = () => {
     fixed={data.placeholderImage.childImageSharp.fixed}
     style={{
       borderRadius:180,
-      border: `2px solid #525D7D`,
-      marginTop: `2rem`
+      border: `2px solid #525D7D`
     }}
     />
   </div>
