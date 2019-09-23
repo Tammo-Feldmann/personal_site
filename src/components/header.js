@@ -10,7 +10,7 @@ import { Link as RsLink} from "react-scroll";
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#F3F3F6`
+      background: `white`
     }}
   >
     <div style={{

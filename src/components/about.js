@@ -17,20 +17,21 @@ const About = () => (
           >About Me
         </h1>
         <div style={{ 
-          maxWidth: `300px`, 
+          maxWidth: `420px`, 
           marginBottom: `1.45rem`, 
           marginTop: `1.5rem`, 
           color: `#575964`
         }}>
-          <p>I am stoked about learning everything related to coding.</p>
+          <p>I enjoy programming, problem solving, climbing, and good food. I spent 5 years chasing a PhD that I 
+             completed in August of 2018. Since then I have been coding full time and I am excited every day to learn 
+             more.</p>
         </div>
       </div>
       
     <div style={{float: `right`, paddingTop: `6.4rem`}}>
       <div style={{textAlign: `center`}}>
-        <Image style= {{margin: `0`, padding: `0`}}/>
+        <Image style= {{}}/>
       </div>
-      
         <h2 style ={{
           marginTop: `1.4rem`, 
           marginBottom: `.4rem`, 
