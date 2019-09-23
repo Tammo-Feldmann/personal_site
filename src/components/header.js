@@ -13,26 +13,17 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `white`
     }}
-  >
-    <div style={{
-        marginLeft: `6.5rem`,
-        marginRight: `6.5rem`,
-        paddingTop: `1.5rem`,
-        display: `flex`,
-        alignItems: 'baseline',
-        justifyContent: `space-between`
-      }}
-    >
-      <MainIcon></MainIcon>
-      
+  >  
       <div style={{
-        color: `blue`,
         display: `flex`,
-        minWidth: '28rem',
-        alignItems: 'baseline',
-        justifyContent: 'space-between'
+        alignItems: `baseline`,
+        justifyContent:`space-between`,
+        padding: `2rem`,
+        marginLeft: `6rem`,
+        marginRight: `4rem`
         }}
         >
+        <MainIcon></MainIcon>
         <RsLink
           activeClass="active"
           to="about-section"
@@ -61,26 +52,19 @@ const Header = ({ siteTitle }) => (
           ><HoverText>projects</HoverText>
         </RsLink>
         
+        <div style={{display:`flex`, justifyContent: `space-between`, minWidth: `6rem`}}>
+          <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer'}}>
+            <Clipboard></Clipboard>
+          </div>
+          <a href="https://www.linkedin.com/in/tammo-feldmann/">
+            <img src={LinkedIn}  data-tip="LinkedIn" alt="LinkedIn logo"/>
+          </a>
+          <a href="https://github.com/Tammo-Feldmann" data-tip="Git Hub" style={{color:`blue`}}>
+            <img src={GitHub} alt="GitHub logo"/>
+          <ReactTooltip type="light"/>
+          </a>
+        </div>
       </div>
-
-      <div style={{
-        display: `flex`,
-        justifyContent: 'space-between',
-        minWidth: '5.5rem'
-        }}
-      >
-        <p data-tip="Copy my email to your clipboard" style={{cursor: 'pointer'}}>
-          <Clipboard></Clipboard>
-        </p>
-        <a href="https://www.linkedin.com/in/tammo-feldmann/">
-          <img src={LinkedIn}  data-tip="LinkedIn" alt="LinkedIn logo"/>
-        </a>
-        <a href="https://github.com/Tammo-Feldmann" data-tip="Git Hub" style={{color:`blue`}}>
-          <img src={GitHub} alt="GitHub logo"/>
-        <ReactTooltip type="light"/>
-        </a>
-      </div>
-    </div>
   </header>
 )
 
