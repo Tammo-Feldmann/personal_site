@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link as RsLink} from "react-scroll";
 
 import Header from "./header"
 import "./layout.css"
@@ -37,6 +38,22 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
+      <RsLink
+        activeClass="active"
+        to="header-section"
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration= {900}
+        >
+        <div style={{display: `flex`, justifyContent: `center`}}>
+          <div style={{
+            height: `2rem`,
+            width: `4rem`,
+            borderRadius: `120px 120px 0px 0px`,
+            backgroundColor: `#2F3854`}}></div>
+          </div>
+      </RsLink>
       <footer style={{ 
         margin:'0px',
         color: `white`,

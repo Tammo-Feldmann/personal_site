@@ -9,7 +9,7 @@ import { Link as RsLink} from "react-scroll";
 import ReactTooltip from "react-tooltip"
 
 const Header = ({ siteTitle }) => (
-  <header
+  <header id="header-section"
     style={{
       background: `white`
     }}
