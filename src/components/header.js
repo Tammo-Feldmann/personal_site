@@ -47,7 +47,7 @@ const Header = ({ siteTitle }) => (
           to="projects-section"
           spy={true}
           smooth={true}
-          offset={70}
+          offset={0}
           duration= {1100}
           ><HoverText>projects</HoverText>
         </RsLink>
