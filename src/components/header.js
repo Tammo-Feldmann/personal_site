@@ -29,7 +29,7 @@ const Header = ({ siteTitle }) => (
           to="about-section"
           spy={true}
           smooth={true}
-          offset={70}
+          offset={90}
           duration= {500}
           ><HoverText>about</HoverText>
         </RsLink>
@@ -38,7 +38,7 @@ const Header = ({ siteTitle }) => (
           to="expertise-section"
           spy={true}
           smooth={true}
-          offset={30}
+          offset={5}
           duration= {700}
           ><HoverText>expertise</HoverText>
         </RsLink>
@@ -47,8 +47,8 @@ const Header = ({ siteTitle }) => (
           to="projects-section"
           spy={true}
           smooth={true}
-          offset={50}
-          duration= {900}
+          offset={70}
+          duration= {1100}
           ><HoverText>projects</HoverText>
         </RsLink>
         
@@ -59,7 +59,7 @@ const Header = ({ siteTitle }) => (
           <a href="https://www.linkedin.com/in/tammo-feldmann/">
             <img src={LinkedIn}  data-tip="LinkedIn" alt="LinkedIn logo"/>
           </a>
-          <a href="https://github.com/Tammo-Feldmann" data-tip="Git Hub" style={{color:`blue`}}>
+          <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{color:`blue`}}>
             <img src={GitHub} alt="GitHub logo"/>
           <ReactTooltip type="light"/>
           </a>
