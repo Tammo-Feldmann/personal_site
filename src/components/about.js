@@ -29,7 +29,7 @@ const About = () => (
       </div>
       
     <div style={{float: `right`, paddingTop: `6.4rem`}}>
-      <div style={{textAlign: `center`}}>
+      <div style={{display: `flex`, justifyContent: `center`}}>
         <Image style= {{}}/>
       </div>
         <h2 style ={{

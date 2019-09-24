@@ -26,12 +26,16 @@ const Image = () => {
     }
   `)
 
-  return <div>
+  return <div style={{border:`4px solid #525D7D`,
+  display: `flex`,
+  justifyContent: `center`,
+  borderRadius: `140px`}}>
     <Img 
     fixed={data.placeholderImage.childImageSharp.fixed}
     style={{
       borderRadius:180,
-      border: `1px solid #525D7D`
+      border: `2px solid #525D7D`,
+      margin: `10px`
     }}
     />
   </div>

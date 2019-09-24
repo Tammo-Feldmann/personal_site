@@ -38,6 +38,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
+      <div style={{textAlign: `center`, marginBottom: `0`, cursor:`pointer`}}>
       <RsLink
         activeClass="active"
         to="header-section"
@@ -47,13 +48,12 @@ const Layout = ({ children }) => {
         duration= {900}
         >
         <div style={{display: `flex`, justifyContent: `center`}}>
-          <div style={{
-            height: `2rem`,
-            width: `4rem`,
-            borderRadius: `120px 120px 0px 0px`,
-            backgroundColor: `#2F3854`}}></div>
+          <div style={{display: `flex`, justifyContent: `center`, alignItems: `baseline`, backgroundColor: `#2F3854`, width:`80px`, height:`40px`, borderRadius: `90px 90px 0 0`}}>
+            <div style={{marginTop: `14px`, backgroundColor: `white`, width:`20px`, height:`20px`, borderRadius: `90px`}}></div>
           </div>
+        </div>
       </RsLink>
+      </div>
       <footer style={{ 
         margin:'0px',
         color: `white`,
