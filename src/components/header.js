@@ -18,9 +18,10 @@ const Header = ({ siteTitle }) => (
         display: `flex`,
         alignItems: `baseline`,
         justifyContent:`space-between`,
-        padding: `2rem`,
-        marginLeft: `6rem`,
-        marginRight: `4rem`
+        paddingTop: `1.5rem`,
+        paddingBottom: `.5rem`,
+        marginLeft: `8rem`,
+        marginRight: `6rem`
         }}
         >
         <MainIcon></MainIcon>
