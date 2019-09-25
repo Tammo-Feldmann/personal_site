@@ -15,13 +15,17 @@ const Graph = () => {
   }
 `)
 
-  return <div>
+  return <div style={{
+    display: `flex`,
+    justifyContent: `center`,
+    alignItems: `baseline`,
+    backgroundColor: `#ECECEC`
+    }}>
     <Img 
     fixed={data.placeholderImage.childImageSharp.fixed}
     style={{
-      margin: `2rem`
-      
-    }}
+      margin: `.4rem`
+      }}
     />
   </div>
 }
