@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} >
       </Header>
 
-      <div style={{borderLeft: `200vh solid #2F3854`,
+      <div style={{borderLeft: `200vh solid #525D7D`,
         width: `0`,
         height: `0`,
         borderTop: `0px solid transparent`,
