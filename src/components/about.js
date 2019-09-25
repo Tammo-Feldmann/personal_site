@@ -4,8 +4,8 @@ import Image from "../components/image"
 const About = () => (
   <div id="about-section">
     <div style={{
-      paddingTop: `8rem`,
-      paddingBottom: `4.4rem`,
+      paddingTop: `10rem`,
+      paddingBottom: `8rem`,
       display: `flex`,
       justifyContent: 'space-between'
        }}>
