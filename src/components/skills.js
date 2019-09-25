@@ -7,7 +7,7 @@ const Skills = () => (
     <p style={{maxWidth: 600}}>I have listed my various skills and their relationships in a sanky diagram. I really enjoyed seeing it and found it insightful. 
       Thought I might share how I think, here. 
     </p>
-    <div style={{textAlign:`center`, marginTop: `2rem`}}>
+    <div style={{display: `flex`, justifyContent:`center`, marginTop: `2rem`, marginBottom: `2rem`}}>
     <Graph></Graph>
     </div>
     <div>- - - -Skills Construction hours per month -- working on my development stack</div>
