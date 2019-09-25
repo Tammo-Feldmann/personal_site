@@ -1,8 +1,8 @@
 <h1 align="center">
-  Tammo Feldmann Personal Page
+  My Gatsby Personal Page
 </h1>
 
-There is really not a ton to say about this project. I just built a quick gatsby site to show some of the things I do in my daily life as a coder. 
+My intention for this page is to have one place in which I can keep track of the projects I build as a programmer and share them with those who are interested. 
 
 
-## I'll be updating the skills section monthly and add projects as they arise. I am still playing with some ideas to make the projects most accessible. 
+## I'll be updating the page monthly and add projects and new features as they arise.
