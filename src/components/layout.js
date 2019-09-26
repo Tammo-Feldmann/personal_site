@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} >
       </Header>
 
-      <div style={{borderLeft: `200vh solid #525D7D`,
+      <div style={{borderLeft: `198vh solid #525D7D`,
         width: `0`,
         height: `0`,
         borderTop: `0px solid transparent`,
@@ -50,7 +50,7 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 1050,
+          maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 0,
         }}

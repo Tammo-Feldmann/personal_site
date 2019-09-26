@@ -11,19 +11,9 @@ import About from "../components/about"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-
     <About></About>
-    <div style={{
-      marginTop: `4rem`,
-      marginBottom: `4rem`
-      }}> 
     <Skills></Skills>
-    </div>
     <Projects></Projects>
-    <h3>Education</h3>
-      <p> - Stanford University, PhD in German Studies, 2018</p>
-      <p> - Harvard University, Visiting Exchange Scholar, 2016</p>
-      <p> - Carl von Ossietzky Universität, MA in Exercise Physiology, 2007</p>
   </Layout>
 )
 
