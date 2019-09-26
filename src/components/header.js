@@ -11,7 +11,8 @@ import ReactTooltip from "react-tooltip"
 const Header = ({ siteTitle }) => (
   <header id="header-section"
     style={{
-      background: `white`
+      background: `white`,
+      boxShadow: `5px`
     }}
   >  
       <div style={{
@@ -30,7 +31,7 @@ const Header = ({ siteTitle }) => (
           to="about-section"
           spy={true}
           smooth={true}
-          offset={90}
+          offset={0}
           duration= {500}
           ><HoverText>about</HoverText>
         </RsLink>
@@ -53,14 +54,14 @@ const Header = ({ siteTitle }) => (
           ><HoverText>projects</HoverText>
         </RsLink>
         
-        <div style={{display:`flex`, justifyContent: `space-between`, minWidth: `6rem`}}>
-          <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer'}}>
+        <div style={{display:`flex`, justifyContent: `space-between`, alignItems: `baseline`, minWidth: `6rem`}}>
+          <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', width:`24px`}}>
             <Clipboard></Clipboard>
           </div>
           <a href="https://www.linkedin.com/in/tammo-feldmann/">
-            <img src={LinkedIn}  data-tip="LinkedIn" alt="LinkedIn logo"/>
+            <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
           </a>
-          <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{color:`blue`}}>
+          <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{width:`21px`}}>
             <img src={GitHub} alt="GitHub logo"/>
           <ReactTooltip type="light"/>
           </a>
