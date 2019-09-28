@@ -29,20 +29,20 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} >
       </Header>
 
-      <div style={{borderLeft: `198vh solid #525D7D`,
+      <div style={{borderLeft: `79rem solid #525D7D`,
         width: `0`,
         height: `0`,
         borderTop: `0px solid transparent`,
-        borderBottom: `100px solid transparent`,
+        borderBottom: `120px solid transparent`,
         position: `absolute`,
         zIndex: `-2`}}>
       </div>
 
-      <div style={{borderLeft: `10.5rem solid #2F3854`,
+      <div style={{borderLeft: `12rem solid #2F3854`,
         width: `0`,
         height: `0`,
         borderTop: `0px solid transparent`,
-        borderBottom: `20rem solid transparent`,
+        borderBottom: `18rem solid transparent`,
         position: `absolute`,
         zIndex: `-1`}}>
       </div>

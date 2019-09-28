@@ -6,13 +6,11 @@ import GitHub from "../images/GitHub.svg";
 import Clipboard from "../components/clipboard";
 import HoverText from "../components/hover-text";
 import { Link as RsLink} from "react-scroll";
-import ReactTooltip from "react-tooltip"
+import ReactTooltip from "react-tooltip";
 
 const Header = ({ siteTitle }) => (
   <header id="header-section"
     style={{
-      background: `white`,
-      boxShadow: `5px`
     }}
   >  
       <div style={{
@@ -22,7 +20,8 @@ const Header = ({ siteTitle }) => (
         paddingTop: `1.5rem`,
         paddingBottom: `.5rem`,
         marginLeft: `8rem`,
-        marginRight: `6rem`
+        marginRight: `6rem`,
+        minWidth: `35rem`
         }}
         >
         <MainIcon></MainIcon>

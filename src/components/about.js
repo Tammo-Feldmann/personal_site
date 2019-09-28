@@ -4,21 +4,22 @@ import Image from "../components/image"
 const About = () => (
   <div id="about-section">
     <div style={{
-      paddingTop: `11.5rem`,
-      paddingBottom: `4.6rem`,
+      paddingTop: `8rem`,
+      paddingBottom: `6.6rem`,
       display: `flex`,
       justifyContent: 'space-between'
        }}>
       
       <div> 
         <h1 style={{
-          color: `#353848`
+          color: `#353848`,
+          paddingTop: `13rem`
           }}
           >About Me
         </h1>
         <div style={{ 
           maxWidth: `420px`, 
-          marginBottom: `1.45rem`, 
+          marginBottom: `3rem`, 
           marginTop: `1.5rem`, 
           color: `#575964`
         }}>
@@ -28,9 +29,9 @@ const About = () => (
         </div>
       </div>
       
-    <div style={{float: `right`, paddingTop: `5.4rem`}}>
+    <div style={{float: `right`, paddingTop: `.4rem`}}>
       <div style={{display: `flex`, justifyContent: `center`}}>
-        <Image style= {{}}/>
+        <Image/>
       </div>
         <h2 style ={{
           marginTop: `1.4rem`, 
@@ -45,14 +46,7 @@ const About = () => (
           }}>Full-Stack Developer</h3>
       </div>
       </div>
-      <div style={{borderRight: `163.42vh solid #A07250`,
-        width: `0`,
-        height: `0`,
-        borderTop: `0px solid transparent`,
-        borderBottom: `4rem solid transparent`,
-        position: `absolute`,
-        zIndex: `-2`}}>
-      </div>
+      <hr></hr>
   </div>
 )
 

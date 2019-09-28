@@ -17,6 +17,7 @@ const Skills = () => (
       <p>Machine Learning</p>
       <p>Time Series Forcasting</p>
     </div>
+    <hr></hr>
   </div>
 )
 
