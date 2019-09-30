@@ -7,6 +7,7 @@ import Clipboard from "../components/clipboard";
 import HoverText from "../components/hover-text";
 import { Link as RsLink} from "react-scroll";
 import ReactTooltip from "react-tooltip";
+import StyledBackgroundSection from "./background";
 
 const Header = ({ siteTitle }) => (
   <header id="header-section"
@@ -24,6 +25,7 @@ const Header = ({ siteTitle }) => (
         minWidth: `35rem`
         }}
         >
+          <StyledBackgroundSection></StyledBackgroundSection>
         <MainIcon></MainIcon>
         <RsLink
           activeClass="active"
@@ -66,6 +68,7 @@ const Header = ({ siteTitle }) => (
           </a>
         </div>
       </div>
+      
   </header>
 )
 
