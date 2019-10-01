@@ -66,10 +66,10 @@ const Layout = ({ children }) => {
 
       <div style={{
         width: `0 auto`,
-        height: `10rem`,
+        height: `5rem`,
         backgroundColor: `#4B5678`,
         /* The points are: centered top, left bottom, right bottom */
-        clipPath: `polygon(100% 100%, 0 100%, 100% 0)`
+        clipPath: `polygon(0 0, 0 100%, 100% 0)`
         }}>
       </div>
 
