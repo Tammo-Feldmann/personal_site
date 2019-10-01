@@ -106,8 +106,17 @@ const Layout = ({ children }) => {
         duration= {900}
         >
         <div style={{display: `flex`, justifyContent: `center`}}>
-          <div style={{display: `flex`, justifyContent: `center`, alignItems: `baseline`, backgroundColor: `#2F3854`, width:`80px`, height:`40px`, borderRadius: `90px 90px 0 0`}}>
-            <div style={{marginTop: `14px`, backgroundColor: `white`, width:`20px`, height:`20px`, borderRadius: `90px`}}></div>
+          <div style={{display: `flex`, justifyContent: `center`, alignItems: `baseline`, backgroundColor: `#2F3854`, width:`100px`, height:`40px`, borderRadius: `110px 110px 0 0`}}>
+            <div style={{ 
+              marginTop:'1rem',
+              border: `solid white`,
+              borderWidth: `0 5px 5px 0`,
+              display: `inline-block`,
+              padding: `9px`,
+              borderRadius: `4px`,
+              transform: `rotate(-135deg)`
+              }}> 
+              </div>
           </div>
         </div>
       </RsLink>
