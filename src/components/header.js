@@ -17,7 +17,7 @@ const RawHeader = ({ className, siteTitle }) => (
           query {
             desktop: file(relativePath: { eq: "Adirondacs.JPG" }) {
               childImageSharp {
-                fluid(duotone: { highlight: "#FFFFFF", shadow: "#707CA3", opacity: 50 }, quality: 100, maxWidth: 960) {
+                fluid(duotone: { highlight: "#FFFFFF", shadow: "#CCD5F1", opacity: 20 }, quality: 100, maxWidth: 960) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -48,13 +48,22 @@ const RawHeader = ({ className, siteTitle }) => (
             >
             <MainIcon></MainIcon>
         
-            <div style={{display:`flex`, justifyContent: `space-between`, alignItems: `baseline`, minWidth: `6rem`}}>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', width:`24px`}}>
-                <Clipboard></Clipboard>
+            <div style={{
+                  display:`flex`,
+                  justifyContent: `space-between`,
+                  alignItems: `baseline`,
+                  minWidth: `6rem`
+                  }}>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', backgroundColor: `#E6E2E2`, padding: `8px`, borderRadius: `20px`}}>
+                <div  style={{ width:`24px`}}>
+                  <Clipboard></Clipboard>
+                </div>
               </div>
-              <a href="https://www.linkedin.com/in/tammo-feldmann/">
-                <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
-              </a>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', backgroundColor: `#E6E2E2`, padding: `8px`, borderRadius: `10px`}}>
+                <a href="https://www.linkedin.com/in/tammo-feldmann/">
+                  <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
+                </a>
+              </div>
               <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{width:`21px`}}>
                 <img src={GitHub} alt="GitHub logo"/>
               <ReactTooltip type="light"/>

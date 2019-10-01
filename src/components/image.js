@@ -18,7 +18,7 @@ const Image = () => {
     query {
       placeholderImage: file(relativePath: { eq: "work_selfy.JPG" }) {
         childImageSharp {
-          fixed(width: 180, height: 180) {
+          fixed(duotone: { highlight: "#FFFFFF", shadow: "#CCD5F1", opacity: 20 }, width: 180, height: 180) {
             ...GatsbyImageSharpFixed
           }
         }
