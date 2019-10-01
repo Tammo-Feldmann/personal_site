@@ -66,28 +66,24 @@ const Layout = ({ children }) => {
               ><HoverText>projects</HoverText>
             </RsLink>
         </div>
-        </div>
-        <div style={{
-          position: `absolute`,
-          width: `0`,
-          height: `0`,
-          borderRight: `6rem solid transparent`,
-          borderTop: `18rem solid #9CA7C8`,
-          zIndex: `2`
-        }}>
-          </div>
-
+      </div>
+      <div style={{
+        position: `absolute`,
+        width: `0`,
+        height: `0`,
+        borderRight: `6rem solid transparent`,
+        borderTop: `14rem solid #4B5678`,
+        zIndex: `2`
+      }}>
+      </div>
       <div style={{
         width: `0 auto`,
         height: `5rem`,
-        backgroundColor: `#4B5678`,
+        backgroundColor: `#9CA7C8`,
         /* The points are: centered top, left bottom, right bottom */
         clipPath: `polygon(0 0, 0 100%, 100% 0)`
         }}>
       </div>
-
-
-
       <div
         style={{
           margin: `0 auto`,

@@ -54,12 +54,12 @@ const RawHeader = ({ className, siteTitle }) => (
                   alignItems: `baseline`,
                   minWidth: `6rem`
                   }}>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', backgroundColor: `#E6E2E2`, padding: `8px`, borderRadius: `20px`}}>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', padding: `8px`, borderRadius: `20px`}}>
                 <div  style={{ width:`24px`}}>
                   <Clipboard></Clipboard>
                 </div>
               </div>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', backgroundColor: `#E6E2E2`, padding: `8px`, borderRadius: `10px`}}>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', padding: `8px`, borderRadius: `10px`}}>
                 <a href="https://www.linkedin.com/in/tammo-feldmann/">
                   <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
                 </a>
