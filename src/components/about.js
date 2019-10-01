@@ -4,8 +4,8 @@ import Image from "../components/image"
 const About = () => (
   <div id="about-section">
     <div style={{
-      paddingTop: `8rem`,
-      paddingBottom: `6.6rem`,
+      /* The values for padding are: top, right, bottom, left */
+      padding: `2rem 0rem 0rem 0rem`,
       display: `flex`,
       justifyContent: 'space-between'
        }}>
@@ -13,7 +13,7 @@ const About = () => (
       <div> 
         <h1 style={{
           color: `#353848`,
-          paddingTop: `13rem`
+          paddingTop: `1rem`
           }}
           >About Me
         </h1>
@@ -29,7 +29,7 @@ const About = () => (
         </div>
       </div>
       
-    <div style={{float: `right`, paddingTop: `.4rem`}}>
+    <div style={{float: `right`, padding: `8.4rem 0rem 3rem 0rem`}}>
       <div style={{display: `flex`, justifyContent: `center`}}>
         <Image/>
       </div>

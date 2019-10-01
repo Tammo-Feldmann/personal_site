@@ -39,8 +39,7 @@ const RawHeader = ({ className, siteTitle }) => (
             display: `flex`,
             alignItems: `flex-start`,
             justifyContent:`space-between`,
-            paddingTop: `1rem`,
-            paddingBottom: `.5rem`,
+            padding: `1.1rem 0rem 0rem 0rem`,
             marginLeft: `4rem`,
             marginRight: `2rem`,
             minWidth: `30rem`
@@ -54,7 +53,7 @@ const RawHeader = ({ className, siteTitle }) => (
                   alignItems: `baseline`,
                   minWidth: `6rem`
                   }}>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', borderRadius: `20px`}}>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', borderRadius: `20px`, backgroundColor: `#2F3854`}}>
                 <div  style={{ width:`24px`}}>
                   <Clipboard></Clipboard>
                 </div>

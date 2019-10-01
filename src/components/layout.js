@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
           display: `flex`, 
           justifyContent: `space-between`,
           /* The values represent: top, right, bottom, left */
-          padding: `2.5rem 2rem .5rem 0rem`,
+          padding: `2rem 2rem .4rem 0rem`,
           width: `56rem`
           }}>
             <RsLink
@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
               to="about-section"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-142}
               duration= {500}
               ><HoverText>about</HoverText>
             </RsLink>
@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
               to="expertise-section"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={60}
               duration= {700}
               ><HoverText>expertise</HoverText>
             </RsLink>
@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
               to="projects-section"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-20}
               duration= {1100}
               ><HoverText>projects</HoverText>
             </RsLink>

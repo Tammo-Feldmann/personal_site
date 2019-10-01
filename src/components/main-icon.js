@@ -18,7 +18,7 @@ const MainIcon = () => {
   return <div>
     <Img 
     fixed={data.placeholderImage.childImageSharp.fixed}
-    style={{opacity: `.8`}}/>
+    style={{opacity: `.85`}}/>
   </div>
 }
 
