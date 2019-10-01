@@ -8,10 +8,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Link as RsLink} from "react-scroll";
 
 import Header from "./header"
 import "./layout.css"
+import HoverText from "../components/hover-text";
+import { Link as RsLink} from "react-scroll";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,23 +29,48 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} >
       </Header>
+        <div style={{ 
+          display: `flex`, 
+          alignItems: `baseline`,
+          justifyContent: `space-between`,
+          margin: `1.5rem`
+          }}>
+            <RsLink
+              activeClass="active"
+              to="about-section"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration= {500}
+              ><HoverText>about</HoverText>
+            </RsLink>
+            <RsLink
+              activeClass="active"
+              to="expertise-section"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration= {700}
+              ><HoverText>expertise</HoverText>
+            </RsLink>
+            <RsLink
+              activeClass="active"
+              to="projects-section"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration= {1100}
+              ><HoverText>projects</HoverText>
+            </RsLink>
+        </div>
 
-      <div style={{borderLeft: `79rem solid #525D7D`,
-        width: `0`,
-        height: `0`,
-        borderTop: `0px solid transparent`,
-        borderBottom: `120px solid transparent`,
-        position: `absolute`,
-        zIndex: `-2`}}>
-      </div>
-
-      <div style={{borderLeft: `12rem solid #2F3854`,
-        width: `0`,
-        height: `0`,
-        borderTop: `0px solid transparent`,
-        borderBottom: `18rem solid transparent`,
-        position: `absolute`,
-        zIndex: `-1`}}>
+      <div style={{
+        width: `0 auto`,
+        height: `10rem`,
+        backgroundColor: `#4B5678`,
+        /* The points are: centered top, left bottom, right bottom */
+        clipPath: `polygon(100% 100%, 0 100%, 100% 0)`
+        }}>
       </div>
 
       <div
