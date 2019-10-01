@@ -17,7 +17,7 @@ const RawHeader = ({ className, siteTitle }) => (
           query {
             desktop: file(relativePath: { eq: "Adirondacs.JPG" }) {
               childImageSharp {
-                fluid(duotone: { highlight: "#FFFFFF", shadow: "#CCD5F1", opacity: 20 }, quality: 100, maxWidth: 960) {
+                fluid(duotone: { highlight: "#FFFFFF", shadow: "#CCD5F1", opacity: 15 }, quality: 100, maxWidth: 960) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -37,13 +37,13 @@ const RawHeader = ({ className, siteTitle }) => (
           <header id="header-section">  
           <div style={{
             display: `flex`,
-            alignItems: `baseline`,
+            alignItems: `flex-start`,
             justifyContent:`space-between`,
             paddingTop: `1rem`,
             paddingBottom: `.5rem`,
-            marginLeft: `2rem`,
+            marginLeft: `4rem`,
             marginRight: `2rem`,
-            minWidth: `5rem`
+            minWidth: `30rem`
             }}
             >
             <MainIcon></MainIcon>
@@ -54,12 +54,12 @@ const RawHeader = ({ className, siteTitle }) => (
                   alignItems: `baseline`,
                   minWidth: `6rem`
                   }}>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', padding: `8px`, borderRadius: `20px`}}>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', borderRadius: `20px`}}>
                 <div  style={{ width:`24px`}}>
                   <Clipboard></Clipboard>
                 </div>
               </div>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', padding: `8px`, borderRadius: `10px`}}>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', padding: `10px`, borderRadius: `10px`}}>
                 <a href="https://www.linkedin.com/in/tammo-feldmann/">
                   <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
                 </a>

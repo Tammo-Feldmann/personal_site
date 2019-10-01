@@ -34,8 +34,8 @@ const Layout = ({ children }) => {
         <div style={{ 
           display: `flex`, 
           justifyContent: `space-between`,
-          margin: `.5rem`,
-          paddingTop: `1.75rem`,
+          /* The values represent: top, right, bottom, left */
+          padding: `2.5rem 2rem .5rem 0rem`,
           width: `56rem`
           }}>
             <RsLink
@@ -71,15 +71,16 @@ const Layout = ({ children }) => {
         position: `absolute`,
         width: `0`,
         height: `0`,
-        borderRight: `6rem solid transparent`,
-        borderTop: `14rem solid #4B5678`,
+        borderRight: `10rem solid transparent`,
+        borderTop: `18rem solid #4B5678`,
         zIndex: `2`
       }}>
       </div>
       <div style={{
         width: `0 auto`,
-        height: `5rem`,
+        height: `8rem`,
         backgroundColor: `#9CA7C8`,
+        opacity: `.3`,
         /* The points are: centered top, left bottom, right bottom */
         clipPath: `polygon(0 0, 0 100%, 100% 0)`
         }}>

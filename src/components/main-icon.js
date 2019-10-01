@@ -7,7 +7,7 @@ const MainIcon = () => {
   query {
     placeholderImage: file(relativePath: { eq: "MeIcon.png" }) {
       childImageSharp {
-        fixed(width: 45) {
+        fixed(width: 100) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -18,7 +18,7 @@ const MainIcon = () => {
   return <div>
     <Img 
     fixed={data.placeholderImage.childImageSharp.fixed}
-    style={{}}/>
+    style={{opacity: `.8`}}/>
   </div>
 }
 
