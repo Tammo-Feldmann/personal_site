@@ -29,11 +29,14 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} >
       </Header>
+      <div style={{ display: `flex`, 
+          justifyContent: `center`,}}>
         <div style={{ 
           display: `flex`, 
-          alignItems: `baseline`,
           justifyContent: `space-between`,
-          margin: `1.5rem`
+          margin: `1rem`,
+          paddingTop: `1.5rem`,
+          width: `46rem`
           }}>
             <RsLink
               activeClass="active"
@@ -62,6 +65,7 @@ const Layout = ({ children }) => {
               duration= {1100}
               ><HoverText>projects</HoverText>
             </RsLink>
+        </div>
         </div>
 
       <div style={{
