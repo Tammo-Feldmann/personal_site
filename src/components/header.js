@@ -7,18 +7,17 @@ import Clipboard from "../components/clipboard";
 import HoverText from "../components/hover-text";
 import { Link as RsLink} from "react-scroll";
 import ReactTooltip from "react-tooltip";
-import { graphql, StaticQuery } from 'gatsby'
-import styled from 'styled-components'
-
+import { graphql, StaticQuery } from "gatsby";
+import styled from "styled-components";
 import BackgroundImage from 'gatsby-background-image'
 
-const Header = ({ className, siteTitle }) => (
+const RawHeader = ({ className, siteTitle }) => (
       <StaticQuery
         query={graphql`
           query {
             desktop: file(relativePath: { eq: "Adirondacs.JPG" }) {
               childImageSharp {
-                fluid(quality: 90, maxWidth: 920) {
+                fluid(duotone: { highlight: "#FFFFFF", shadow: "#707CA3", opacity: 50 }, quality: 100, maxWidth: 960) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -33,24 +32,41 @@ const Header = ({ className, siteTitle }) => (
               Tag="section"
               className={className}
               fluid={imageData}
-              backgroundColor={`#040e18`}
+              backgroundColor={`#ffffff`}
             >
-                <header id="header-section"
-        style={{
-        }}
-      >  
+          <header id="header-section">  
           <div style={{
             display: `flex`,
             alignItems: `baseline`,
             justifyContent:`space-between`,
-            paddingTop: `1.5rem`,
+            paddingTop: `1rem`,
             paddingBottom: `.5rem`,
-            marginLeft: `8rem`,
-            marginRight: `6rem`,
+            marginLeft: `2rem`,
+            marginRight: `2rem`,
             minWidth: `35rem`
             }}
             >
             <MainIcon></MainIcon>
+        
+            <div style={{display:`flex`, justifyContent: `space-between`, alignItems: `baseline`, minWidth: `6rem`}}>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', width:`24px`}}>
+                <Clipboard></Clipboard>
+              </div>
+              <a href="https://www.linkedin.com/in/tammo-feldmann/">
+                <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
+              </a>
+              <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{width:`21px`}}>
+                <img src={GitHub} alt="GitHub logo"/>
+              <ReactTooltip type="light"/>
+              </a>
+            </div>
+          </div> 
+          <div style={{ display: `flex`, 
+                        alignItems: `baseline`,
+                        justifyContent: `space-between`,
+                        marginLeft: `16rem`,
+                        marginRight: `24rem`
+                        }}>
             <RsLink
               activeClass="active"
               to="about-section"
@@ -78,20 +94,7 @@ const Header = ({ className, siteTitle }) => (
               duration= {1100}
               ><HoverText>projects</HoverText>
             </RsLink>
-            
-            <div style={{display:`flex`, justifyContent: `space-between`, alignItems: `baseline`, minWidth: `6rem`}}>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', width:`24px`}}>
-                <Clipboard></Clipboard>
-              </div>
-              <a href="https://www.linkedin.com/in/tammo-feldmann/">
-                <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
-              </a>
-              <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{width:`21px`}}>
-                <img src={GitHub} alt="GitHub logo"/>
-              <ReactTooltip type="light"/>
-              </a>
             </div>
-          </div> 
           </header>
         </BackgroundImage>
       )
@@ -99,83 +102,19 @@ const Header = ({ className, siteTitle }) => (
   />
 )
 
-// const StyledBackgroundSection = styled(BackgroundSection)`
-//   width: 100%;
-//   background-position: bottom center;
-//   background-repeat: repeat-y;
-//   background-size: cover;
-// `
-
-
-// const Header = ({ siteTitle }) => (
-//   <header id="header-section"
-//     style={{
-//     }}
-//   >  
-//       <div style={{
-//         display: `flex`,
-//         alignItems: `baseline`,
-//         justifyContent:`space-between`,
-//         paddingTop: `1.5rem`,
-//         paddingBottom: `.5rem`,
-//         marginLeft: `8rem`,
-//         marginRight: `6rem`,
-//         minWidth: `35rem`
-//         }}
-//         >
-//           <StyledBackgroundSection></StyledBackgroundSection>
-//         <MainIcon></MainIcon>
-//         <RsLink
-//           activeClass="active"
-//           to="about-section"
-//           spy={true}
-//           smooth={true}
-//           offset={0}
-//           duration= {500}
-//           ><HoverText>about</HoverText>
-//         </RsLink>
-//         <RsLink
-//           activeClass="active"
-//           to="expertise-section"
-//           spy={true}
-//           smooth={true}
-//           offset={0}
-//           duration= {700}
-//           ><HoverText>expertise</HoverText>
-//         </RsLink>
-//         <RsLink
-//           activeClass="active"
-//           to="projects-section"
-//           spy={true}
-//           smooth={true}
-//           offset={0}
-//           duration= {1100}
-//           ><HoverText>projects</HoverText>
-//         </RsLink>
-        
-//         <div style={{display:`flex`, justifyContent: `space-between`, alignItems: `baseline`, minWidth: `6rem`}}>
-//           <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', width:`24px`}}>
-//             <Clipboard></Clipboard>
-//           </div>
-//           <a href="https://www.linkedin.com/in/tammo-feldmann/">
-//             <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
-//           </a>
-//           <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{width:`21px`}}>
-//             <img src={GitHub} alt="GitHub logo"/>
-//           <ReactTooltip type="light"/>
-//           </a>
-//         </div>
-//       </div>
-      
-//   </header>
-// )
-
-Header.propTypes = {
+RawHeader.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+RawHeader.defaultProps = {
   siteTitle: ``,
 }
+
+const Header = styled(RawHeader)`
+width: 100%;
+min-height: 36vh;
+opacity: 0.7;
+
+`
 
 export default Header
