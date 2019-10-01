@@ -4,8 +4,8 @@ import MainIcon from "./main-icon";
 import LinkedIn from "../images/LinkedIn.svg";
 import GitHub from "../images/GitHub.svg";
 import Clipboard from "../components/clipboard";
-import HoverText from "../components/hover-text";
-import { Link as RsLink} from "react-scroll";
+
+
 import ReactTooltip from "react-tooltip";
 import { graphql, StaticQuery } from "gatsby";
 import styled from "styled-components";
@@ -43,7 +43,7 @@ const RawHeader = ({ className, siteTitle }) => (
             paddingBottom: `.5rem`,
             marginLeft: `2rem`,
             marginRight: `2rem`,
-            minWidth: `35rem`
+            minWidth: `5rem`
             }}
             >
             <MainIcon></MainIcon>
@@ -70,40 +70,7 @@ const RawHeader = ({ className, siteTitle }) => (
               </a>
             </div>
           </div> 
-          <div style={{ display: `flex`, 
-                        alignItems: `baseline`,
-                        justifyContent: `space-between`,
-                        marginLeft: `16rem`,
-                        marginRight: `24rem`
-                        }}>
-            <RsLink
-              activeClass="active"
-              to="about-section"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration= {500}
-              ><HoverText>about</HoverText>
-            </RsLink>
-            <RsLink
-              activeClass="active"
-              to="expertise-section"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration= {700}
-              ><HoverText>expertise</HoverText>
-            </RsLink>
-            <RsLink
-              activeClass="active"
-              to="projects-section"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration= {1100}
-              ><HoverText>projects</HoverText>
-            </RsLink>
-            </div>
+
           </header>
         </BackgroundImage>
       )
