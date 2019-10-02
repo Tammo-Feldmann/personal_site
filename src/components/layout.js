@@ -13,6 +13,12 @@ import Header from "./header"
 import "./layout.css"
 import HoverText from "../components/hover-text";
 import { Link as RsLink} from "react-scroll";
+import LinkedIn from "../images/LinkedIn.svg";
+import GitHub from "../images/GitHub.svg";
+import Clipboard from "../components/clipboard";
+
+
+import ReactTooltip from "react-tooltip";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,61 +35,76 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} >
       </Header>
-      <div style={{ display: `flex`, 
-          justifyContent: `center`,}}>
-        <div style={{ 
-          display: `flex`, 
-          justifyContent: `space-between`,
-          /* The values represent: top, right, bottom, left */
-          padding: `2rem 2rem .4rem 0rem`,
-          width: `56rem`
-          }}>
-            <RsLink
-              activeClass="active"
-              to="about-section"
-              spy={true}
-              smooth={true}
-              offset={-142}
-              duration= {500}
-              ><HoverText>about</HoverText>
-            </RsLink>
-            <RsLink
-              activeClass="active"
-              to="expertise-section"
-              spy={true}
-              smooth={true}
-              offset={60}
-              duration= {700}
-              ><HoverText>expertise</HoverText>
-            </RsLink>
-            <RsLink
-              activeClass="active"
-              to="projects-section"
-              spy={true}
-              smooth={true}
-              offset={-20}
-              duration= {1100}
-              ><HoverText>projects</HoverText>
-            </RsLink>
-        </div>
-      </div>
       <div style={{
         position: `absolute`,
-        width: `0`,
-        height: `0`,
-        borderRight: `10rem solid transparent`,
-        borderTop: `18rem solid #4B5678`,
-        zIndex: `2`
-      }}>
-      </div>
-      <div style={{
-        width: `0 auto`,
-        height: `8rem`,
-        backgroundColor: `#9CA7C8`,
-        opacity: `.3`,
+        width: `79.8rem`,
+        height: `16.5rem`,
+        backgroundColor: `#AFB4C4`,
         /* The points are: centered top, left bottom, right bottom */
-        clipPath: `polygon(0 0, 0 100%, 100% 0)`
+        clipPath: `polygon(0 -1%, 100% -1%, 100% 23.5%, 64% 24%, 62% 8%, 60% 24%, 10% 26%, 0 100%)`,
         }}>
+        <div style={{ 
+          display: `flex`, 
+          justifyContent: `center`,
+          marginLeft: `4rem`
+          }}>
+          <div style={{
+            display: `flex`,
+            /* The values represent: top, right, bottom, left */
+            padding: `1rem 8rem 0rem 0rem`, 
+            justifyContent: `space-between`,
+            width: `50rem`}}>
+          <RsLink
+            activeClass="active"
+            to="about-section"
+            spy={true}
+            smooth={true}
+            offset={-142}
+            duration= {500}
+            ><HoverText>about</HoverText>
+          </RsLink>
+          <RsLink
+            activeClass="active"
+            to="expertise-section"
+            spy={true}
+            smooth={true}
+            offset={60}
+            duration= {700}
+            ><HoverText>expertise</HoverText>
+          </RsLink>
+          <RsLink
+            activeClass="active"
+            to="projects-section"
+            spy={true}
+            smooth={true}
+            offset={-20}
+            duration= {1100}
+            ><HoverText>projects</HoverText>
+          </RsLink>
+          <div style={{
+                  display:`flex`,
+                  justifyContent: `space-between`,
+                  alignItems: `baseline`,
+                  minWidth: `4.8rem`,
+                  marginLeft: `1rem`
+                  }}>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', borderRadius: `20px`, backgroundColor: `#2F3854`}}>
+                <div  style={{ width:`24px`}}>
+                  <Clipboard></Clipboard>
+                </div>
+              </div>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', padding: `10px`, borderRadius: `10px`}}>
+                <a href="https://www.linkedin.com/in/tammo-feldmann/">
+                  <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
+                </a>
+              </div>
+              <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{width:`21px`}}>
+                <img src={GitHub} alt="GitHub logo"/>
+              <ReactTooltip type="light"/>
+              </a>
+          </div>
+        </div>
+      </div>
       </div>
       <div
         style={{

@@ -1,12 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 import MainIcon from "./main-icon";
-import LinkedIn from "../images/LinkedIn.svg";
-import GitHub from "../images/GitHub.svg";
-import Clipboard from "../components/clipboard";
 
-
-import ReactTooltip from "react-tooltip";
 import { graphql, StaticQuery } from "gatsby";
 import styled from "styled-components";
 import BackgroundImage from 'gatsby-background-image'
@@ -39,7 +34,7 @@ const RawHeader = ({ className, siteTitle }) => (
             display: `flex`,
             alignItems: `flex-start`,
             justifyContent:`space-between`,
-            padding: `1.1rem 0rem 0rem 0rem`,
+            padding: `1.4rem 0rem 0rem 0rem`,
             marginLeft: `4rem`,
             marginRight: `2rem`,
             minWidth: `30rem`
@@ -47,27 +42,7 @@ const RawHeader = ({ className, siteTitle }) => (
             >
             <MainIcon></MainIcon>
         
-            <div style={{
-                  display:`flex`,
-                  justifyContent: `space-between`,
-                  alignItems: `baseline`,
-                  minWidth: `6rem`
-                  }}>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', borderRadius: `20px`, backgroundColor: `#2F3854`}}>
-                <div  style={{ width:`24px`}}>
-                  <Clipboard></Clipboard>
-                </div>
-              </div>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', padding: `10px`, borderRadius: `10px`}}>
-                <a href="https://www.linkedin.com/in/tammo-feldmann/">
-                  <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
-                </a>
-              </div>
-              <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{width:`21px`}}>
-                <img src={GitHub} alt="GitHub logo"/>
-              <ReactTooltip type="light"/>
-              </a>
-            </div>
+            
           </div> 
 
           </header>
@@ -89,7 +64,6 @@ const Header = styled(RawHeader)`
 width: 100%;
 min-height: 36vh;
 opacity: 0.7;
-
 `
 
 export default Header
