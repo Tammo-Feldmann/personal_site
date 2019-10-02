@@ -7,28 +7,48 @@ import ReactTooltip from "react-tooltip";
 
 const About = () => (
   <div id="about-section">
+
     <div style={{
       /* The values for padding are: top, right, bottom, left */
       marginLeft: `3rem`,
-      padding: `8rem 0rem 0rem 0rem`,
+      padding: `4rem 0rem 5rem 0rem`,
       display: `flex`,
       justifyContent: 'space-between'
        }}>
       
+
+
       <div> 
         <h1 style={{
           color: `#3F4967`,
-          paddingTop: `6rem`
+          paddingTop: `8rem`
           }}
           >About Me
         </h1>
-        <div style={{
+ 
+        <div style={{ 
+          maxWidth: `420px`, 
+          marginBottom: `3rem`, 
+          marginTop: `1.5rem`, 
+          color: `#575964`
+        }}>
+          <p>I enjoy programming, problem solving, climbing, and good food. I spent 5 years chasing a PhD that I 
+             completed in August of 2018. Since then I have been coding full time and I am excited every day to learn 
+             more.
+          </p>
+        </div>
+        <h1 style={{
+          color: `#3F4967`,
+          paddingTop: `4rem`
+          }}
+          >Contact
+        </h1>
+
+      <div style={{
                   display:`flex`,
-                  justifyContent: `space-between`,
+                  justifyContent: `flex-start`,
                   alignItems: `baseline`,
-                  minWidth: `4.8rem`,
-                  marginLeft: `12rem`,
-                  marginTop: `2.5rem`
+                  minWidth: `4.8rem`
                   }}>
               <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', borderRadius: `20px`, backgroundColor: `#2F3854`}}>
                 <div  style={{ width:`24px`}}>
@@ -45,19 +65,10 @@ const About = () => (
               <ReactTooltip type="light"/>
               </a>
             </div>
-        <div style={{ 
-          maxWidth: `420px`, 
-          marginBottom: `3rem`, 
-          marginTop: `1.5rem`, 
-          color: `#575964`
-        }}>
-          <p>I enjoy programming, problem solving, climbing, and good food. I spent 5 years chasing a PhD that I 
-             completed in August of 2018. Since then I have been coding full time and I am excited every day to learn 
-             more.</p>
-        </div>
       </div>
-      
-    <div style={{float: `right`, padding: `0rem 0rem 3rem 0rem`}}>
+
+    <div style={{padding: `10rem 0rem 3rem 0rem`}}>
+    
       <div style={{display: `flex`, justifyContent: `center`}}>
         <Image/>
       </div>
