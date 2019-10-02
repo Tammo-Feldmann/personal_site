@@ -26,7 +26,7 @@ const Image = () => {
     }
   `)
 
-  return <div style={{border:`4px solid #525D7D`,
+  return <div style={{border:`2px solid #CFD2D9`,
   display: `flex`,
   justifyContent: `center`,
   borderRadius: `140px`}}>
@@ -34,7 +34,7 @@ const Image = () => {
     fixed={data.placeholderImage.childImageSharp.fixed}
     style={{
       borderRadius:180,
-      border: `2px solid #525D7D`,
+      border: `6px solid #A07250`,
       margin: `10px`
     }}
     />

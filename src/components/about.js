@@ -10,15 +10,15 @@ const About = () => (
     <div style={{
       /* The values for padding are: top, right, bottom, left */
       marginLeft: `3rem`,
-      padding: `10rem 0rem 0rem 0rem`,
+      padding: `8rem 0rem 0rem 0rem`,
       display: `flex`,
       justifyContent: 'space-between'
        }}>
       
       <div> 
         <h1 style={{
-          color: `#353848`,
-          paddingTop: `1rem`
+          color: `#3F4967`,
+          paddingTop: `6rem`
           }}
           >About Me
         </h1>
@@ -57,7 +57,7 @@ const About = () => (
         </div>
       </div>
       
-    <div style={{float: `right`, padding: `8.4rem 0rem 3rem 0rem`}}>
+    <div style={{float: `right`, padding: `0rem 0rem 3rem 0rem`}}>
       <div style={{display: `flex`, justifyContent: `center`}}>
         <Image/>
       </div>
