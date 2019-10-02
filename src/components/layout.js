@@ -13,12 +13,6 @@ import Header from "./header"
 import "./layout.css"
 import HoverText from "../components/hover-text";
 import { Link as RsLink} from "react-scroll";
-import LinkedIn from "../images/LinkedIn.svg";
-import GitHub from "../images/GitHub.svg";
-import Clipboard from "../components/clipboard";
-
-
-import ReactTooltip from "react-tooltip";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -37,11 +31,11 @@ const Layout = ({ children }) => {
       </Header>
       <div style={{
         position: `absolute`,
-        width: `79.8rem`,
+        width: `100%`,
         height: `16.5rem`,
         backgroundColor: `#525C7B`,
         /* The points are: centered top, left bottom, right bottom */
-        clipPath: `polygon(0 -1%, 100% -1%, 100% 23.7%, 64% 24%, 62% 6%, 60% 30%, 10% 32%, 0 100%)`,
+        clipPath: `polygon(0 -1%, 100% -1%, 100% 21%, 98.6% 21%, 97% 16%, 95.4% 19.5%, 93.4% 12%, 91% 20%, 90% 14%, 89.4% 14.4%, 88.8% 14%, 87.8% 21%, 87% 16%, 86.2% 21%, 12% 22%, 0 100%)`,
         }}>
         <div style={{ 
           display: `flex`, 
@@ -81,29 +75,8 @@ const Layout = ({ children }) => {
             duration= {1100}
             ><HoverText>projects</HoverText>
           </RsLink>
-          <div style={{
-                  display:`flex`,
-                  justifyContent: `space-between`,
-                  alignItems: `baseline`,
-                  minWidth: `4.8rem`,
-                  marginLeft: `1rem`
-                  }}>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', borderRadius: `20px`, backgroundColor: `#2F3854`}}>
-                <div  style={{ width:`24px`}}>
-                  <Clipboard></Clipboard>
-                </div>
-              </div>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', padding: `10px`, borderRadius: `10px`}}>
-                <a href="https://www.linkedin.com/in/tammo-feldmann/">
-                  <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
-                </a>
-              </div>
-              <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{width:`21px`}}>
-                <img src={GitHub} alt="GitHub logo"/>
-              <ReactTooltip type="light"/>
-              </a>
           </div>
-        </div>
+
       </div>
       </div>
       <div
