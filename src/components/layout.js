@@ -39,9 +39,9 @@ const Layout = ({ children }) => {
         position: `absolute`,
         width: `79.8rem`,
         height: `16.5rem`,
-        backgroundColor: `#AFB4C4`,
+        backgroundColor: `#525C7B`,
         /* The points are: centered top, left bottom, right bottom */
-        clipPath: `polygon(0 -1%, 100% -1%, 100% 23.5%, 64% 24%, 62% 8%, 60% 24%, 10% 26%, 0 100%)`,
+        clipPath: `polygon(0 -1%, 100% -1%, 100% 23.7%, 64% 24%, 62% 6%, 60% 30%, 10% 32%, 0 100%)`,
         }}>
         <div style={{ 
           display: `flex`, 

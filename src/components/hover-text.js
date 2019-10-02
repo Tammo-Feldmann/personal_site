@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const HoverText = styled.ul`
-	color: #525C7B;
+	color: #FFFFFF;
 	font-weight: 400;
 	:hover {
 		cursor: pointer;

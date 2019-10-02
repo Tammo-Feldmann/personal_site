@@ -5,7 +5,8 @@ const About = () => (
   <div id="about-section">
     <div style={{
       /* The values for padding are: top, right, bottom, left */
-      padding: `2rem 0rem 0rem 0rem`,
+      marginLeft: `3rem`,
+      padding: `10rem 0rem 0rem 0rem`,
       display: `flex`,
       justifyContent: 'space-between'
        }}>
