@@ -29,61 +29,55 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} >
       </Header>
-      <div style={{ display: `flex`, 
-          justifyContent: `center`,}}>
-        <div style={{ 
-          display: `flex`, 
-          justifyContent: `space-between`,
-          /* The values represent: top, right, bottom, left */
-          padding: `2rem 2rem .4rem 0rem`,
-          width: `56rem`
-          }}>
-            <RsLink
-              activeClass="active"
-              to="about-section"
-              spy={true}
-              smooth={true}
-              offset={-142}
-              duration= {500}
-              ><HoverText>about</HoverText>
-            </RsLink>
-            <RsLink
-              activeClass="active"
-              to="expertise-section"
-              spy={true}
-              smooth={true}
-              offset={60}
-              duration= {700}
-              ><HoverText>expertise</HoverText>
-            </RsLink>
-            <RsLink
-              activeClass="active"
-              to="projects-section"
-              spy={true}
-              smooth={true}
-              offset={-20}
-              duration= {1100}
-              ><HoverText>projects</HoverText>
-            </RsLink>
-        </div>
-      </div>
       <div style={{
         position: `absolute`,
-        width: `0`,
-        height: `0`,
-        borderRight: `10rem solid transparent`,
-        borderTop: `18rem solid #4B5678`,
-        zIndex: `2`
-      }}>
-      </div>
-      <div style={{
-        width: `0 auto`,
-        height: `8rem`,
-        backgroundColor: `#9CA7C8`,
-        opacity: `.3`,
+        width: `100%`,
+        height: `16.5rem`,
+        backgroundColor: `#525C7B`,
         /* The points are: centered top, left bottom, right bottom */
-        clipPath: `polygon(0 0, 0 100%, 100% 0)`
+        clipPath: `polygon(0 -1%, 100% -1%, 100% 21%, 98.6% 21%, 97% 16%, 95.4% 19.5%, 93.4% 12%, 91% 20%, 90% 14%, 89.4% 14.4%, 88.8% 14%, 87.8% 21%, 87% 16%, 86.2% 21%, 12% 22%, 0 100%)`,
         }}>
+        <div style={{ 
+          display: `flex`, 
+          justifyContent: `center`,
+          marginLeft: `4rem`
+          }}>
+          <div style={{
+            display: `flex`,
+            /* The values represent: top, right, bottom, left */
+            padding: `1rem 8rem 0rem 0rem`, 
+            justifyContent: `space-between`,
+            width: `50rem`}}>
+          <RsLink
+            activeClass="active"
+            to="about-section"
+            spy={true}
+            smooth={true}
+            offset={-142}
+            duration= {500}
+            ><HoverText>about</HoverText>
+          </RsLink>
+          <RsLink
+            activeClass="active"
+            to="expertise-section"
+            spy={true}
+            smooth={true}
+            offset={60}
+            duration= {700}
+            ><HoverText>expertise</HoverText>
+          </RsLink>
+          <RsLink
+            activeClass="active"
+            to="projects-section"
+            spy={true}
+            smooth={true}
+            offset={-20}
+            duration= {1100}
+            ><HoverText>projects</HoverText>
+          </RsLink>
+          </div>
+
+      </div>
       </div>
       <div
         style={{
