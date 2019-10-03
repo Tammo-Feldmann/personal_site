@@ -39,16 +39,17 @@ const About = () => (
         </div>
         <h1 style={{
           color: `#3F4967`,
-          paddingTop: `4rem`
+          padding: `4rem 0rem 1rem 0rem`
           }}
           >Contact
         </h1>
 
       <div style={{
                   display:`flex`,
-                  justifyContent: `flex-start`,
+                  justifyContent: `space-between`,
                   alignItems: `baseline`,
-                  minWidth: `4.8rem`
+                  width: `6rem`,
+                  paddingLeft: `.2rem`
                   }}>
               <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', borderRadius: `20px`, backgroundColor: `#2F3854`}}>
                 <div  style={{ width:`24px`}}>
