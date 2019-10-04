@@ -10,7 +10,6 @@ const About = () => (
 
     <div style={{
       /* The values for padding are: top, right, bottom, left */
-      marginLeft: `3rem`,
       padding: `4rem 0rem 5rem 0rem`,
       display: `flex`,
       justifyContent: 'space-between'
@@ -51,7 +50,7 @@ const About = () => (
                   width: `6rem`,
                   paddingLeft: `.2rem`
                   }}>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', borderRadius: `20px`, backgroundColor: `#2F3854`}}>
+              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer'}}>
                 <div  style={{ width:`24px`}}>
                   <Clipboard></Clipboard>
                 </div>
