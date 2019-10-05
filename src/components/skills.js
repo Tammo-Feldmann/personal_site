@@ -1,5 +1,5 @@
 import React from 'react';
-import Sankey from './sankey-image';
+import Sankey from '../images/SankeyDiagram.svg';
 
 const Skills = () => (
   <div id="expertise-section" style={{paddingTop: `4rem`, paddingBottom: `4rem`, color: `#353848` }}>
@@ -9,7 +9,8 @@ const Skills = () => (
     </p>
     <div style={{display: `flex`, justifyContent:`center`, marginTop: `2rem`, marginBottom: `2rem`}}>
     </div>
-    <Sankey></Sankey>
+   
+    <img src={Sankey} alt="Sankey Diagram"></img>
     <div>- - - -Skills Construction hours per month -- working on my development stack</div>
     <div style={{marginTop: `4rem`, marginBottom: `4rem`}}>
       <p>JavaScript, Python, React, Flask</p>
