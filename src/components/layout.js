@@ -100,14 +100,14 @@ const Layout = ({ children }) => {
         duration= {900}
         >
         <div style={{display: `flex`, justifyContent: `center`}}>
-          <div style={{display: `flex`, justifyContent: `center`, alignItems: `baseline`, backgroundColor: `#2F3854`, width:`100px`, height:`40px`, borderRadius: `110px 110px 0 0`}}>
+          <div style={{display: `flex`, justifyContent: `center`, alignItems: `baseline`, backgroundColor: `#3F4967`, width:`80px`, height:`34px`, borderRadius: `160px 160px 0 0`}}>
             <div style={{ 
-              marginTop:'1rem',
+              marginTop:'.7rem',
               border: `solid white`,
               borderWidth: `0 5px 5px 0`,
               display: `inline-block`,
               padding: `9px`,
-              borderRadius: `4px`,
+              borderRadius: `7px`,
               transform: `rotate(-135deg)`
               }}> 
               </div>
@@ -118,7 +118,7 @@ const Layout = ({ children }) => {
       <footer style={{ 
         margin:'0px',
         color: `white`,
-        backgroundColor: `#2F3854` }}>
+        backgroundColor: `#3F4967` }}>
         © {new Date().getFullYear()}, Tammo Feldmann
         {` `}
       </footer>
