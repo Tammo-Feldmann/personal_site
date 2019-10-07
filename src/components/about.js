@@ -10,13 +10,10 @@ const About = () => (
 
     <div style={{
       /* The values for padding are: top, right, bottom, left */
-      padding: `4rem 0rem 5rem 0rem`,
+      padding: `4rem 16% 5rem 16%`,
       display: `flex`,
       justifyContent: 'space-between'
        }}>
-      
-
-
       <div> 
         <h1 style={{
           color: `#3F4967`,

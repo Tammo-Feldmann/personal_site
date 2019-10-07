@@ -2,7 +2,7 @@ import React from 'react';
 import Sankey from '../images/SankeyDiagram.svg';
 
 const Skills = () => (
-  <div id="expertise-section" style={{paddingTop: `4rem`, paddingBottom: `4rem`, color: `#353848` }}>
+  <div id="expertise-section" style={{backgroundColor: `#6C3436`, paddingTop: `4rem`, paddingBottom: `4rem`, color: `#353848` }}>
     <h1>Expertise</h1>
     <p style={{maxWidth: 600}}>I have listed my various skills and their relationships in a sanky diagram. I really enjoyed seeing it and found it insightful. 
       Thought I might share how I think, here. 
