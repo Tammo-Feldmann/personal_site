@@ -10,9 +10,10 @@ const About = () => (
 
     <div style={{
       /* The values for padding are: top, right, bottom, left */
-      padding: `4rem 16% 5rem 16%`,
+      padding: `4rem 16% 6rem 16%`,
       display: `flex`,
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
+      backgroundColor: `#F4F5F6`
        }}>
       <div> 
         <h1 style={{
@@ -33,19 +34,20 @@ const About = () => (
              more.
           </p>
         </div>
+      
+      <div style={{display: `flex`, padding: `8rem 0rem 1rem 0rem`}}>
         <h1 style={{
           color: `#3F4967`,
-          padding: `4rem 0rem 1rem 0rem`
           }}
-          >Contact
-        </h1>
+          >Contact:
+          </h1>
 
       <div style={{
                   display:`flex`,
                   justifyContent: `space-between`,
                   alignItems: `baseline`,
-                  width: `6rem`,
-                  paddingLeft: `.2rem`
+                  width: `8rem`,
+                  paddingLeft: `2rem`
                   }}>
               <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer'}}>
                 <div  style={{ width:`24px`}}>
@@ -62,6 +64,7 @@ const About = () => (
               <ReactTooltip type="light"/>
               </a>
             </div>
+      </div>
       </div>
 
     <div style={{padding: `10rem 0rem 3rem 0rem`}}>
@@ -82,7 +85,6 @@ const About = () => (
           }}>Full-Stack Developer</h3>
       </div>
       </div>
-      <hr></hr>
   </div>
 )
 
