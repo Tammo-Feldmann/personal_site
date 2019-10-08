@@ -13,7 +13,7 @@ const About = () => (
       padding: `4rem 16% 6rem 16%`,
       display: `flex`,
       justifyContent: 'space-between',
-      backgroundColor: `#F4F5F6`
+      backgroundColor: `#FAFAFA`
        }}>
       <div> 
         <h1 style={{

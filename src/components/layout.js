@@ -88,7 +88,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
-      <div style={{textAlign: `center`, marginBottom: `0`, cursor:`pointer`}}>
+      <div style={{textAlign: `center`, marginBottom: `0`, cursor:`pointer`, backgroundColor: `#FAFAFA`}}>
       <RsLink
         activeClass="active"
         to="header-section"
