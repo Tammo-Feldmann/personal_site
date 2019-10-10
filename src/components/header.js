@@ -7,44 +7,41 @@ import styled from "styled-components";
 import BackgroundImage from 'gatsby-background-image'
 
 const RawHeader = ({ className, siteTitle }) => (
-      <StaticQuery
-        query={graphql`
-          query {
-            desktop: file(relativePath: { eq: "Adirondacs.JPG" }) {
-              childImageSharp {
-                fluid(duotone: { highlight: "#FFFFFF", shadow: "#CCD5F1", opacity: 15 }, quality: 100, maxWidth: 960) {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
+  <StaticQuery
+    query={graphql`
+      query {
+        desktop: file(relativePath: { eq: "Adirondacs.JPG" }) {
+          childImageSharp {
+            fluid(duotone: { highlight: "#FFFFFF", shadow: "#CCD5F1", opacity: 15 }, quality: 100, maxWidth: 960) {
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
-        `}
-        render={data => {
-          // Set ImageData.
-          const imageData = data.desktop.childImageSharp.fluid
-          return (
-            <BackgroundImage
-              Tag="section"
-              className={className}
-              fluid={imageData}
-              backgroundColor={`#ffffff`}
-            >
+        }
+      }
+    `}
+    render={data => {
+      // Set ImageData.
+      const imageData = data.desktop.childImageSharp.fluid
+      return (
+        <BackgroundImage
+          Tag="section"
+          className={className}
+          fluid={imageData}
+          backgroundColor={`#ffffff`}
+        >
           <header id="header-section">  
-          <div style={{
-            display: `flex`,
-            alignItems: `flex-start`,
-            justifyContent:`space-between`,
-            padding: `1.4rem 0rem 0rem 0rem`,
-            marginLeft: `4rem`,
-            marginRight: `2rem`,
-            minWidth: `30rem`
-            }}
-            >
-            <MainIcon></MainIcon>
-        
-            
-          </div> 
-
+            <div style={{
+              display: `flex`,
+              alignItems: `flex-start`,
+              justifyContent:`space-between`,
+              padding: `1.4rem 0rem 0rem 0rem`,
+              marginLeft: `4rem`,
+              marginRight: `2rem`,
+              minWidth: `30rem`
+              }}
+              >
+              <MainIcon></MainIcon>
+            </div> 
           </header>
         </BackgroundImage>
       )

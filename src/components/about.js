@@ -9,7 +9,7 @@ const About = () => (
   <div id="about-section">
     <div style={{
       /* The values for padding are: top, right, bottom, left */
-      padding: `4rem 16% 6rem 16%`,
+      padding: `4rem 16% 0rem 16%`,
       display: `flex`,
       justifyContent: 'space-between',
       backgroundColor: `#FAFAFA`
@@ -17,14 +17,13 @@ const About = () => (
       <div> 
         <h1 style={{
           color: `#3F4967`,
-          paddingTop: `8rem`
+          paddingTop: `6rem`
           }}
           >About Me
         </h1>
  
         <div style={{ 
           maxWidth: `420px`, 
-          marginBottom: `3rem`, 
           marginTop: `1.5rem`, 
           color: `#575964`
         }}>
@@ -34,7 +33,7 @@ const About = () => (
           </p>
         </div>
       
-      <div style={{display: `flex`, padding: `8rem 0rem 1rem 0rem`}}>
+      <div style={{display: `flex`, padding: `6rem 0rem 0rem 0rem`}}>
         <h1 style={{
           color: `#3F4967`,
           }}
