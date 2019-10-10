@@ -76,8 +76,7 @@ const Layout = ({ children }) => {
             ><HoverText>projects</HoverText>
           </RsLink>
           </div>
-
-      </div>
+        </div>
       </div>
       <div
         style={{

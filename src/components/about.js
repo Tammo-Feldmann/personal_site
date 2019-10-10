@@ -7,7 +7,6 @@ import ReactTooltip from "react-tooltip";
 
 const About = () => (
   <div id="about-section">
-
     <div style={{
       /* The values for padding are: top, right, bottom, left */
       padding: `4rem 16% 6rem 16%`,
