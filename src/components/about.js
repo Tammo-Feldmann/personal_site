@@ -21,7 +21,6 @@ const About = () => (
           }}
           >About Me
         </h1>
- 
         <div style={{ 
           maxWidth: `420px`, 
           marginTop: `1.5rem`, 
@@ -32,14 +31,8 @@ const About = () => (
              more.
           </p>
         </div>
-      
       <div style={{display: `flex`, padding: `6rem 0rem 0rem 0rem`}}>
-        <h1 style={{
-          color: `#3F4967`,
-          }}
-          >Contact:
-          </h1>
-
+        <h1 style={{ color: `#3F4967` }}>Contact:</h1>
       <div style={{
                   display:`flex`,
                   justifyContent: `space-between`,
