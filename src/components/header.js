@@ -36,8 +36,7 @@ const RawHeader = ({ className, siteTitle }) => (
               justifyContent:`space-between`,
               padding: `1.4rem 0rem 0rem 0rem`,
               marginLeft: `4rem`,
-              marginRight: `2rem`,
-              minWidth: `30rem`
+              marginRight: `2rem`
               }}
               >
               <MainIcon></MainIcon>
@@ -59,7 +58,7 @@ RawHeader.defaultProps = {
 
 const Header = styled(RawHeader)`
 width: 100%;
-min-height: 36vh;
+min-height: 26vh;
 opacity: 0.7;
 `
 

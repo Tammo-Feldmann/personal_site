@@ -15,17 +15,21 @@ const Skills = () => (
       }}>
     </div>
     <div style={{
-    padding: `14rem 16% 4rem 16%`
+    padding: `14rem 16% 4rem 16%`,
+    diplay: `flex`,
+    justifyContent: `right`,
+    color: `#FAFAFA`
     }}>
-    <h1 style={{color:`#FFFFFF`}}>Expertise</h1>
-    <p style={{maxWidth: 600, color: `#FFFFFF`}}>I have listed my various skills and their relationships in a sanky diagram. I really enjoyed seeing it and found it insightful. 
-      Thought I might share how I think, here. 
+    <h1>Expertise</h1>
+    <p style={{maxWidth: `40%`}}>I am just comfortable with backend problems as I like to work on frontend features. 
+      Most of my work has been in Javascript/React and Python on the backend. More recently I have been really fascinated with Rust. 
     </p>
-    <SkillCard></SkillCard>
-    <SkillCard></SkillCard>
-    <SkillCard></SkillCard>
-    <SkillCard></SkillCard>
-  </div>
+    </div>
+    <div style={{padding: `2rem 4rem 0rem 8%`}}>
+      <SkillCard></SkillCard>
+      <SkillCard></SkillCard>
+      <SkillCard></SkillCard>
+    </div>
   </div>
 )
 

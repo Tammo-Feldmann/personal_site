@@ -9,7 +9,7 @@ const About = () => (
   <div id="about-section">
     <div style={{
       /* The values for padding are: top, right, bottom, left */
-      padding: `7rem 18% 0rem 18%`,
+      padding: `6rem 18% 0rem 18%`,
       display: `flex`,
       justifyContent: 'space-between',
       backgroundColor: `#FAFAFA`
@@ -65,8 +65,7 @@ const About = () => (
       </div>
       </div>
 
-    <div style={{padding: `0rem 0rem 3rem 0rem`}}>
-    
+    <div style={{padding: `4rem 0rem 3rem 0rem`}}>
       <div style={{display: `flex`, justifyContent: `center`}}>
         <Image/>
       </div>

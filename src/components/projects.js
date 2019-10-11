@@ -5,16 +5,21 @@ const Projects = () => (
   <div id="projects-section" style={{
     padding:`8rem 16% 4rem 16%`,
     backgroundColor: `#FAFAFA`,
-    
     }}>
     <h1>Projects</h1>
-    <p>Here I will be including a bunch of screenshots from stuff that I am working on ...</p>
-    <div style={{borderLeft: `solid 68px #C06A73`, marginTop:`1rem`, backgroundColor: `#FFFFFF`, borderRadius: `35px`}}>
-        <h3>Datamago</h3>
-        <p>Time series forecasting. Machine learning platform</p>
-        <img src={Landing} alt="Datamago Landing Page" 
-        ></img>
-        {/* <a href=  */}
+    <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this
+      section are my own and I will specify where I have written all the backend and frontend code.</p>
+    <div style={{display: `flex`, justifyContent: `space-between`, padding: `2rem`, marginTop:`1rem`, backgroundColor: `#FFFFFF`, borderRadius: `35px`}}>
+        <div>
+          <h3>Datamago</h3>
+          <p>Datamago is a machine learning platform. The company focuses on time series forecasting. I have contributed to frontend features, 
+            data visualization, QA and CI pipelines, and others. 
+          </p>
+        </div>
+        <div style={{width: `24rem`, height: `18rem`}}>
+          <img src={Landing} alt="Datamago Landing Page" 
+          ></img>
+        </div>
       </div>
   </div>
 )
