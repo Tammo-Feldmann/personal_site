@@ -2,22 +2,25 @@ import React from 'react'
 import Landing from '../images/dm-landing.png'
 
 const Projects = () => (
-  <div id="projects-section" style={{
-    padding:`8rem 5% 4rem 5%`,
-    backgroundColor: `#FAFAFA`,
-    width: `40%`
+  <div id="projects-section" style={{display: `flex`
     }}>
+    <div style={{
+    padding:`8rem 5% 4rem 5%`,
+    backgroundColor: `#FAFAFA`
+    }} >
     <h1>Projects</h1>
     <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this
       section are my own and I will specify where I have written all the backend and frontend code.</p>
-    <div style={{borderLeft: `2rem solid #3F4967`, display: `flex`, justifyContent: `space-between`, margin: `2rem 2rem 2rem 120%`, backgroundColor: `#FFFFFF`, borderRadius: `15px`}}>
-        <div>
+    </div>
+    <div> 
+    <div style={{boxShadow: "4px 6px 4px #3F4967", display: `flex`, justifyContent: `space-between`, backgroundColor: `#FFFFFF`, borderRadius: `15px`, margin: `4rem`}}>
+        <div style={{backgroundColor: `#3F4967`, padding: `0rem 2rem 0rem 2rem`}}>
           <h2>Datamago</h2>
-          <p style={{width:`100%`}}>Datamago is a machine learning platform. The company focuses on time series forecasting. I have contributed to frontend features, 
+          <p style={{width:`80%`}}>Datamago is a machine learning platform. The company focuses on time series forecasting. I have contributed to frontend features, 
             data visualization, QA and CI pipelines, and others. 
           </p>
           <div style={{
-            margin: `1rem 1rem 2rem 1rem`,
+            margin: `4rem 1rem 2rem 1rem`,
             padding: `.8rem`,
             borderRadius: `5px`,
             backgroundColor: `#3F4967`,
@@ -43,7 +46,8 @@ const Projects = () => (
         ></img>
         </div>
       </div>
-  </div>
+      </div>
+</div>
 )
 
 export default Projects

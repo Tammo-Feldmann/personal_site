@@ -9,7 +9,7 @@ const About = () => (
   <div id="about-section">
     <div style={{
       /* The values for padding are: top, right, bottom, left */
-      padding: `6rem 18% 0rem 18%`,
+      padding: `4rem 18% 0rem 18%`,
       display: `flex`,
       justifyContent: 'space-between',
       backgroundColor: `#FAFAFA`
@@ -31,14 +31,14 @@ const About = () => (
              more.
           </p>
         </div>
-      <div style={{display: `flex`, padding: `6rem 0rem 0rem 0rem`}}>
+      <div style={{display: `flex`, padding: `4rem 0rem 0rem 0rem`, alignItems: `baseline`}}>
         <h1 style={{ color: `#3F4967` }}>Contact:</h1>
       <div style={{
                   display:`flex`,
                   justifyContent: `space-between`,
                   alignItems: `baseline`,
-                  width: `8rem`,
-                  paddingLeft: `2rem`
+                  width: `7rem`,
+                  paddingLeft: `1rem`
                   }}>
               <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer'}}>
                 <div  style={{ width:`24px`}}>
@@ -58,7 +58,7 @@ const About = () => (
       </div>
       </div>
 
-    <div style={{padding: `4rem 0rem 3rem 0rem`}}>
+    <div style={{padding: `8rem 0rem 3rem 0rem`}}>
       <div style={{display: `flex`, justifyContent: `center`}}>
         <Image/>
       </div>
