@@ -1,8 +1,22 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
+import React from 'react';
 
-const ProjectCard = () => (
-<Card></Card>
-)
+const { Component } = React;
 
-export default ProjectCard
+class ProjectCard extends Component {
+  render() {
+    const { title, excerpt } = this.props;
+
+    return (
+      <div className="project-card" style={{margin: `1.5rem`, padding: `2rem 0rem 0rem 0rem`}}>
+          <h2 className="card-header">
+            {title}
+          </h2>
+          <div className="card-body" style={{maxWidth: `25rem`}}>
+            {excerpt}
+          </div>
+      </div>
+    );
+  }
+};
+
+export default ProjectCard;
