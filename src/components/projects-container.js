@@ -12,7 +12,11 @@ const myProjects = [
 class ProjectsContainer extends Component {
   render() {
     return (
-        <div style={{margin: `2rem`}}>
+        <div style={{
+          display: `flex`,
+          flexWrap: `wrap`,
+          justifyContent: `space-between`,
+        }}>
           {myProjects.map(project => (
             <ProjectCard
               title={project.title}

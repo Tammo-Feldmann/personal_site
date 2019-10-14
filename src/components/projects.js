@@ -5,8 +5,8 @@ const Projects = () => (
   <div id="projects-section" style={{display: `flex`
     }}>
     <div style={{
-    padding:`8rem 5% 4rem 5%`,
-    backgroundColor: `#FAFAFA`
+    padding:`8rem 4% 4rem 4%`,
+    backgroundColor: `#D9D9DA`
     }} >
     <h1>Projects</h1>
     <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this

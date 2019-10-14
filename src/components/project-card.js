@@ -7,36 +7,32 @@ class ProjectCard extends Component {
     const { title, excerpt } = this.props;
 
     return (
-      <div className="project-card" style={{border: `solid blue 1px`, margin: `1.5rem`, padding: `2rem 0rem 0rem 0rem`, boxShadow: "4px 6px 4px #3F4967", backgroundColor: `#FFFFFF`, borderRadius: `15px`,}}>
+      <div className="project-card" style={{
+        border: `solid #E6E6E8 2px`,
+        padding: `2rem 1rem 0rem 1rem`, 
+        boxShadow: "2px 4px 2px #575964", 
+        backgroundColor: `#D9D9DA`, 
+        borderRadius: `15px`,
+        margin: `1rem`,
+        flex: `1 0 21%`,
+        }}>
+        <div style={{}}>
+          <img src={Landing} alt="Datamago Landing Page"></img>
+        </div>
+        <div>
           <h2 className="card-header">
             {title}
           </h2>
-          <div className="card-body" style={{maxWidth: `25rem`}}>
+          <div className="card-body" style={{maxWidth: `15rem`}}>
             {excerpt}
           </div>
-          <div style={{
-            margin: `4rem 1rem 2rem 1rem`,
-            padding: `.8rem`,
-            borderRadius: `5px`,
-            backgroundColor: `#3F4967`,
-            color: `white`,
-            textAlign: `center`,
-            width: `70%`
-            }}>
-          <a href="https://www.linkedin.com/in/tammo-feldmann/"
-          style={{color: `#FAFAFA`}}>More information
-          </a>
-          </div>
-          <h4>Technologies</h4>
-          <div style={{display: `inline-flex`}}>
+          <div style={{display: `inline-block`}}>
             <ul>JavaScript</ul>
             <ul>Firebase</ul>
             <ul>Jest</ul>
             <ul>Cypress</ul>
           </div>
-          <div style={{minWidth: `20rem`, height: `15rem`}}>
-            <img src={Landing} alt="Datamago Landing Page"></img>
-          </div>
+         </div>
       </div>
     );
   }
