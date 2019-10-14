@@ -14,23 +14,24 @@ class ProjectCard extends Component {
         backgroundColor: `#D9D9DA`, 
         borderRadius: `15px`,
         margin: `1rem`,
-        flex: `1 0 21%`,
+        width: `14rem`,
+        flex: `1`
         }}>
-        <div style={{}}>
-          <img src={Landing} alt="Datamago Landing Page"></img>
+        <div>
+          <img src={Landing} alt="Datamago Landing Page" ></img>
         </div>
         <div>
-          <h2 className="card-header">
+          <h4 className="card-header">
             {title}
-          </h2>
-          <div className="card-body" style={{maxWidth: `15rem`}}>
+          </h4>
+          <div className="card-body">
             {excerpt}
           </div>
-          <div style={{display: `inline-block`}}>
-            <ul>JavaScript</ul>
-            <ul>Firebase</ul>
-            <ul>Jest</ul>
-            <ul>Cypress</ul>
+          <div style={{display: `flex`}}>
+            <ul style={{flex: `1`}}>JavaScript</ul>
+            <ul style={{flex: `1`}}>Firebase</ul>
+            <ul style={{flex: `1`}}>Jest</ul>
+            <ul style={{flex: `1`}}>Cypress</ul>
           </div>
          </div>
       </div>

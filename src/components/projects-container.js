@@ -16,6 +16,8 @@ class ProjectsContainer extends Component {
           display: `flex`,
           flexWrap: `wrap`,
           justifyContent: `space-between`,
+          border: `1px grey solid`,
+          margin: `2rem`
         }}>
           {myProjects.map(project => (
             <ProjectCard
