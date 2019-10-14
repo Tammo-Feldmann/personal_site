@@ -1,5 +1,6 @@
 import React from 'react'
 import Landing from '../images/dm-landing.png'
+import ProjectsContainer from './projects-container'
 
 const Projects = () => (
   <div id="projects-section" style={{display: `flex`
@@ -13,6 +14,7 @@ const Projects = () => (
       section are my own and I will specify where I have written all the backend and frontend code.</p>
     </div>
     <div> 
+      <ProjectsContainer></ProjectsContainer>
     <div style={{boxShadow: "4px 6px 4px #3F4967", display: `flex`, justifyContent: `space-between`, backgroundColor: `#FFFFFF`, borderRadius: `15px`, margin: `4rem`}}>
         <div style={{backgroundColor: `#3F4967`, padding: `0rem 2rem 0rem 2rem`}}>
           <h2>Datamago</h2>
