@@ -1,9 +1,9 @@
 import React from 'react'
 import ProjectsContainer from './projects-container'
+import containerStyles from "./projects.module.css"
 
 const Projects = () => (
-  <div id="projects-section" style={{display: `flex`,
-    }}>
+  <div id="projects-section" className={containerStyles.projects}>
     <div style={{
       flex: `1`,
       padding:`8rem 4% 4rem 4%`,
