@@ -15,7 +15,8 @@ class ProjectCard extends Component {
         borderRadius: `15px`,
         margin: `1rem`,
         width: `14rem`,
-        flex: `1`
+        flex: `1`,
+        minWidth: `14rem`
         }}>
         <div>
           <img src={Landing} alt="Datamago Landing Page" ></img>
@@ -27,13 +28,13 @@ class ProjectCard extends Component {
           <div className="card-body">
             {excerpt}
           </div>
-          <div style={{display: `flex`}}>
-            <ul style={{flex: `1`}}>JavaScript</ul>
-            <ul style={{flex: `1`}}>Firebase</ul>
-            <ul style={{flex: `1`}}>Jest</ul>
-            <ul style={{flex: `1`}}>Cypress</ul>
+        </div>
+          <div style={{display:  `flex`, flexWrap: `wrap`, fontSize: `12px`, justifyContent: `space-between`, flexBasis: `20%`}}>
+            <div style={{flex: `1`}}>JavaScript</div>
+            <div style={{flex: `1`}}>Firebase</div>
+            <div style={{flex: `1`}}>Jest</div>
+            <div style={{flex: `1`}}>Cypress</div>
           </div>
-         </div>
       </div>
     );
   }

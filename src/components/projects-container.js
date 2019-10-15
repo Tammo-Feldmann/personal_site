@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from './project-card'
+import containerStyles from "./projects-container.module.css"
 
 const { Component } = React;
 
@@ -12,13 +13,7 @@ const myProjects = [
 class ProjectsContainer extends Component {
   render() {
     return (
-        <div style={{
-          display: `flex`,
-          flexWrap: `wrap`,
-          justifyContent: `space-between`,
-          border: `1px grey solid`,
-          margin: `2rem`
-        }}>
+        <div className={containerStyles.projects}>
           {myProjects.map(project => (
             <ProjectCard
               title={project.title}

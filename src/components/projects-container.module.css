@@ -1,0 +1,7 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 10px rgb(226, 126, 126) solid;
+  margin: 2rem;
+}
