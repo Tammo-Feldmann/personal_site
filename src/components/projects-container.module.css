@@ -1,12 +1,15 @@
 .projects {
-  border: 10px rgb(226, 126, 126) solid;
-  margin: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 800px) {
   .projects {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    border: 4px rgb(205, 207, 218) solid;
+    margin: 2rem;
   }
 }
+
