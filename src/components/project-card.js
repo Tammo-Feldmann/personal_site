@@ -1,22 +1,16 @@
 import React from 'react';
 import Landing from '../images/dm-landing.png'
 const { Component } = React;
+// eslint-disable-next-line
+import CardStyle from './project-card.module.css'
 
 class ProjectCard extends Component {
   render() {
     const { title, excerpt } = this.props;
 
     return (
-      <div className="project-card" style={{
-        border: `solid #E6E6E8 2px`,
-        padding: `1rem 1rem 1rem 1rem`, 
-        boxShadow: "2px 4px 2px #575964", 
-        backgroundColor: `#D9D9DA`, 
-        borderRadius: `15px`,
-        margin: `1rem`,
-        width: `12rem`
-        }}>
-        <div>
+      <div className={CardStyle.projectCard}
+>        <div>
           <img src={Landing} alt="Datamago Landing Page" ></img>
         </div>
         <div>

@@ -1,0 +1,13 @@
+.projectCard {
+  border: solid #E6E6E8 2px;
+  padding: 1rem 1rem 1rem 1rem; 
+  box-shadow: "2px 4px 2px #575964"; 
+  background-color: #D9D9DA; 
+  border-radius: 15px;
+  margin: 1rem;
+  width: 12rem
+}
+
+p {
+  background-color: none;
+}
