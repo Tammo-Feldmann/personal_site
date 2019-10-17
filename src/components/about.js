@@ -4,16 +4,12 @@ import LinkedIn from "../images/LinkedIn.svg";
 import GitHub from "../images/GitHub.svg";
 import Clipboard from "../components/clipboard";
 import ReactTooltip from "react-tooltip";
+import AboutStyles from "./about.module.css"
 
-const About = () => (
+
+export default ({ children }) => (
+  <div className={AboutStyles.container}>
   <div id="about-section">
-    <div style={{
-      /* The values for padding are: top, right, bottom, left */
-      padding: `4rem 18% 0rem 18%`,
-      display: `flex`,
-      justifyContent: 'space-between',
-      backgroundColor: `#FAFAFA`
-       }}>
       <div> 
         <h1 style={{
           color: `#3F4967`,
@@ -32,7 +28,7 @@ const About = () => (
           </p>
         </div>
       <div style={{display: `flex`, padding: `4rem 0rem 0rem 0rem`, alignItems: `baseline`}}>
-        <h1 style={{ color: `#3F4967` }}>Contact:</h1>
+        <h1 className="contact" style={{ color: `#3F4967` }}>Contact:</h1>
       <div style={{
                   display:`flex`,
                   justifyContent: `space-between`,
@@ -57,7 +53,6 @@ const About = () => (
             </div>
       </div>
       </div>
-
     <div style={{padding: `8rem 0rem 3rem 0rem`}}>
       <div style={{display: `flex`, justifyContent: `center`}}>
         <Image/>
@@ -77,5 +72,3 @@ const About = () => (
       </div>
   </div>
 )
-
-export default About

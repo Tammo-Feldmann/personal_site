@@ -1,0 +1,7 @@
+.container {
+  background-color: #FAFAFAFA;
+  /* The values for padding are: top, right, bottom, left */
+  padding: 4rem 18% 0rem 18%;
+  display: flex;
+  justify-content: space-between;
+}
