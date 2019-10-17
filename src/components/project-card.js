@@ -9,8 +9,8 @@ class ProjectCard extends Component {
     const { title, excerpt } = this.props;
 
     return (
-      <div className={CardStyle.projectCard}
->        <div>
+      <div className={CardStyle.projectCard}>        
+      <div>
           <img src={Landing} alt="Datamago Landing Page" ></img>
         </div>
         <div>
@@ -21,11 +21,11 @@ class ProjectCard extends Component {
             {excerpt}
           </div>
         </div>
-          <div style={{display:  `flex`, flexWrap: `wrap`, fontSize: `12px`, justifyContent: `space-between`, flexBasis: `40%`}}>
-            <div style={{flex: `1`}}>JavaScript</div>
-            <div style={{flex: `1`}}>Firebase</div>
-            <div style={{flex: `1`}}>Jest</div>
-            <div style={{flex: `1`}}>Cypress</div>
+          <div className={CardStyle.stackWrap}>
+            <div className={CardStyle.stackItem}>JavaScript</div>
+            <div className={CardStyle.stackItem}>Firebase</div>
+            <div className={CardStyle.stackItem}>Jest</div>
+            <div className={CardStyle.stackItem}>Cypress</div>
           </div>
       </div>
     );

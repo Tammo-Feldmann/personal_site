@@ -3,11 +3,11 @@
   padding-bottom: 4rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
   .projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: flex-start;
     border: 4px rgb(205, 207, 218) solid;
     margin: 2rem;
   }

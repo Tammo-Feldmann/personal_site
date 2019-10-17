@@ -6,15 +6,12 @@ const Menu = () => (
       paddingTop: '20px',
       color: 'white'
     }}>
-
       <ul style={{ 
         display: 'inline'
       }}>
-
         <li>about</li>
         <li>expertise</li>
         <li>projects</li>
-
       </ul>
     </div>
   )

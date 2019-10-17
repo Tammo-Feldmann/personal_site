@@ -1,13 +1,43 @@
 .projectCard {
-  border: solid #E6E6E8 2px;
-  padding: 1rem 1rem 1rem 1rem; 
-  box-shadow: "2px 4px 2px #575964"; 
-  background-color: #D9D9DA; 
-  border-radius: 15px;
+  flex-basis: 20%;
+  width: 259px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  -ms-flex: auto;
+  flex: auto;
   margin: 1rem;
-  width: 12rem
 }
 
-p {
-  background-color: none;
+.stackWrap {
+  display:  flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.stackItem {
+  flex: 1;
+  border: 1px solid white;
+}
+
+@media(max-width: 1333px) {
+  .projectCard {
+    flex-basis: 33.33%;
+  }
+}
+@media(max-width: 1073px) {
+   .projectCard {
+    flex-basis: 33.33%;
+  }
+}
+@media(max-width: 815px) {
+  .projectCard {
+    flex-basis: 50%;
+  }
+}
+@media(max-width: 555px) {
+  .projectCard {
+    flex-basis: 100%;
+  }
 }

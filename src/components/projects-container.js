@@ -16,6 +16,7 @@ class ProjectsContainer extends Component {
         <div className={containerStyles.projects}>
           {myProjects.map(project => (
             <ProjectCard
+              key={project.title}
               title={project.title}
               excerpt={project.excerpt}
             />
