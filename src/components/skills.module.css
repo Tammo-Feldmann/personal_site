@@ -14,3 +14,16 @@
   justify-content: right;
   color: #FAFAFA;
 }
+
+@media (max-width: 800px) {
+  .skills-section {
+    display: inline-block;
+  }
+  .summary {
+    padding: 14rem 10% 4rem 14%;
+  }
+  .cards-container {
+    flex: 1;
+    padding: 3rem 10% 0rem 10%;
+  }
+}
