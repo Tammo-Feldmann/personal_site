@@ -6,11 +6,10 @@ import Clipboard from "../components/clipboard";
 import ReactTooltip from "react-tooltip";
 import AboutStyles from "./about.module.css"
 
-
 export default ({ children }) => (
   <div className={AboutStyles.container}>
     <div id="about-section" className={AboutStyles.aboutInfo}>
-      <div> 
+      <div > 
         <h1 style={{
           color: `#3F4967`,
           paddingTop: `7rem`
@@ -27,8 +26,8 @@ export default ({ children }) => (
              more.
           </p>
         </div>
-      <div style={{display: `flex`, padding: `4rem 0rem 0rem 0rem`, alignItems: `baseline`}}>
-        <h1 className="contact" style={{ color: `#3F4967` }}>Contact:</h1>
+      <div className={AboutStyles.contact}>
+        <h1 className="contact">Contact:</h1>
         <div style={{
           display:`flex`,
           justifyContent: `space-between`,
@@ -70,7 +69,5 @@ export default ({ children }) => (
           textAlign: `center`
           }}>Full-Stack Developer</h3>
       </div>
-      
-   
   </div>
 )
