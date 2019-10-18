@@ -1,9 +1,12 @@
 import React from 'react';
 import SkillCard from './skill-card';
 import Polygon from './polygon'
+import SkillStyles from "./skills.module.css"
 
-const Skills = () => (
-  <div id="expertise-section" style={{
+export default ({ children }) => (
+  <div className={SkillStyles.container}>
+    <div id="expertise-section" className={SkillStyles.skillsSection}
+    style={{
     backgroundColor: `#3F4967`
     }}>
     <Polygon
@@ -25,6 +28,5 @@ const Skills = () => (
       <SkillCard></SkillCard>
     </div>
   </div>
+  </div>
 )
-
-export default Skills
