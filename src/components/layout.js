@@ -54,7 +54,7 @@ const Layout = ({ children }) => {
             to="about-section"
             spy={true}
             smooth={true}
-            offset={0}
+            offset={-70}
             duration= {500}
             ><HoverText>about</HoverText>
           </RsLink>
@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
             to="expertise-section"
             spy={true}
             smooth={true}
-            offset={60}
+            offset={10}
             duration= {700}
             ><HoverText>expertise</HoverText>
           </RsLink>
