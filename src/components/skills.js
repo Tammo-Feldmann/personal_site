@@ -5,28 +5,20 @@ import SkillStyles from "./skills.module.css"
 
 export default ({ children }) => (
   <div className={SkillStyles.container}>
-    <div id="expertise-section" className={SkillStyles.skillsSection}
-    style={{
-    backgroundColor: `#3F4967`
-    }}>
-    <Polygon
-    background = "blue"></Polygon>
-    <div style={{
-    padding: `14rem 16% 4rem 16%`,
-    diplay: `flex`,
-    justifyContent: `right`,
-    color: `#FAFAFA`
-    }}>
-    <h1>Expertise</h1>
-    <p style={{maxWidth: `40%`}}>I am just comfortable with backend problems as I like to work on frontend features. 
-      Most of my work has been in Javascript/React and Python on the backend. More recently I have been really fascinated with Rust. 
-    </p>
+    <div id="expertise-section" className={SkillStyles.skillsSection}>
+      <Polygon></Polygon>
+      <div className={SkillStyles.summary}>
+        <h1>Expertise</h1>
+        <p>I am just comfortable with backend problems as I like to work on frontend features. 
+            Most of my work has been in Javascript/React and Python on the backend. 
+            More recently I have been really fascinated with Rust. 
+        </p>
+      </div>
+      <div className={SkillStyles.cardsContainer}>
+        <SkillCard></SkillCard>
+        <SkillCard></SkillCard>
+        <SkillCard></SkillCard>
+      </div>
     </div>
-    <div style={{padding: `2rem 4rem 0rem 8%`}}>
-      <SkillCard></SkillCard>
-      <SkillCard></SkillCard>
-      <SkillCard></SkillCard>
-    </div>
-  </div>
   </div>
 )
