@@ -1,49 +1,87 @@
-.container {
-  background-color: #FAFAFAFA;
+.about-info {
   /* The values for padding are: top, right, bottom, left */
-  padding: 4rem 18% 0rem 18%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  padding: 6rem 0rem 0rem 2rem;
+  order: 2;
 }
-
+.about-text {
+  max-width: 450px;
+  margin-top: 1.5rem;
+  color: #575964;
+}
 .contact {
   display: flex;
   padding: 4rem 0rem 0rem 0rem;
   align-items: baseline;
   color: #3F4967;
 }
-
+.contact-email {
+  cursor: pointer;
+  width: 26px;
+}
+.contact-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 7rem;
+  padding-left: 1rem;
+}
+.container {
+  background-color: #FAFAFAFA;
+  padding: 4rem 14% 0rem 14%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #3F4967;
+}
 .selfy-container {
-  padding: 6rem 3rem 0rem 3rem;
+  padding: 6rem 1rem 0rem 1rem;
   order: 1;
   flex: 1;
+  color: #3F4967;
+  text-align: center;
+}
+.selfy-border {
+  display: flex;
+  justify-content: center;
+}
+.selfyName {
+  margin-top: 1.4rem; 
+  margin-bottom: .4rem;
+  font-size: 34px;
 }
 
-.about-info {
-  padding: 0rem 0rem 0rem 0rem;
-  order: 2;
-}
-
-@media(max-width: 515px) {
-  .container {
-    flex: 1;
-  }
+@media(max-width: 800px) {
   .about-info {
-    margin: none;
-    flex: 1;
+    text-align: center;
+    padding: 4rem 10% 0rem 10%;
+  }
+  .about-text {
+    text-align: left;
+    max-width: 640px;
   }
   .container {
     background-color: #FAFAFAFA;
     /* The values for padding are: top, right, bottom, left */
-    padding: 4rem 10% 0rem 10%;
+    padding: 6rem 8% 0rem 8%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
   .selfy-container {
-    padding: 4rem 3rem 0rem 3rem;
+    padding: 4rem 8% 0rem 8%;
     order: 1;
     flex: 1;
+  }
+}
+
+@media(max-width: 1010px) {
+  .about-info {
+    margin: none;
+    text-align: center;
+    padding: 4rem 8% 0rem 8%;
+  }
+  .about-text {
+    text-align: left;
+    max-width: 640px;
   }
 }
