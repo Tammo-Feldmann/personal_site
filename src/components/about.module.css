@@ -4,4 +4,42 @@
   padding: 4rem 18% 0rem 18%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.selfy-container {
+  padding: 6rem 3rem 0rem 3rem;
+  order: 1;
+  flex: 1;
+}
+
+.about-info {
+  padding: 0rem 0rem 0rem 0rem;
+  order: 2;
+}
+
+@media(max-width: 815px) {
+  .container {
+    flex: 1
+  }
+  .about-info {
+    background-color: violet;
+    flex: 1;
+    flex-basis: 50%;
+    margin: none;
+  }
+  .container {
+    background-color: #FAFAFAFA;
+    /* The values for padding are: top, right, bottom, left */
+    padding: 4rem 18% 0rem 18%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .selfy-container {
+    padding: 4rem 3rem 0rem 3rem;
+    order: 1;
+    flex: 1;
+  }
+
 }

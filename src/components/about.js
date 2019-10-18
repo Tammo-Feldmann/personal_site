@@ -9,7 +9,7 @@ import AboutStyles from "./about.module.css"
 
 export default ({ children }) => (
   <div className={AboutStyles.container}>
-  <div id="about-section">
+    <div id="about-section" className={AboutStyles.aboutInfo}>
       <div> 
         <h1 style={{
           color: `#3F4967`,
@@ -29,31 +29,32 @@ export default ({ children }) => (
         </div>
       <div style={{display: `flex`, padding: `4rem 0rem 0rem 0rem`, alignItems: `baseline`}}>
         <h1 className="contact" style={{ color: `#3F4967` }}>Contact:</h1>
-      <div style={{
-                  display:`flex`,
-                  justifyContent: `space-between`,
-                  alignItems: `baseline`,
-                  width: `7rem`,
-                  paddingLeft: `1rem`
-                  }}>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer'}}>
-                <div  style={{ width:`24px`}}>
-                  <Clipboard></Clipboard>
-                </div>
+        <div style={{
+          display:`flex`,
+          justifyContent: `space-between`,
+          alignItems: `baseline`,
+          width: `7rem`,
+          paddingLeft: `1rem`
+          }}>
+            <div data-tip="Copy my email to your clipboard" style={{order: `1`, cursor: 'pointer'}}>
+              <div  style={{ width:`24px`}}>
+                <Clipboard></Clipboard>
               </div>
-              <div data-tip="Copy my email to your clipboard" style={{cursor: 'pointer', padding: `10px`, borderRadius: `10px`}}>
-                <a href="https://www.linkedin.com/in/tammo-feldmann/">
-                  <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
-                </a>
-              </div>
-              <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{width:`21px`}}>
-                <img src={GitHub} alt="GitHub logo"/>
-              <ReactTooltip type="light"/>
+            </div>
+            <div data-tip="Copy my email to your clipboard" style={{order: `2`, cursor: 'pointer', padding: `10px`, borderRadius: `10px`}}>
+              <a href="https://www.linkedin.com/in/tammo-feldmann/">
+                <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" style={{width:`20px`}}/>
               </a>
             </div>
-      </div>
-      </div>
-    <div style={{padding: `8rem 0rem 3rem 0rem`}}>
+            <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub" style={{order: `3`, width:`21px`}}>
+              <img src={GitHub} alt="GitHub logo"/>
+            <ReactTooltip type="light"/>
+            </a>
+          </div>
+        </div>
+        </div>
+        </div>
+    <div className={AboutStyles.selfyContainer}>
       <div style={{display: `flex`, justifyContent: `center`}}>
         <Image/>
       </div>
@@ -69,6 +70,7 @@ export default ({ children }) => (
           textAlign: `center`
           }}>Full-Stack Developer</h3>
       </div>
-      </div>
+      
+   
   </div>
 )
