@@ -14,11 +14,19 @@
   display:  flex;
   flex-wrap: wrap;
   font-size: 14px;
+  font-weight: 400;
 }
 
 .stackItem {
   flex: 1;
+  padding: .2rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
   border: 1px solid white;
+  background-color: rgb(146, 147, 151);
+  color: #FAFAFA;
+  border-radius: 5px;
 }
 
 @media(max-width: 1333px) {

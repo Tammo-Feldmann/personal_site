@@ -4,20 +4,16 @@ import containerStyles from "./projects.module.css"
 
 const Projects = () => (
   <div id="projects-section" className={containerStyles.projects}>
-    <div style={{
-      flex: `1`,
-      padding:`8rem 4% 4rem 4%`,
-      backgroundColor: `#D9D9DA`
-    }} >
-    <h1>Projects</h1>
-    <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this
-      section are my own and I will specify where I have written all the backend and frontend code.</p>
-    </div>
-    <div style={{
-      flex: `3`,}}> 
+    <div> 
+      <h1>Projects</h1>
+      <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this
+        section are my own and I will specify where I have written all the backend and frontend code.
+      </p>
+    </div> 
+    <div className={containerStyles.cards}>
       <ProjectsContainer></ProjectsContainer>    
     </div>
-</div>
+  </div>
 )
 
 export default Projects

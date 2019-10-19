@@ -1,9 +1,16 @@
 .projects {
   border: none;
+  flex: 1;
+  padding: 8rem 4% 4rem 4%;
+  background-color: #FAFAFAFA;
+}
+.cards {
+  flex: 3;
 }
 
 @media (min-width: 700px) {
   .projects {
-    display: flex;
+    display: grid;
+    flex: 1;
   }
 }
