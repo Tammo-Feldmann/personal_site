@@ -6,7 +6,7 @@
   background-color: #3F4967;
   display: flex;
   justify-content: space-between;
-  padding: 0rem 6rem 0rem 0rem;
+  padding: 0rem 12rem 0rem 12rem;
 }
 .summary {
   flex: 1;
@@ -19,12 +19,17 @@
 @media (max-width: 800px) {
   .skills-section {
     display: inline-block;
+    padding: 0rem 1rem 0rem 1rem;
   }
   .summary {
-    padding: 14rem 10% 4rem 14%;
+    padding: 14rem 8% 0rem 8%;
+    text-align: center;
+  }
+  .text {
+    text-align: left;
   }
   .cards-container {
     flex: 1;
-    padding: 3rem 10% 0rem 10%;
+    padding: 3rem 8% 0rem 8%;
   }
 }

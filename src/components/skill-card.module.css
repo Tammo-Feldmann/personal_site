@@ -2,7 +2,7 @@
   display: flex;
   color: white;
   /* The values for padding are: top, right, bottom, left */
-  padding: 4rem 0rem 4rem 0rem;
+  padding: 2rem 0rem 2rem 0rem;
 }
 .icon {
   align-self: center;

@@ -9,7 +9,7 @@ export default ({ children }) => (
     <div id="expertise-section" className={SkillStyles.skillsSection}>
       <div className={SkillStyles.summary}>
         <h1>Expertise</h1>
-        <p>I am just comfortable with backend problems as I like to work on frontend features. 
+        <p className={SkillStyles.text}>I am just comfortable with backend problems as I like to work on frontend features. 
             Most of my work has been in Javascript/React and Python on the backend. 
             More recently I have been really fascinated with Rust. 
         </p>
