@@ -1,18 +1,17 @@
 import React from "react"
+import SkillCardStyles from "./skill-card.module.css"
 
-const SkillCard = () => {
-  return (
-    <div style={{display: `flex`, justifyContent: `space-between`, backgroundColor: `#3F4967`, color: `white`}}>
-      <div style={{margin: `1rem 4rem 10rem 0rem`, width: `100px`, height:`100px`, borderRadius: `180`, backgroundColor: `#FFFFFF`}}>
-      </div>
-      <div>
-        <h3>This is my Skill Card</h3>
+export default ({ children }) => (
+  <div className={SkillCardStyles.container}>
+    <div className={SkillCardStyles.icon}>
+    </div>
+    <div className={SkillCardStyles.spacer}> </div>
+      <div className={SkillCardStyles.text}>
+        <h4>This is my Skill Card</h4>
+        
         <p>Some description of my skill. I have been developing with Javascript and Python React frameworks. I like to learn about 
          browsers and all the intricacies of cool web-technologies. I am currently learning Rust and mobile development with React native. 
         </p>
-      </div>
     </div>
-  );
-}
-
-export default SkillCard
+  </div>
+);

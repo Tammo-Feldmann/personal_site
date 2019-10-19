@@ -5,8 +5,8 @@ import SkillStyles from "./skills.module.css"
 
 export default ({ children }) => (
   <div className={SkillStyles.container}>
+    <Polygon></Polygon>
     <div id="expertise-section" className={SkillStyles.skillsSection}>
-      <Polygon></Polygon>
       <div className={SkillStyles.summary}>
         <h1>Expertise</h1>
         <p>I am just comfortable with backend problems as I like to work on frontend features. 

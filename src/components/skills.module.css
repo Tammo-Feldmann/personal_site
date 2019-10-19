@@ -1,11 +1,12 @@
 .cards-container {
-  flex: 2;
+  flex: 1.5;
   padding: 8rem 8% 0rem 8%;
 }
 .skills-section {
   background-color: #3F4967;
   display: flex;
   justify-content: space-between;
+  padding: 0rem 6rem 0rem 0rem;
 }
 .summary {
   flex: 1;

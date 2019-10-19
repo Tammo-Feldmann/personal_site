@@ -1,0 +1,21 @@
+.container { 
+  display: flex;
+  color: white;
+  /* The values for padding are: top, right, bottom, left */
+  padding: 4rem 0rem 4rem 0rem;
+}
+.icon {
+  align-self: center;
+  flex: 1;
+  flex-basis: 1%;
+  height: 80px;
+  border-radius: 180px;
+  background-color: #FFFFFF;
+}
+.text {
+  flex: 5
+}
+.spacer {
+  flex: .4;
+
+}
