@@ -1,0 +1,30 @@
+.projects {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 22rem);
+  grid-gap: 1rem;
+  /* grid-auto-rows: minmax(20px, auto); */
+  background-color: #FFFFFF;
+}
+
+.wrapper > div {
+  padding: 2rem;
+  background: #FFFFFF;
+  border: 2px grey solid;
+  
+}
+
+@media (min-width: 700px) {
+  .projects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border: 4px rgb(205, 207, 218) solid;
+    margin: 2rem;
+  }
+}
+

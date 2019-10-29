@@ -5,7 +5,7 @@ import React from "react"
 import Layout from "../components/layout"
 //import SEO from "../components/seo"
 import Skills from "../components/skills"
-import Projects from "../components/projects"
+import Projects from "../components/projects/projects-section"
 import About from "../components/about"
 
 const IndexPage = () => (
