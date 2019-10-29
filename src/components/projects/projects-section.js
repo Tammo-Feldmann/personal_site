@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectsContainer from './projects-container'
-import containerStyles from "./projects.module.css"
+import containerStyles from "./projects-section.module.css"
 
 const Projects = () => (
   <div id="projects-section" className={containerStyles.projects}>

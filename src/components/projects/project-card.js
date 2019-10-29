@@ -1,5 +1,5 @@
 import React from 'react';
-import Landing from '../images/dm-landing.png'
+import Landing from '../../images/dm-landing.png'
 const { Component } = React;
 // eslint-disable-next-line
 import CardStyle from './project-card.module.css'
