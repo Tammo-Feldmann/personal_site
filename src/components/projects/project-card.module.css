@@ -11,8 +11,9 @@
 }
 
 .stackWrap {
-  display:  flex;
-  flex-wrap: wrap;
+  display:grid;
+  grid-template-columns: repeat(auto-fill, 4rem);
+  grid-gap: .5rem;
   font-size: 14px;
   font-weight: 400;
 }
