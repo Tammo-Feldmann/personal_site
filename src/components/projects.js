@@ -4,14 +4,14 @@ import containerStyles from "./projects.module.css"
 
 const Projects = () => (
   <div id="projects-section" className={containerStyles.projects}>
-    <div> 
+    <div>
       <h1>Projects</h1>
       <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this
         section are my own and I will specify where I have written all the backend and frontend code.
       </p>
-    </div> 
+    </div>
     <div className={containerStyles.cards}>
-      <ProjectsContainer></ProjectsContainer>    
+      <ProjectsContainer></ProjectsContainer>
     </div>
   </div>
 )

@@ -13,15 +13,15 @@ const myProjects = [
 class ProjectsContainer extends Component {
   render() {
     return (
-        <div className={containerStyles.projects}>
-          {myProjects.map(project => (
-            <ProjectCard
-              key={project.title}
-              title={project.title}
-              excerpt={project.excerpt}
-            />
-          ))}
-       </div>
+      <div className={containerStyles.wrapper}>
+        {myProjects.map(project => (
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            excerpt={project.excerpt}
+          />
+        ))}
+      </div>
     );
   }
 };

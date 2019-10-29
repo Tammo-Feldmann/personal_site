@@ -3,6 +3,19 @@
   padding-bottom: 4rem;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  grid-auto-rows: minmax(20px, auto);
+}
+
+.wrapper > div {
+  padding: 2rem;
+  background: #FFFFFF,
+  
+}
+
 @media (min-width: 700px) {
   .projects {
     display: flex;
