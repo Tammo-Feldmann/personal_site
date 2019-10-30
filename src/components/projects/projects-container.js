@@ -1,13 +1,28 @@
-import React from 'react'
-import ProjectCard from './project-card'
-import containerStyles from "./projects-container.module.css"
+import React from 'react';
+import ProjectCard from './project-card';
+import DatamagoImage from '../../images/dm-landing.png';
+import ABCya from '../../images/ABCyaScreen.png';
+import Byzantine from '../../images/Byzantine.png';
+import containerStyles from "./projects-container.module.css";
 
 const { Component } = React;
 
 const myProjects = [
-  { title: 'Datamago', excerpt: 'Datamago is a machine learning platform. The company focuses on time series forecasting. I have contributed to frontend features, data visualization, QA and CI pipelines, and others.' },
-  { title: 'ABC Animation', excerpt: 'ABC Animation allows children to create their own 2D animations and play them in story lines' },
-  { title: 'McClanan Art History', excerpt: 'this is an excerpt for project three' }
+  {
+    title: 'Datamago',
+    image: DatamagoImage,
+    excerpt: 'Datamago is a machine learning platform. The company focuses on time series forecasting. I have contributed to frontend features, data visualization, QA and CI pipelines, and others.'
+  },
+  {
+    title: 'ABC Animation',
+    image: ABCya,
+    excerpt: 'ABC Animation allows children to create their own 2D animations and play them in story lines'
+  },
+  {
+    title: 'Byzantine Pairings',
+    image: Byzantine,
+    excerpt: 'this is an excerpt for project three'
+  }
 ]
 
 class ProjectsContainer extends Component {
@@ -16,6 +31,7 @@ class ProjectsContainer extends Component {
       <div className={containerStyles.wrapper}>
         {myProjects.map(project => (
           <ProjectCard
+            image={project.image}
             key={project.title}
             title={project.title}
             excerpt={project.excerpt}
