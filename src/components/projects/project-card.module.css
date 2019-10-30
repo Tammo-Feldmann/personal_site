@@ -1,21 +1,14 @@
-.projectCard {
-  flex-basis: 20%;
-  width: 259px;
-  position: relative;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid grey;
-  -ms-flex: auto;
-  flex: auto;
-  margin: 1rem;
+.project {
+  padding: 1rem
 }
 
 .stackWrap {
   display:grid;
   grid-template-columns: repeat(auto-fill, 4rem);
-  grid-gap: .5rem;
+  grid-auto-rows: minmax(6rem, max-content);
+  grid-gap: .3rem;
   font-size: 14px;
-  font-weight: 400;
+  padding-top: .4rem;
 }
 
 .stackItem {
@@ -28,6 +21,10 @@
   background-color: rgb(146, 147, 151);
   color: #FAFAFA;
   border-radius: 5px;
+}
+
+.text {
+  padding: 1rem;
 }
 
 @media(max-width: 1333px) {

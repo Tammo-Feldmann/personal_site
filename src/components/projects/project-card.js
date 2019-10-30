@@ -8,23 +8,26 @@ class ProjectCard extends Component {
     const { title, excerpt, image } = this.props;
 
     return (
-      <div>
+      <div className={CardStyle.project}>
+
         <div>
           <img src={image} alt="Datamago Landing Page" ></img>
         </div>
-        <div>
-          <h4 className="card-header">
-            {title}
-          </h4>
-          <div className="card-body">
-            {excerpt}
+        <div className={CardStyle.text}>
+          <div>
+            <h4 className="card-header">
+              {title}
+            </h4>
+            <div className="card-body">
+              {excerpt}
+            </div>
           </div>
-        </div>
-        <div className={CardStyle.stackWrap}>
-          <div className={CardStyle.stackItem}>JavaScript</div>
-          <div className={CardStyle.stackItem}>Firebase</div>
-          <div className={CardStyle.stackItem}>Jest</div>
-          <div className={CardStyle.stackItem}>Cypress</div>
+          <div className={CardStyle.stackWrap}>
+            <div className={CardStyle.stackItem}>JavaScript</div>
+            <div className={CardStyle.stackItem}>Firebase</div>
+            <div className={CardStyle.stackItem}>Jest</div>
+            <div className={CardStyle.stackItem}>Cypress</div>
+          </div>
         </div>
       </div>
     );

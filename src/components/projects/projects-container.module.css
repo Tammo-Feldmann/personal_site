@@ -12,9 +12,9 @@
 }
 
 .wrapper > div {
-  padding: 2rem;
+  padding: .5rem;
+  border: 1px lightgray solid;
   background: #FFFFFF;
-  border: 2px grey solid;
 }
 
 @media (min-width: 700px) {
