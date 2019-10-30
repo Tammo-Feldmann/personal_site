@@ -5,8 +5,8 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 22rem);
-  grid-gap: 1rem;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+  grid-gap: 2rem;
   /* grid-auto-rows: minmax(20px, auto); */
   background-color: #FFFFFF;
 }
@@ -19,7 +19,7 @@
 
 @media (min-width: 700px) {
   .projects {
-    display: flex;
+    display: grid;
     flex-flow: row wrap;
     justify-content: flex-start;
     border: 4px rgb(205, 207, 218) solid;

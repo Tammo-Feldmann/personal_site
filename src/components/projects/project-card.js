@@ -9,8 +9,7 @@ class ProjectCard extends Component {
 
     return (
       <div className={CardStyle.project}>
-
-        <div>
+        <div className={CardStyle.images}>
           <img src={image} alt="Datamago Landing Page" ></img>
         </div>
         <div className={CardStyle.text}>

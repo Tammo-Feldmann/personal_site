@@ -1,24 +1,21 @@
-.project {
-  padding: 1rem
+.images {
+  height: 18rem;
+  align-items: center;
 }
 
 .stackWrap {
   display:grid;
   grid-template-columns: repeat(auto-fill, 4rem);
   grid-auto-rows: minmax(6rem, max-content);
-  grid-gap: .3rem;
+  grid-gap: .5rem;
   font-size: 14px;
   padding-top: .4rem;
 }
 
 .stackItem {
-  flex: 1;
-  padding: .2rem;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  border: 1px solid white;
-  background-color: rgb(146, 147, 151);
+  padding: .4rem;
+  max-height: 2rem;
+  background-color: #D5B386;
   color: #FAFAFA;
   border-radius: 5px;
 }
