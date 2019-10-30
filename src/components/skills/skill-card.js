@@ -2,7 +2,7 @@ import React from "react"
 import SkillCardStyles from "./skill-card.module.css"
 
 export default ({ children }) => (
-  <div className={SkillCardStyles.something}>
+  <div className={SkillCardStyles.container}>
     <div className={SkillCardStyles.icon}>
     </div>
     <div className={SkillCardStyles.spacer}> </div>
