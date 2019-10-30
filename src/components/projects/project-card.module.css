@@ -5,7 +5,7 @@
 
 .stackWrap {
   display:grid;
-  grid-template-columns: repeat(auto-fill, 4rem);
+  grid-template-columns: repeat( auto-fill, minmax(4rem, 1fr) );
   grid-auto-rows: minmax(6rem, max-content);
   grid-gap: .5rem;
   font-size: 14px;
@@ -27,20 +27,22 @@
 @media(max-width: 1333px) {
   .projectCard {
     flex-basis: 33.33%;
+    min-width: 16rem;
   }
 }
 @media(max-width: 1073px) {
-   .projectCard {
+   .project {
     flex-basis: 33.33%;
   }
 }
 @media(max-width: 815px) {
-  .projectCard {
+  .project{
     flex-basis: 50%;
+    min-width: 16rem;
   }
 }
 @media(max-width: 555px) {
-  .projectCard {
+  .project {
     flex-basis: 100%;
   }
 }
