@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ProjectCard from './project-card';
 import DatamagoImage from '../../images/dm-landing.png';
 import ABCya from '../../images/ABCyaScreen.png';
 import Byzantine from '../../images/Byzantine.png';
 import containerStyles from "./projects-container.module.css";
-
-const { Component } = React;
 
 const myProjects = [
   {

@@ -1,21 +1,16 @@
 .container { 
-  display: flex;
+  border: 2px solid white;
+  padding: 2rem;
   color: white;
   /* The values for padding are: top, right, bottom, left */
   padding: 2rem 0rem 2rem 0rem;
 }
 .icon {
-  align-self: center;
-  flex: 1;
-  flex-basis: 1%;
   height: 80px;
-  border-radius: 180px;
-  background-color: #FFFFFF;
 }
 .text {
   flex: 5
 }
 .spacer {
   flex: .4;
-
 }

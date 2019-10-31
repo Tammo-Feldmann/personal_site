@@ -1,18 +1,17 @@
+.container {
+  display: grid;
+}
+
 .cards-container {
   flex: 1.5;
   padding: 8rem 8% 0rem 8%;
 }
 .skills-section {
-  background-color: #3F4967;
-  display: flex;
-  justify-content: space-between;
+  background-color: rgb(134, 146, 180);
   padding: 0rem 12rem 0rem 12rem;
 }
 .summary {
-  flex: 1;
-  align-self: center;
   padding: 14rem 6% 4rem 6%;
-  justify-content: right;
   color: #FAFAFA;
 }
 

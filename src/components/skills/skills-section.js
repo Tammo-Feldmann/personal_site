@@ -2,6 +2,9 @@ import React from 'react';
 import SkillCard from './skill-card';
 import Polygon from '../polygon'
 import SkillStyles from "./skills-section.module.css"
+import MeIcon from "../main-icon"
+
+const excerpt = "Enim ex amet non excepteur. Fugiat dolor ad do aliquip qui aute cupidatat aliqua tempor deserunt mollit deserunt. Dolore eu aute voluptate adipisicing. Culpa anim velit laboris tempor sit sit occaecat. Fugiat cupidatat sint anim magna officia excepteur id fugiat sint id."
 
 export default ({ children }) => (
   <div className={SkillStyles.container}>
@@ -14,8 +17,12 @@ export default ({ children }) => (
             More recently I have been really fascinated with Rust.
         </p>
       </div>
+
+
       <div className={SkillStyles.cardsContainer}>
-        <SkillCard></SkillCard>
+        <SkillCard title="Lorem Ipsum Title" excerpt={excerpt} icon={MeIcon}>
+          <MeIcon></MeIcon>
+        </SkillCard>
         <SkillCard></SkillCard>
         <SkillCard></SkillCard>
       </div>
