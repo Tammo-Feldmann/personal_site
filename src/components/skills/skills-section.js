@@ -1,24 +1,24 @@
 import React from 'react';
 import SkillCard from './skill-card';
 import Polygon from '../polygon'
-import SkillStyles from "./skills-section.module.css"
 import MeIcon from "../main-icon"
+import SkillStyles from "./skills-section.module.css"
 
 const mySkills = [
   {
-    title: 'First Skills',
+    title: 'Web Development',
     image: MeIcon,
-    excerpt: "Enim ex amet non excepteur. Fugiat dolor ad do aliquip qui aute cupidatat aliqua tempor deserunt mollit deserunt. Dolore eu aute voluptate adipisicing. Culpa anim velit laboris tempor sit sit occaecat. Fugiat cupidatat sint anim magna officia excepteur id fugiat sint id."
+    excerpt: "I work in custom JavaScript framework but I am also comfortabel with React (Gastby and Next.JS). I like working on teams and thrive with good collaborators."
   },
   {
-    title: 'Second Amazing Skill',
+    title: 'Backend Development',
     image: MeIcon,
-    excerpt: "Enim ex amet non excepteur. Fugiat dolor ad do aliquip qui aute cupidatat aliqua tempor deserunt mollit deserunt. Dolore eu aute voluptate adipisicing. Culpa anim velit laboris tempor sit sit occaecat. Fugiat cupidatat sint anim magna officia excepteur id fugiat sint id."
+    excerpt: "I am always honing my craft as a programmer and I love a good puzzle. I spend a lot of my time with coding challenges. It is important to me to write clean and readable code. I mostly use Python and NodeJS for my backend development at this point. "
   },
   {
-    title: 'Third impressive Skill',
+    title: 'Digital Humanities',
     image: MeIcon,
-    excerpt: "Enim ex amet non excepteur. Fugiat dolor ad do aliquip qui aute cupidatat aliqua tempor deserunt mollit deserunt. Dolore eu aute voluptate adipisicing. Culpa anim velit laboris tempor sit sit occaecat. Fugiat cupidatat sint anim magna officia excepteur id fugiat sint id."
+    excerpt: "I decided to put my PhD to use and start collaborating on some digital humanities projects with my friends from Stanford. My skill here is to see and design project that are technically feasable, visually engaging, and insightful. I work as the technical developer and also collaborate on the design of the questions from a humanities background. If you are working on a project and need technical help, reach out and I am happy to help."
   }
 ]
 
