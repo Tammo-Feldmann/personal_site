@@ -34,12 +34,12 @@ export default ({ children }) => (
         </p>
       </div>
       <div className={SkillStyles.cardsContainer}>
-        {mySkills.map(project => (
+        {mySkills.map(skill => (
           <SkillCard
-            image={project.image}
-            key={project.title}
-            title={project.title}
-            excerpt={project.excerpt}
+            image={skill.image}
+            key={skill.title}
+            title={skill.title}
+            excerpt={skill.excerpt}
           />
         ))}
       </div>

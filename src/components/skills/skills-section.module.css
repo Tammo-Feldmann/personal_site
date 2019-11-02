@@ -1,12 +1,10 @@
-.container {
-  display: grid;
-}
-
 .cards-container {
   flex: 1.5;
   padding: 8rem 8% 0rem 8%;
 }
 .skills-section {
+  display: grid;
+  grid-template-columns: 20% 80%;
   background-color: rgb(134, 146, 180);
   padding: 0rem 12rem 0rem 12rem;
 }
