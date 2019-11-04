@@ -1,15 +1,15 @@
 .cards-container {
-  flex: 1.5;
-  padding: 8rem 8% 0rem 8%;
+  align-self: center;
 }
 .skills-section {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 6rem;
   background-color: rgb(134, 146, 180);
-  padding: 0rem 12rem 0rem 12rem;
+  padding: 6rem 8rem 2rem 8rem;
 }
 .summary {
-  padding: 14rem 6% 4rem 6%;
+  align-self: center;
   color: #FAFAFA;
 }
 
@@ -26,7 +26,6 @@
     text-align: left;
   }
   .cards-container {
-    flex: 1;
     padding: 3rem 8% 0rem 8%;
   }
 }

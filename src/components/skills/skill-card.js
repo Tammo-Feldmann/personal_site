@@ -9,7 +9,7 @@ class SkillCard extends Component {
       <div className={SkillCardStyles.container}>
         <div className={SkillCardStyles.spacer}> </div>
         <div className={SkillCardStyles.text}>
-          <img alt="sdf">{icon}</img>
+          <img alt="sdf" className={SkillCardStyles.icon}>{icon}</img>
           <div>
             <h4>{title}</h4>
             <p>{excerpt}</p>
