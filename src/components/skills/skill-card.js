@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import SkillCardStyles from "./skill-card.module.css";
-// import MainIcon from "../main-icon"
+import MainIcon from "../main-icon"
 
 class SkillCard extends Component {
   render() {
@@ -8,7 +8,8 @@ class SkillCard extends Component {
     return (
       <div className={SkillCardStyles.container}>
         <div className={SkillCardStyles.text}>
-          <div className={SkillCardStyles.icon}>{icon}</div>
+          <MainIcon></MainIcon>
+          {/* <div className={SkillCardStyles.icon}>{icon}</div> */}
           <div>
             <h4>{title}</h4>
             <p>{excerpt}</p>

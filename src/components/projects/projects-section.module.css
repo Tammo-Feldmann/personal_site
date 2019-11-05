@@ -1,7 +1,11 @@
 .projects {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 4rem;
   border: none;
   padding: 8rem 4% 4rem 4%;
   background-color: #FAFAFAFA;
+  align-items: center;
 }
 
 @media (min-width: 700px) {

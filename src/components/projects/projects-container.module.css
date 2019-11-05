@@ -6,15 +6,13 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
-  grid-gap: 2rem;
-  /* grid-auto-rows: minmax(20px, auto); */
-  background-color: #FFFFFF;
+  grid-gap: 1rem;
+  grid-auto-rows: repeat(autofit, minmax(2rem, 1fr) );
 }
 
 .wrapper > div {
-  padding: 1.5rem;
-  border: 1px lightgray solid;
-  background: #FFFFFF;
+  padding: .8rem;
+  background-color:#D9D9DA;
 }
 
 @media (min-width: 700px) {

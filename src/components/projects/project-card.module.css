@@ -1,27 +1,35 @@
 .images {
-  height: 18rem;
-  align-items: center;
+  display:flex;
+  height: 8rem;
+  align-self: center;
 }
 
 .stackWrap {
   display:grid;
   grid-template-columns: repeat( auto-fill, minmax(4rem, 1fr) );
-  grid-auto-rows: minmax(6rem, max-content);
   grid-gap: .5rem;
   font-size: 14px;
-  padding-top: .4rem;
 }
 
 .stackItem {
-  padding: .4rem;
+  display: flex;
+  padding: .2rem;
   max-height: 2rem;
-  background-color: #D5B386;
-  color: #FAFAFA;
-  border-radius: 5px;
+  background-color: #fafafa;
+  color:  rgb(134, 146, 180);
+  border-radius: 2px;
 }
 
 .text {
-  padding: 1rem;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  padding: 1rem 0rem 1rem 0rem;
+  background-color:#D9D9DA;
+  color: #3F4967;
+}
+
+.project {
+  border-radius: 3%;
 }
 
 @media(max-width: 1333px) {

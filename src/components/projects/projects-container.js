@@ -9,7 +9,7 @@ const myProjects = [
   {
     title: 'Datamago',
     image: DatamagoImage,
-    excerpt: 'Datamago is a machine learning platform. The company focuses on time series forecasting. I have contributed to frontend features, data visualization, QA and CI pipelines, and others.'
+    excerpt: 'Datamago is a machine learning platform. The company focuses on time series forecasting.'
   },
   {
     title: 'ABC Animation',
