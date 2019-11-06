@@ -1,3 +1,6 @@
+.project {
+  padding: 1rem;
+}
 .images {
   display:flex;
   height: 8rem;
@@ -14,7 +17,6 @@
 .stackItem {
   display: flex;
   padding: .2rem;
-  max-height: 2rem;
   background-color: #fafafa;
   color:  rgb(134, 146, 180);
   border-radius: 2px;
@@ -22,35 +24,8 @@
 
 .text {
   display: grid;
-  grid-template-rows: 2fr 1fr;
+  row-gap: .8rem;
   padding: 1rem 0rem 1rem 0rem;
   background-color:#D9D9DA;
   color: #3F4967;
-}
-
-.project {
-  border-radius: 3%;
-}
-
-@media(max-width: 1333px) {
-  .projectCard {
-    flex-basis: 33.33%;
-    min-width: 16rem;
-  }
-}
-@media(max-width: 1073px) {
-   .project {
-    flex-basis: 33.33%;
-  }
-}
-@media(max-width: 815px) {
-  .project{
-    flex-basis: 50%;
-    min-width: 16rem;
-  }
-}
-@media(max-width: 555px) {
-  .project {
-    flex-basis: 100%;
-  }
 }

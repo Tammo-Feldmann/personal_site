@@ -6,6 +6,13 @@
   padding: 8rem 4% 4rem 4%;
   background-color: #FAFAFAFA;
   align-items: center;
+  padding: 4rem;
+}
+
+.container{
+  display: flex;
+  padding:  4rem;
+  background-color: rgb(252, 225, 176);
 }
 
 @media (min-width: 700px) {

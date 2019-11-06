@@ -9,17 +9,17 @@ const myProjects = [
   {
     title: 'Datamago',
     image: DatamagoImage,
-    excerpt: 'Datamago is a machine learning platform. The company focuses on time series forecasting.'
+    excerpt: 'Machine learning platform for time series forecasting.'
   },
   {
-    title: 'ABC Animation',
+    title: 'ABCya',
     image: ABCya,
-    excerpt: 'ABC Animation allows children to create their own 2D animations and play them in story lines'
+    excerpt: '2D Animation for children.'
   },
   {
     title: 'Byzantine Pairings',
     image: Byzantine,
-    excerpt: 'this is an excerpt for project three'
+    excerpt: 'Educational Application for Medival Art History'
   }
 ]
 
