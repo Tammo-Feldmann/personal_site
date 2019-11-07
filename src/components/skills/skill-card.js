@@ -4,7 +4,7 @@ import MainIcon from "../main-icon"
 
 class SkillCard extends Component {
   render() {
-    const { title, excerpt, icon } = this.props;
+    const { title, excerpt } = this.props;  //Remember to include Icon here if you want to use it again
     return (
       <div className={SkillCardStyles.container}>
         <div className={SkillCardStyles.text}>
