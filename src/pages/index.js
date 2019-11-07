@@ -8,6 +8,7 @@ import Skills from "../components/skills/skills-section"
 import Projects from "../components/projects/projects-section"
 import About from "../components/about"
 import Experience from "../components/experience/experience-section"
+import "bootstrap/dist/css/bootstrap.css"
 
 const IndexPage = () => (
   <Layout>
