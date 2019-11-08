@@ -1,46 +1,18 @@
 import React from 'react';
-import { Col, Row, Button, Card, CardBody, CardImg, CardTitle, CardSubtitle, CardText } from 'reactstrap';
-//import experienceStyles from "./experience-section.module.css"
-import img from "../../images/ABCyaScreen.png"
+import ExCards from './experience-cards'
+import experienceStyles from "./experience-section.module.css"
 
 const Experience = () => (
-  <div className={CardBody}>
-    Experience section
-    <Row>
-      <Col sm="6">
-        <Card>
-          <CardImg top width="100%" src={img} alt="Card image cap" />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
-          </CardBody>
-        </Card>
-      </Col>
-      <Col sm="6">
-        <Card>
-          <CardImg top width="100%" src={img} alt="Card image cap" />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
-          </CardBody>
-        </Card>
-      </Col>
-      <Col sm="6">
-        <Card>
-          <CardImg top width="100%" src={img} alt="Card image cap" />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
-          </CardBody>
-        </Card>
-      </Col>
-    </Row>
+  <div className={experienceStyles.container}>
+    <div className={experienceStyles.deck}>
+      <ExCards></ExCards>
+    </div>
+    <div className={experienceStyles.label}>
+      <h1>Projects</h1>
+      <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this
+        section are my own and I will specify where I have written all the backend and frontend code.
+      </p>
+    </div>
   </div >
 )
 

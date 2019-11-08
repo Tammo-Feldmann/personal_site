@@ -1,6 +1,17 @@
 .container {
-  text-align: center;
-  font-size: 44px;
-  padding-top: 20rem;
-  padding-bottom: 20rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 2rem;
+}
+
+.deck {
+  background-color: lightgoldenrodyellow;
+  padding: 1rem;
+}
+
+.label {
+  display: grid;
+  align-content: center;
+  padding: 1rem;
+  background-color: lightskyblue;
 }
