@@ -1,48 +1,31 @@
 
 import React from 'react';
-import { Col, Button, Card, CardBody, CardImg, CardTitle, CardSubtitle, CardText, CardDeck } from 'reactstrap';
+import { Col, CardDeck, Card, CardBody, CardImg, CardTitle, CardSubtitle, CardText } from 'reactstrap';
+import experienceStyles from './experience-card.module.css'
 
-import ABCya from "../../images/ABCyaScreen.png"
-
-
-const ExCards = () => (
-  <div>
-    <CardDeck>
-      <Col sm="4">
-        <Card>
-          <CardImg top width="100%" src={ABCya} alt="Card image cap" />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
-          </CardBody>
-        </Card>
-      </Col>
-      <Col sm="4">
-        <Card>
-          <CardImg top width="100%" src={ABCya} alt="Card image cap" />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
-          </CardBody>
-        </Card>
-      </Col>
-      <Col sm="4">
-        <Card>
-          <CardImg top width="100%" src={ABCya} alt="Card image cap" />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
-          </CardBody>
-        </Card>
-      </Col>
-    </CardDeck>
-  </div >
+const ExCard = ({ image, title, subtitle, excerpt, skill1 }) => (
+  <Card className={experienceStyles.card}>
+    <CardImg className={experienceStyles.cardImage} top width="100%" src={image} alt="Card image cap" />
+    <CardBody>
+      <div className="CardTitle">
+        <CardTitle>{title}</CardTitle>
+        <CardSubtitle>{subtitle}</CardSubtitle>
+      </div>
+      <CardText>{excerpt}</CardText>
+      <CardDeck>
+        <Col className={experienceStyles.skill}>JavaScript
+          {skill1}
+        </Col>
+        <Col className={experienceStyles.skill}>Node
+        </Col>
+        <Col className={experienceStyles.skill}>Python
+          {skill1}
+        </Col>
+        <Col className={experienceStyles.skill}>Gatsby
+        </Col>
+      </CardDeck>
+    </CardBody>
+  </Card>
 )
 
-export default ExCards
+export default ExCard

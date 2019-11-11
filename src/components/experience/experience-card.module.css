@@ -1,0 +1,16 @@
+.card {
+  padding-bottom: .1rem
+}
+
+.cardImage {
+  height: 9rem;
+}
+
+.skill {
+  background-color: brown;
+  font-size: 14px;
+  color: #FAFAFA;
+  max-width: 6rem;
+  margin: 1rem .5rem 0 .5rem;
+  padding: .2rem;
+}
