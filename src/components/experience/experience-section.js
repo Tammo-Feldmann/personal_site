@@ -1,50 +1,48 @@
 import React from 'react';
 import ExCard from './experience-cards'
 import experienceStyles from "./experience-section.module.css";
-import { Col, CardDeck } from 'reactstrap'
+import { CardColumns } from 'reactstrap'
 import DatamagoImage from '../../images/dm-landing.png';
 import ABCya from '../../images/ABCyaScreen.png';
 import Byzantine from '../../images/Byzantine.png';
 
 const myProjects = [
   {
-    title: 'Datamago',
-    subtitle: 'Project subtitle',
+    title: 'ABCya Animation',
+    subtitle: 'With ABCya',
     image: ABCya,
-    excerpt: 'Educational Application for Medival Art History',
+    excerpt: 'Frontend Developer',
     skill: 'Project Skill'
   },
   {
-    title: 'Byzantine Pairings',
-    subtitle: 'Project subtitle',
+    title: 'Byzantine Pairs',
+    subtitle: 'With PSU',
     image: Byzantine,
-    excerpt: 'Educational Application for Medival Art History',
+    excerpt: 'Lead Developer',
     skill: 'Project Skill'
   },
   {
-    title: 'ABCya',
-    subtitle: 'Project subtitle',
+    title: 'Datamago',
+    subtitle: 'With Datamago',
     image: DatamagoImage,
-    excerpt: 'Educational Application for Medival Art History',
+    excerpt: 'Frontend Developer',
     skill: 'Project Skill'
   }
 ]
 
 const Experience = () => (
   <div className={experienceStyles.container}>
-    <CardDeck className={experienceStyles.deck}>
+    <CardColumns className={experienceStyles.deck}>
       {myProjects.map(project => (
-        <Col sm="4">
-          <ExCard
-            image={project.image}
-            key={project.title}
-            title={project.title}
-            subtitle={project.subtitle}
-            excerpt={project.excerpt}
-          />
-        </Col>
+        <ExCard
+          image={project.image}
+          key={project.title}
+          title={project.title}
+          subtitle={project.subtitle}
+          excerpt={project.excerpt}
+        />
       ))}
-    </CardDeck>
+    </CardColumns>
     <div className={experienceStyles.label}>
       <h1>Projects</h1>
       <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this
