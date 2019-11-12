@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 4rem;
+  background-color: #FAFAFA;
+}
+
+.deck {
+  padding: 1.5rem;
+  background-color: rgb(187, 193, 221);
+}
+
+.label {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #FAFAFA;
+  background-color: rgb(63, 75, 112);
+}
