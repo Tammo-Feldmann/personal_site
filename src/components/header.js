@@ -6,7 +6,7 @@ import { graphql, StaticQuery } from "gatsby";
 import styled from "styled-components";
 import BackgroundImage from 'gatsby-background-image'
 
-const RawHeader = ({ className, siteTitle }) => (
+const RawHeader = ({ className }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -29,18 +29,18 @@ const RawHeader = ({ className, siteTitle }) => (
           fluid={imageData}
           backgroundColor={`#ffffff`}
         >
-          <header id="header-section">  
+          <header id="header-section">
             <div style={{
               display: `flex`,
               alignItems: `flex-start`,
-              justifyContent:`space-between`,
+              justifyContent: `space-between`,
               padding: `1.4rem 0rem 0rem 0rem`,
               marginLeft: `4rem`,
               marginRight: `2rem`
-              }}
-              >
+            }}
+            >
               <MainIcon></MainIcon>
-            </div> 
+            </div>
           </header>
         </BackgroundImage>
       )
