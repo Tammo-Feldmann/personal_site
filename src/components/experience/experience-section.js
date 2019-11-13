@@ -1,38 +1,38 @@
-import React from 'react';
-import ExCard from './experience-cards'
-import experienceStyles from "./experience-section.module.css";
-import { CardGroup } from 'react-bootstrap'
-import DatamagoImage from '../../images/dm-landing.png';
-import ABCya from '../../images/ABCyaScreen.png';
-import Byzantine from '../../images/Byzantine.png';
+import React from "react"
+import ExCard from "./experience-cards"
+import experienceStyles from "./experience-section.module.css"
+import { CardDeck } from "react-bootstrap"
+import DatamagoImage from "../../images/dm-landing.png"
+import ABCya from "../../images/ABCyaScreen.png"
+import Byzantine from "../../images/Byzantine.png"
 
 const myProjects = [
   {
-    title: 'ABCya Animation',
-    subtitle: 'With ABCya',
+    title: "ABCya Animation",
+    subtitle: "With ABCya",
     image: ABCya,
-    excerpt: 'Frontend Developer',
-    skill: 'Project Skill'
+    excerpt: "Frontend Developer",
+    skill: "Project Skill",
   },
   {
-    title: 'Byzantine Pairs',
-    subtitle: 'With PSU',
+    title: "Byzantine Pairs",
+    subtitle: "With PSU",
     image: Byzantine,
-    excerpt: 'Lead Developer',
-    skill: 'Project Skill'
+    excerpt: "Lead Developer",
+    skill: "Project Skill",
   },
   {
-    title: 'Datamago',
-    subtitle: 'With Datamago',
+    title: "Datamago",
+    subtitle: "With Datamago",
     image: DatamagoImage,
-    excerpt: 'Frontend Developer',
-    skill: 'Project Skill'
-  }
+    excerpt: "Frontend Developer",
+    skill: "Project Skill",
+  },
 ]
 
 const Experience = () => (
   <div className={experienceStyles.container}>
-    <CardGroup className={experienceStyles.deck}>
+    <CardDeck className={experienceStyles.deck}>
       {myProjects.map(project => (
         <ExCard
           image={project.image}
@@ -42,14 +42,16 @@ const Experience = () => (
           excerpt={project.excerpt}
         />
       ))}
-    </CardGroup>
+    </CardDeck>
     <div className={experienceStyles.label}>
       <h1>Projects</h1>
-      <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this
-        section are my own and I will specify where I have written all the backend and frontend code.
+      <p>
+        I work on most of my bigger projects collaboratively, either remotely or
+        in person, the smaller projects in this section are my own and I will
+        specify where I have written all the backend and frontend code.
       </p>
     </div>
-  </div >
+  </div>
 )
 
 export default Experience

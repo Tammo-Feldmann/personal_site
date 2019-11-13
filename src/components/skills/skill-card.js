@@ -1,22 +1,22 @@
 import React, { Component } from "react"
-import SkillCardStyles from "./skill-card.module.css";
-import MainIcon from "../main-icon"
+import { Card } from "react-bootstrap"
 
 class SkillCard extends Component {
   render() {
-    const { title, excerpt } = this.props;  //Remember to include Icon here if you want to use it again
+    const { title, excerpt, header } = this.props //Remember to include Icon here if you want to use it again
     return (
-      <div className={SkillCardStyles.container}>
-        <div className={SkillCardStyles.text}>
-          <MainIcon></MainIcon>
-          {/* <div className={SkillCardStyles.icon}>{icon}</div> */}
-          <div>
-            <h4>{title}</h4>
-            <p>{excerpt}</p>
-          </div>
-        </div>
+      <div>
+        <Card bg="light" text="dark" style={{ width: "32rem" }}>
+          <Card.Header>{header}</Card.Header>
+          <Card.Body>
+            {/* <Card.Img variant="bottom" src={img} /> */}
+            <Card.Title>{title}</Card.Title>
+            <Card.Text>{excerpt}</Card.Text>
+          </Card.Body>
+        </Card>
+        <br />
       </div>
-    );
+    )
   }
 }
 
