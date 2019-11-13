@@ -5,6 +5,7 @@ import GitHub from "../images/GitHub.svg"
 import Clipboard from "../components/clipboard"
 import ReactTooltip from "react-tooltip"
 import AboutStyles from "./about.module.css"
+import { ButtonToolbar, Button } from "react-bootstrap"
 
 export default ({ children }) => (
   <div className={AboutStyles.container}>
@@ -26,25 +27,28 @@ export default ({ children }) => (
           </p>
         </div>
         <div className={AboutStyles.contact}>
-          <div className="contact">Contact:</div>
-          <div className={AboutStyles.contactInner}>
-            <div
-              data-tip="Copy my email to your clipboard"
-              className={AboutStyles.contactEmail}
-            >
-              <Clipboard></Clipboard>
-            </div>
-            <a
-              data-tip="Copy my email to your clipboard"
-              href="https://www.linkedin.com/in/tammo-feldmann/"
-            >
-              <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" />
-            </a>
-            <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub">
-              <img src={GitHub} alt="GitHub logo" />
-              <ReactTooltip type="light" />
-            </a>
-          </div>
+          <div className={AboutStyles.label}>Contact:</div>
+          <ButtonToolbar>
+            <Button variant="outline-light">
+              <div data-tip="Copy my email to your clipboard">
+                <Clipboard></Clipboard>
+              </div>
+            </Button>
+            <Button variant="outline-light" size="sm">
+              <a
+                data-tip="Copy my email to your clipboard"
+                href="https://www.linkedin.com/in/tammo-feldmann/"
+              >
+                <img src={LinkedIn} data-tip="LinkedIn" alt="LinkedIn logo" />
+              </a>
+            </Button>
+            <Button variant="outline-light">
+              <a href="https://github.com/Tammo-Feldmann" data-tip="GitHub">
+                <img src={GitHub} alt="GitHub logo" />
+                <ReactTooltip type="light" />
+              </a>
+            </Button>
+          </ButtonToolbar>
         </div>
       </div>
     </div>

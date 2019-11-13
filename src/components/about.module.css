@@ -12,10 +12,9 @@
   display: flex;
   padding: 4rem 0rem 0em 0rem;
   align-items: baseline;
-  color: #3F4967;
+  color: #3f4967;
   font-size: 24px;
   font-weight: 600;
-
 }
 .contact-email {
   cursor: pointer;
@@ -31,23 +30,27 @@
   margin-left: 1rem;
 }
 .container {
-  background-color: #FAFAFAFA;
+  background-color: #fafafafa;
   padding: 4rem 14% 0rem 14%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  color: #3F4967;
+  color: #3f4967;
 }
 
 .aboutMe {
   font-size: 34px;
 }
 
+.label {
+  margin-right: 4px;
+}
+
 .selfy-container {
   padding: 6rem 1rem 0rem 1rem;
   order: 1;
   flex: 1;
-  color: #3F4967;
+  color: #3f4967;
   text-align: center;
 }
 .selfy-border {
@@ -55,12 +58,12 @@
   justify-content: center;
 }
 .selfyName {
-  margin-top: 1.4rem; 
-  margin-bottom: .4rem;
+  margin-top: 1.4rem;
+  margin-bottom: 0.4rem;
   font-size: 34px;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   .about-info {
     text-align: center;
     padding: 4rem 10% 0rem 10%;
@@ -70,7 +73,7 @@
     max-width: 640px;
   }
   .container {
-    background-color: #FAFAFAFA;
+    background-color: #fafafafa;
     /* The values for padding are: top, right, bottom, left */
     padding: 6rem 8% 0rem 8%;
     display: flex;
@@ -84,7 +87,7 @@
   }
 }
 
-@media(max-width: 1010px) {
+@media (max-width: 1010px) {
   .about-info {
     margin: none;
     text-align: center;
