@@ -10,20 +10,25 @@
 }
 .contact {
   display: flex;
-  padding: 4rem 0rem 0rem 0rem;
+  padding: 4rem 0rem 0em 0rem;
   align-items: baseline;
   color: #3F4967;
+  font-size: 24px;
+  font-weight: 600;
+
 }
 .contact-email {
   cursor: pointer;
   width: 26px;
+  border: 1px yellow solid;
 }
 .contact-inner {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: baseline;
-  width: 7rem;
-  padding-left: 1rem;
+  width: 6rem;
+  border: 2px black solid;
+  margin-left: 1rem;
 }
 .container {
   background-color: #FAFAFAFA;
@@ -33,6 +38,11 @@
   flex-wrap: wrap;
   color: #3F4967;
 }
+
+.aboutMe {
+  font-size: 34px;
+}
+
 .selfy-container {
   padding: 6rem 1rem 0rem 1rem;
   order: 1;

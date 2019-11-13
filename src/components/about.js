@@ -10,7 +10,7 @@ export default ({ children }) => (
   <div className={AboutStyles.container}>
     <div id="about-section" className={AboutStyles.aboutInfo}>
       <div>
-        <h1>About Me</h1>
+        <h1 className={AboutStyles.aboutMe}>About Me</h1>
         <div className={AboutStyles.aboutText}>
           <p>
             I enjoy programming, problem solving, climbing, and good food. I
@@ -26,7 +26,7 @@ export default ({ children }) => (
           </p>
         </div>
         <div className={AboutStyles.contact}>
-          <h1 className="contact">Contact:</h1>
+          <div className="contact">Contact:</div>
           <div className={AboutStyles.contactInner}>
             <div
               data-tip="Copy my email to your clipboard"
@@ -52,8 +52,8 @@ export default ({ children }) => (
       <div className={AboutStyles.selfyBorder}>
         <Image />
       </div>
-      <h2 className={AboutStyles.selfyName}>Tammo Feldmann</h2>
-      <h3>Full-Stack Developer</h3>
+      <h1 className={AboutStyles.selfyName}>Tammo Feldmann</h1>
+      <h5>Full-Stack Developer</h5>
     </div>
   </div>
 )

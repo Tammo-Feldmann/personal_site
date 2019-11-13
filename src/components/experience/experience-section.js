@@ -5,6 +5,7 @@ import { CardColumns } from 'reactstrap'
 import DatamagoImage from '../../images/dm-landing.png';
 import ABCya from '../../images/ABCyaScreen.png';
 import Byzantine from '../../images/Byzantine.png';
+import bootstrap from 'bootstrap'
 
 const myProjects = [
   {
