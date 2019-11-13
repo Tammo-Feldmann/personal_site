@@ -1,11 +1,10 @@
 import React from 'react';
 import ExCard from './experience-cards'
 import experienceStyles from "./experience-section.module.css";
-import { CardColumns } from 'reactstrap'
+import { CardGroup } from 'react-bootstrap'
 import DatamagoImage from '../../images/dm-landing.png';
 import ABCya from '../../images/ABCyaScreen.png';
 import Byzantine from '../../images/Byzantine.png';
-import bootstrap from 'bootstrap'
 
 const myProjects = [
   {
@@ -33,7 +32,7 @@ const myProjects = [
 
 const Experience = () => (
   <div className={experienceStyles.container}>
-    <CardColumns className={experienceStyles.deck}>
+    <CardGroup className={experienceStyles.deck}>
       {myProjects.map(project => (
         <ExCard
           image={project.image}
@@ -43,7 +42,7 @@ const Experience = () => (
           excerpt={project.excerpt}
         />
       ))}
-    </CardColumns>
+    </CardGroup>
     <div className={experienceStyles.label}>
       <h1>Projects</h1>
       <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this
