@@ -31,7 +31,7 @@ const myProjects = [
 ]
 
 const Experience = () => (
-  <div className={experienceStyles.container}>
+  <div id="experience-section" className={experienceStyles.container}>
     <CardDeck className={experienceStyles.deck}>
       {myProjects.map(project => (
         <ExCard
