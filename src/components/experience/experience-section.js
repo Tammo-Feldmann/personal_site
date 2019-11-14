@@ -44,8 +44,8 @@ const Experience = () => (
       ))}
     </CardDeck>
     <div className={experienceStyles.label}>
-      <h1>Projects</h1>
-      <p>
+      <h2 className={experienceStyles.labelTitle}>Projects</h2>
+      <p className={experienceStyles.labelExerpt}>
         I work on most of my bigger projects collaboratively, either remotely or
         in person, the smaller projects in this section are my own and I will
         specify where I have written all the backend and frontend code.
