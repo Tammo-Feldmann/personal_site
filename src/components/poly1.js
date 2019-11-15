@@ -48,7 +48,7 @@ class Poly1 extends Component {
               to="expertise-section"
               spy={true}
               smooth={true}
-              offset={10}
+              offset={120}
               duration={700}
             >
               <HoverText>expertise</HoverText>

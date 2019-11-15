@@ -31,25 +31,36 @@ const myProjects = [
 ]
 
 const Experience = () => (
-  <div id="experience-section" className={experienceStyles.container}>
-    <CardDeck className={experienceStyles.deck}>
-      {myProjects.map(project => (
-        <ExCard
-          image={project.image}
-          key={project.title}
-          title={project.title}
-          subtitle={project.subtitle}
-          excerpt={project.excerpt}
-        />
-      ))}
-    </CardDeck>
-    <div className={experienceStyles.label}>
-      <h2 className={experienceStyles.labelTitle}>Projects</h2>
-      <p className={experienceStyles.labelExerpt}>
-        I work on most of my bigger projects collaboratively, either remotely or
-        in person, the smaller projects in this section are my own and I will
-        specify where I have written all the backend and frontend code.
+  <div className={experienceStyles.section}>
+    <div className={experienceStyles.intro}>
+      <h2 className={experienceStyles.sectionTitle}>Projects</h2>
+      <p className={experienceStyles.text}>
+        I am just as comfortable with backend problems as I like to work on
+        frontend features. Most of my work has been in Javascript/React and
+        Python on the backend. More recently I have been really fascinated with
+        Rust.
       </p>
+    </div>
+    <div id="experience-section" className={experienceStyles.container}>
+      <CardDeck className={experienceStyles.deck}>
+        {myProjects.map(project => (
+          <ExCard
+            image={project.image}
+            key={project.title}
+            title={project.title}
+            subtitle={project.subtitle}
+            excerpt={project.excerpt}
+          />
+        ))}
+      </CardDeck>
+      <div className={experienceStyles.label}>
+        <h2 className={experienceStyles.labelTitle}>Projects</h2>
+        <p className={experienceStyles.labelExerpt}>
+          I work on most of my bigger projects collaboratively, either remotely
+          or in person, the smaller projects in this section are my own and I
+          will specify where I have written all the backend and frontend code.
+        </p>
+      </div>
     </div>
   </div>
 )
