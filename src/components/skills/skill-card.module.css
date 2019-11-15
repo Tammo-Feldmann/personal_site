@@ -1,26 +1,25 @@
-.container { 
-  border: 2px solid #FAFAFA;
-  color: #FAFAFA;
+.container {
+  color: #fafafa;
   /* The values for padding are: top, right, bottom, left */
-  padding: 2rem 1rem 0rem 2rem;
-  margin-bottom: 1rem;
 }
 
 .icon {
-  align-self: center;
-  justify-self: center;
-  min-width: 4rem;
-  min-height: 4rem;
-  border: 2px white solid;
+  width: 8rem;
+  margin-right: 2rem;
 }
-.text {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.excerpt {
+  font-size: 16px;
+  font-weight: 300;
 }
 
 @media (max-width: 600px) {
   .container {
     padding: 1rem 1rem 0rem 0rem;
   }
-
 }

@@ -16,14 +16,15 @@ export default ({ children }) => (
           <p>
             I enjoy programming, problem solving, climbing, and good food. I
             spent 5 years chasing a PhD that I completed in August of 2018.
-            Since then I have been coding full time and I am excited every day
-            to learn more.
+            Since then I have been coding full time.
           </p>
           <p>
-            I enjoy programming, problem solving, climbing, and good food. I
-            spent 5 years chasing a PhD that I completed in August of 2018.
-            Since then I have been coding full time and I am excited every day
-            to learn more.
+            I prefer to work in intervals of deep focused work that are divided
+            by chunks of time for reflection. Psychologically, I have found it
+            most valuable to keep a learning mindset. I enjoy being around those
+            who encourage others and I always look for ways to collaborate and
+            provide mutual support. I work hard to be my best version of a
+            professional programmer.
           </p>
         </div>
         <div className={AboutStyles.contact}>

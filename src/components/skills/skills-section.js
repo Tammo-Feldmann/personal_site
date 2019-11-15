@@ -24,7 +24,7 @@ const mySkills = [
     image: Landing,
     header: "Staying in touch with the humanities",
     excerpt:
-      "I decided to put my PhD to use and start collaborating on some digital humanities projects with my friends from Stanford. My skill here is to see and design project that are technically feasable, visually engaging, and insightful. I work as the technical developer and also collaborate on the design of the questions from a humanities background. If you are working on a project and need technical help, reach out and I am happy to help.",
+      "I collaborate with former colleagues on digital humanities projects. I lead the technical implementation with an eye on making them technically feasable, visually engaging, and insightful. If you are working on a project and need technical help, I am happy to collaborate.",
   },
 ]
 
@@ -33,7 +33,7 @@ export default ({ children }) => (
     <Polygon></Polygon>
     <div id="expertise-section" className={SkillStyles.skillsSection}>
       <div className={SkillStyles.summary}>
-        <h1>Expertise</h1>
+        <h2 className={SkillStyles.label}>Expertise</h2>
         <p className={SkillStyles.text}>
           I am just as comfortable with backend problems as I like to work on
           frontend features. Most of my work has been in Javascript/React and

@@ -1,17 +1,19 @@
 import React, { Component } from "react"
 import { Card } from "react-bootstrap"
+import Placehoder from "../../images/Placeholder.png"
+import CardStyles from "./skill-card.module.css"
 
 class SkillCard extends Component {
   render() {
     const { title, excerpt } = this.props //Remember to include Icon here if you want to use it again
     return (
-      <div>
+      <div className={CardStyles.cardsContainer}>
         <Card
           text="light"
           border="None"
           style={{
             backgroundColor: "#3f4967",
-            width: "32rem",
+            width: "44rem",
             borderColor: "#3f4967",
           }}
         >
@@ -23,11 +25,14 @@ class SkillCard extends Component {
               padding: "2rem",
             }}
           >
-            <div>Icon Placehoder</div>
+            <Card.Img
+              variant="top"
+              src={Placehoder}
+              className={CardStyles.icon}
+            />
             <Card.Body>
-              {/* <Card.Img variant="bottom" src={img} /> */}
-              <Card.Title>{title}</Card.Title>
-              <Card.Text>{excerpt}</Card.Text>
+              <Card.Title className={CardStyles.title}>{title}</Card.Title>
+              <Card.Text className={CardStyles.excerpt}>{excerpt}</Card.Text>
             </Card.Body>
           </div>
         </Card>
