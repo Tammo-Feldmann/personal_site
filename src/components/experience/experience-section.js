@@ -12,21 +12,21 @@ const myProjects = [
     subtitle: "With ABCya",
     image: ABCya,
     excerpt: "Frontend Developer",
-    skill: "Project Skill",
+    skill: "first set of skills",
   },
   {
     title: "Byzantine Pairs",
     subtitle: "With PSU",
     image: Byzantine,
     excerpt: "Lead Developer",
-    skill: "Project Skill",
+    skill: "Second set of skills",
   },
   {
     title: "Datamago",
     subtitle: "With Datamago",
     image: DatamagoImage,
     excerpt: "Frontend Developer",
-    skill: "Project Skill",
+    skill: "Mostly JS",
   },
 ]
 
@@ -50,6 +50,7 @@ const Experience = () => (
             title={project.title}
             subtitle={project.subtitle}
             excerpt={project.excerpt}
+            skill={project.skill}
           />
         ))}
       </CardDeck>

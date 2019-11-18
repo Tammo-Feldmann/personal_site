@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import skillStyles from "./skill-stack.module.css"
 
 const mySkills = [
@@ -15,18 +15,22 @@ const mySkills = [
     id: 3,
   },
   {
-    name: "Express",
+    name: "",
     id: 4,
   },
 ]
+class SkillStack extends Component {
+  render() {
+    const { name } = this.props
 
-const SkillStack = () => (
-  <div className={skillStyles.container}>
-    Is this working?
-    {mySkills.map(stack => (
-      <div skill={stack.name} key={stack.id} />
-    ))}
-  </div>
-)
+    return (
+      <div className={skillStyles.container}>
+        {mySkills.map(stack => (
+          <div key={stack.id}>{name}</div>
+        ))}
+      </div>
+    )
+  }
+}
 
 export default SkillStack
