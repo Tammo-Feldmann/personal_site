@@ -1,33 +1,30 @@
 import React, { Component } from "react"
 import skillStyles from "./skill-stack.module.css"
+import { Accordion, Card, Button } from "react-bootstrap"
 
-const mySkills = [
-  {
-    name: "JavaScript",
-    id: 1,
-  },
-  {
-    name: "NodeJS",
-    id: 2,
-  },
-  {
-    name: "MongoDB",
-    id: 3,
-  },
-  {
-    name: "",
-    id: 4,
-  },
-]
 class SkillStack extends Component {
   render() {
-    const { name } = this.props
+    const { skills } = this.props
 
     return (
       <div className={skillStyles.container}>
-        {mySkills.map(stack => (
-          <div key={stack.id}>{name}</div>
-        ))}
+        <Accordion>
+          <Card>
+            <Card.Header>
+              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                Skill Stack
+              </Accordion.Toggle>
+            </Card.Header>
+            <Accordion.Collapse eventKey="0">
+              <Card.Body>
+                <div>{skills[0]}</div>
+                <div>{skills[1]}</div>
+                <div>{skills[2]}</div>
+                <div>{skills[3]}</div>
+              </Card.Body>
+            </Accordion.Collapse>
+          </Card>
+        </Accordion>
       </div>
     )
   }

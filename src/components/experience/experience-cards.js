@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap"
 //import experienceStyles from "./experience-card.module.css"
 import Skills from "./skill-stack"
 
-const ExCard = ({ image, title, subtitle, excerpt, skill }) => (
+const ExCard = ({ image, title, subtitle, excerpt, skills }) => (
   <Card>
     <Card.Img variant="top" src={image} />
     <Card.Body>
@@ -13,8 +13,7 @@ const ExCard = ({ image, title, subtitle, excerpt, skill }) => (
       <Card.Text>{excerpt}</Card.Text>
     </Card.Body>
     <Card.Footer>
-      <small className="text-muted">Last updated 3 mins ago</small>
-      <Skills name={skill}></Skills>
+      <Skills skills={skills} style={{ margin: "2rem" }}></Skills>
     </Card.Footer>
   </Card>
 )
