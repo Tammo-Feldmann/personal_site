@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import skillStyles from "./skill-stack.module.css"
+import Styles from "./skill-stack.module.css"
 import { Accordion, Card, Button } from "react-bootstrap"
 
 class SkillStack extends Component {
@@ -7,12 +7,17 @@ class SkillStack extends Component {
     const { skills } = this.props
 
     return (
-      <div className={skillStyles.container}>
+      <div className={Styles.container}>
         <Accordion>
           <Card>
             <Card.Header>
-              <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                Skill Stack
+              <Accordion.Toggle
+                as={Button}
+                variant="link"
+                eventKey="0"
+                text="light"
+              >
+                <div className={Styles.button}>Skill Stack</div>
               </Accordion.Toggle>
             </Card.Header>
             <Accordion.Collapse eventKey="0">

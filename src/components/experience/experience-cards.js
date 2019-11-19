@@ -1,19 +1,19 @@
 import React from "react"
 import { Card } from "react-bootstrap"
-//import experienceStyles from "./experience-card.module.css"
+import Styles from "./experience-card.module.css"
 import Skills from "./skill-stack"
 
 const ExCard = ({ image, title, subtitle, excerpt, skills }) => (
-  <Card>
-    <Card.Img variant="top" src={image} />
+  <Card className={Styles.card}>
+    <Card.Img variant="top" src={image} className={Styles.cardImage} />
     <Card.Body>
-      <Card.Title>
+      <Card.Title className={Styles.cardTitle}>
         {title} {subtitle}
       </Card.Title>
       <Card.Text>{excerpt}</Card.Text>
     </Card.Body>
     <Card.Footer>
-      <Skills skills={skills} style={{ margin: "2rem" }}></Skills>
+      <Skills skills={skills}></Skills>
     </Card.Footer>
   </Card>
 )
