@@ -9,19 +9,19 @@ class SkillStack extends Component {
     return (
       <div className={Styles.container}>
         <Accordion>
-          <Card>
+          <Card border="light">
             <Card.Header>
               <Accordion.Toggle
                 as={Button}
+                border="dark"
                 variant="link"
                 eventKey="0"
-                text="light"
               >
-                <div className={Styles.button}>Skill Stack</div>
+                <div className={Styles.button}>Technologies</div>
               </Accordion.Toggle>
             </Card.Header>
-            <Accordion.Collapse eventKey="0">
-              <Card.Body>
+            <Accordion.Collapse border="dark" eventKey="0">
+              <Card.Body border="dark">
                 <div>{skills[0]}</div>
                 <div>{skills[1]}</div>
                 <div>{skills[2]}</div>
