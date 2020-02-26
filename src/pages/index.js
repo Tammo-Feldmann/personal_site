@@ -7,8 +7,6 @@ import Layout from "../components/layout"
 import Skills from "../components/skills/skills-section"
 import About from "../components/about"
 import Experience from "../components/experience/experience-section"
-//import "bootstrap/dist/css/bootstrap.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const IndexPage = () => (
   <Layout>

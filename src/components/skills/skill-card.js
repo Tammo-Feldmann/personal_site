@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import { Card } from "react-bootstrap"
 import CardStyles from "./skill-card.module.css"
 
 class SkillCard extends Component {
@@ -7,7 +6,7 @@ class SkillCard extends Component {
     const { title, excerpt, icon } = this.props //Remember to include Icon here if you want to use it again
     return (
       <div className={CardStyles.cardsContainer}>
-        <Card
+        <div
           text="light"
           border="None"
           style={{
@@ -24,13 +23,18 @@ class SkillCard extends Component {
               padding: "2rem",
             }}
           >
-            <Card.Img variant="top" src={icon} className={CardStyles.icon} />
-            <Card.Body>
-              <Card.Title className={CardStyles.title}>{title}</Card.Title>
-              <Card.Text className={CardStyles.excerpt}>{excerpt}</Card.Text>
-            </Card.Body>
+            <img
+              variant="top"
+              alt="somekindofAlt"
+              src={icon}
+              className={CardStyles.icon}
+            />
+            <div>
+              <div className={CardStyles.title}>{title}</div>
+              <div className={CardStyles.excerpt}>{excerpt}</div>
+            </div>
           </div>
-        </Card>
+        </div>
         <br />
       </div>
     )

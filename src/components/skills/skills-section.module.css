@@ -1,6 +1,7 @@
 .cards-container {
   display: grid;
   justify-content: center;
+  color: white;
 }
 .skills-section {
   display: grid;

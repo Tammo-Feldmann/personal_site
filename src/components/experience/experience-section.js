@@ -1,7 +1,6 @@
 import React from "react"
 import ExCard from "./experience-cards"
 import experienceStyles from "./experience-section.module.css"
-import { CardDeck } from "react-bootstrap"
 import DatamagoImage from "../../images/dm-landing.png"
 import ABCya from "../../images/ABCyaScreen.png"
 import Byzantine from "../../images/Byzantine.png"
@@ -42,7 +41,7 @@ const Experience = () => (
       </p>
     </div>
     <div id="experience-section" className={experienceStyles.container}>
-      <CardDeck className={experienceStyles.deck}>
+      <div className={experienceStyles.deck}>
         {myProjects.map(project => (
           <ExCard
             image={project.image}
@@ -53,7 +52,7 @@ const Experience = () => (
             skills={project.skills}
           />
         ))}
-      </CardDeck>
+      </div>
       <div className={experienceStyles.label}>
         <h2 className={experienceStyles.labelTitle}>Projects</h2>
         <p className={experienceStyles.labelExerpt}>
