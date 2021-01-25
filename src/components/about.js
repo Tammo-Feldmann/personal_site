@@ -13,12 +13,14 @@ export default ({ children }) => (
         <h1 className={AboutStyles.aboutMe}>About Me</h1>
         <div className={AboutStyles.aboutText}>
           <p>
-            I enjoy programming, problem solving, climbing, and good food. I
-            spent 5 years pursuing PhD that I completed in August of 2018. Since
-            then I have been coding full time. I usually work in intervals of
-            deep focus and like to space them out with rest and reflection. I
-            work hard to be the best version of myself and can benefit from the
-            occasional reminder not to take myself too seriously.
+            I enjoy programming as much as being physically active in the outdoors. 
+            As for so many of us, the pandemic has changed many of my usual ways of working and being.             
+            In 2020 I spent more time in my text-editor than anywhere else.
+            My workouts became mostly solitary activities in parks and other outdoor spaces.
+            What I have missed the most in the past year of the COVID 19 pandemic are the many little chance encounters at 
+            coffee shops, the gym, or my favorite bookstores. What I have appreciated the most has been a time to go deep into
+            the world of computer programs. I am deeply curious to see how I personally navigate the integration of insights from this year
+            and how we will as a community. 
           </p>
         </div>
         <div className={AboutStyles.contact}>
