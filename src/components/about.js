@@ -8,7 +8,7 @@ import AboutStyles from "./about.module.css"
 
 export default ({ children }) => (
   <div className={AboutStyles.container}>
-    <div id="about-section" className={AboutStyles.aboutInfo}>
+    <div id="about-info" className={AboutStyles.aboutInfo}>
       <div>
         <h1 className={AboutStyles.aboutMe}>About Me</h1>
         <div className={AboutStyles.aboutText}>
