@@ -7,6 +7,7 @@ class Poly1 extends Component {
   render() {
     return (
       <div
+        className="polygon-one"
         style={{
           position: `absolute`,
           width: `100%`,
