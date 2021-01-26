@@ -1,13 +1,14 @@
 <h1 align="center">
-  My Gatsby Personal Page
+  Quick and Clean Developer Portfolio 
 </h1>
 
-<h2>Portfolio for my projects </h2> 
-  
-On this page I create a single place to collect and display my projects in a portfolio and share them with those who are interested. 
+# For anyone who might want a simple layout to present their ideas. Please feel free to take and copy anything that might be useful to you and leave what is not.
 
+<h2>Skills</h2>
+This overview section of my skills is really just a quick summary so that someone will know at a glance what type of projects I have worked on. 
+You might think of this as a calling card.
 
-<h2>Skill development</h2>
-Although the primary intention of this page is to display my projects, I also keep track of new skills, programming interests, and technologies here.
+<h2>My projects</h2> 
+The **Projects section** is the bread and butter of this page (it's raison d'etre, if you will). I created a single place where I could collect all my projects and give someone a good impression with screenshots, screenvideos, links, and descriptions.
 
-## I'll be updating the page monthly and add projects and new features as they arise.
+## I'll be updating the page as often as I can remember and leave a **last updated** timestamp in the footer.

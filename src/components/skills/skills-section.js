@@ -22,7 +22,7 @@ const mySkills = [
     header: "Connect people to the information that make our lives easier",
     icon: Placeholder,
     excerpt:
-      "I have worked in Node.js and Python back-ends. API development, internal tools, continuous integration. I enjoy  ",
+      "I work most commonly in Node.js and Python on the back-end. The more it goes towards systems architechture the more I am fascinated. I always strive to build scalable, flexible, maintainable, and ideally ideomatic solutions.",
   },
   {
     title: "Data Visualization",
@@ -30,7 +30,7 @@ const mySkills = [
     header: "Turn numbers into images",
     icon: Dh,
     excerpt:
-      "From digital humanities to environmental concerns, I am passionate about everything data",
+      "I am familiar with charts and maps. I am familiar with D3 and other libraries and have also created my own custom javascrip visualizations.",
   },
 ]
 
