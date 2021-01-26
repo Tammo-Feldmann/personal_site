@@ -11,18 +11,18 @@ const mySkills = [
   {
     title: "Front-End Development",
     image: Landing,
-    header: "Better with Node than Bootstrap",
+    //header: "Better with Node than Bootstrap",
     icon: WebDev,
     excerpt:
-      "I work in custom JavaScript framework but I am also comfortabel with React (Gastby and Next.JS). I like working on teams and thrive with good collaborators.",
+      "I strive to represent complex ideas in beautiful systems. On the front-end I am most familiar (and comfortable) with Typescript and React. I work on the whole stack and enjoy working with GraphQL or MySQL databases and like to build my own tools to make life easier.",
   },
   {
-    title: "API Development",
+    title: "Back-End Development",
     image: Landing,
     header: "Connect people to the information that make our lives easier",
     icon: Placeholder,
     excerpt:
-      "I enjoy well designed API's sdfdsaf asdfgvads dfgsd sdafjkb bljhksdabf  likjadsbf  nlkjagbdsf l luaksdjgf ",
+      "I have worked in Node.js and Python back-ends. API development, internal tools, continuous integration. I enjoy  ",
   },
   {
     title: "Data Visualization",
@@ -39,7 +39,7 @@ export default ({ children }) => (
     <Polygon></Polygon>
     <div id="expertise-section" className={SkillStyles.skillsSection}>
       <div className={SkillStyles.summary}>
-        <h2 className={SkillStyles.label}>Expertise</h2>
+        <h2 className={SkillStyles.label}>Skills</h2>
         <p className={SkillStyles.text}>
           I am just as comfortable with backend problems as I like to work on
           frontend features. Most of my work has been in Javascript/React and
