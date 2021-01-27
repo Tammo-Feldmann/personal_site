@@ -10,11 +10,8 @@ class SkillStack extends Component {
         <div>
           <div border="light">
             <div>
-              {/* <div as={Button} border="dark" variant="link" eventKey="0">
-                <div className={Styles.button}>Technologies</div>
-              </div> */}
             </div>
-            <div border="dark" eventKey="0">
+            <div border="dark">
               <div border="dark">
                 <div>{skills[0]}</div>
                 <div>{skills[1]}</div>
