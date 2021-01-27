@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import Styles from "./skill-stack.module.css"
+import Styles from "./skillStack.module.css"
 
 class SkillStack extends Component {
   render() {

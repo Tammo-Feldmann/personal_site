@@ -1,6 +1,6 @@
 import React from "react"
 import Styles from "./experience-card.module.css"
-import Skills from "./skill-stack"
+import Skills from "./skillStack"
 
 const ExCard = ({ image, title, subtitle, excerpt, skills }) => (
   <div className={Styles.card}>
