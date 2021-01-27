@@ -46,13 +46,13 @@ class Poly1 extends Component {
             </RsLink>
             <RsLink
               activeClass="active"
-              to="expertise-section"
+              to="skills-section"
               spy={true}
               smooth={true}
               offset={120}
               duration={700}
             >
-              <HoverText>expertise</HoverText>
+              <HoverText>skills</HoverText>
             </RsLink>
             <RsLink
               activeClass="active"

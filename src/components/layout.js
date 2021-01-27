@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
     }
   `)
   return (
-    <>
+    <div className="main">
       <Header siteTitle={data.site.siteMetadata.title} >
       </Header>
       <Poly1></Poly1>
@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
         © {new Date().getFullYear()}, Tammo Feldmann
         {` `}
       </footer>
-    </>
+    </div>
   )
 }
 
