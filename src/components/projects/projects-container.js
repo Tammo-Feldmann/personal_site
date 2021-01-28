@@ -3,7 +3,7 @@ import ProjectCard from './project-card';
 import DatamagoImage from '../../images/dm-landing.png';
 import ABCya from '../../images/ABCyaScreen.png';
 import Byzantine from '../../images/Byzantine.png';
-import containerStyles from "./projects-container.module.css";
+import containerStyles from "./projects.module.css";
 
 const myProjects = [
   {

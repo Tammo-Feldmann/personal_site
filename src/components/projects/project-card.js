@@ -1,7 +1,7 @@
 import React from 'react';
 const { Component } = React;
 // eslint-disable-next-line
-import CardStyle from './project-card.module.css'
+import CardStyle from './projects.module.css'
 
 class ProjectCard extends Component {
   render() {

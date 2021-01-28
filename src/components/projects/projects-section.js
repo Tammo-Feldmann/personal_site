@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectsContainer from './projects-container'
-import containerStyles from "./projects-section.module.css"
+import containerStyles from "./projects.module.css"
 
 const Projects = () => (
   <div className={containerStyles.container}>
@@ -11,7 +11,7 @@ const Projects = () => (
       <div>
         <h1>Projects</h1>
         <p>I work on most of my bigger projects collaboratively, either remotely or in person, the smaller projects in this
-          section are my own and I will specify where I have written all the backend and frontend code.
+        section are my own and I will specify where I have written all the backend and frontend code.
       </p>
       </div>
     </div>
