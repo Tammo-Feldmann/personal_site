@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ProjectCard from './project-card';
+import ProjectCard from './projectCard';
 import DatamagoImage from '../../images/dm-landing.png';
 import ABCya from '../../images/ABCyaScreen.png';
 import Byzantine from '../../images/Byzantine.png';
@@ -26,7 +26,7 @@ const myProjects = [
 class ProjectsContainer extends Component {
   render() {
     return (
-      <div className={containerStyles.wrapper}>
+      <div className={containerStyles.body}>
         {myProjects.map(project => (
           <ProjectCard
             image={project.image}

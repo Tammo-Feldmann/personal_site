@@ -2,13 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import Skills from "../components/skills/skills-section"
 import About from "../components/about"
-import Experience from "../components/experience/experience-section"
+import Projects from "../components/projects/projects"
 
 const IndexPage = () => (
   <Layout>
     <About></About>
     <Skills></Skills>
-    <Experience></Experience>
+    <Projects></Projects>
   </Layout>
 )
 

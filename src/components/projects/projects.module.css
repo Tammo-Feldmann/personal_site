@@ -1,18 +1,11 @@
 .projects {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 4rem;
-  border: none;
-  padding: 8rem 4% 4rem 4%;
-  background-color: #fafafafa;
-  align-items: center;
-  padding: 4rem;
+  display: flex;
+  padding: 4rem 15%;
 }
 
-.container {
+.inner {
   display: flex;
-  padding: 4rem;
-  background-color: rgb(252, 225, 176);
+  /* border: 1px solid #3f4967; */
 }
 
 @media (min-width: 700px) {
@@ -23,16 +16,25 @@
   }
 }
 
-.wrapper {
+.header {
+  max-width: 25vw;
+  flex: 0 0 300px;
+  padding: 1rem 0.75rem 3rem;
+  border-radius: 5px 0 0 5px;
+  background-color: #3f4967;
+  color: #fff;
+}
+
+.body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  grid-gap: 1rem;
-  background-color: rebeccapurple;
+  background: rgba(63, 73, 103, 0.1);
+  border-radius: 0 5px 5px 0;
 }
 
 .project {
   padding: 1rem;
 }
+
 .images {
   display: flex;
   height: 8rem;

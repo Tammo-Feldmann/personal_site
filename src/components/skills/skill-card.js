@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import CardStyles from "./skill-card.module.css"
+import CardStyles from "./skills.module.css"
 
 class SkillCard extends Component {
   render() {
