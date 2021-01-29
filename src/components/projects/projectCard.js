@@ -1,6 +1,5 @@
-import React from 'react';
-const { Component } = React;
-// eslint-disable-next-line
+import React, { Component } from 'react';
+import Sankey from '../../components/header'
 import CardStyle from './projects.module.css'
 
 class ProjectCard extends Component {
@@ -8,11 +7,12 @@ class ProjectCard extends Component {
     const { title, excerpt, image } = this.props;
 
     return (
-      <div className={CardStyle.project}>
-        <div className={CardStyle.images}>
-          <img src={image} alt="Datamago Landing Page" ></img>
+      <div className={CardStyle.project_card}>
+        <div className={CardStyle.image}>
+          {/* <img src={image} alt="Project Card Img" ></img> */}
+          <Sankey />
         </div>
-        <div className={CardStyle.text}>
+        <div className={CardStyle.card_header}>
           <div>
             <h4 className="card-header">
               {title}

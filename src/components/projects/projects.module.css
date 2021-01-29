@@ -35,14 +35,24 @@
   /* border-radius: 0 0 5px 0; */
 }
 
-.project {
-  padding: 1rem;
+.cards_body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.25rem;
+  grid-template-rows: auto;
+  grid-row-gap: 1.25rem;
+  align-items: stretch;
 }
 
-.images {
-  display: flex;
-  height: 8rem;
-  align-self: center;
+.project_card {
+  padding: 1rem;
+  background: rgba(63, 73, 103, 0.2);
+}
+
+.card_image {
+  height: 10rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .stackWrap {
@@ -60,10 +70,8 @@
   border-radius: 2px;
 }
 
-.text {
-  display: grid;
-  row-gap: 0.8rem;
+.card_header {
   padding: 1rem 0rem 1rem 0rem;
-  background-color: #d9d9da;
+
   color: #3f4967;
 }

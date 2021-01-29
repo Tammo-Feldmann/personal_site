@@ -20,6 +20,26 @@ const myProjects = [
     title: 'Byzantine Pairings',
     image: Byzantine,
     excerpt: 'Educational Application for Medival Art History'
+  },
+  {
+    title: 'Datamago',
+    image: DatamagoImage,
+    excerpt: 'Machine learning platform for time series forecasting.'
+  },
+  {
+    title: 'ABCya',
+    image: ABCya,
+    excerpt: '2D Animation for children.'
+  },
+  {
+    title: 'Byzantine Pairings',
+    image: Byzantine,
+    excerpt: 'Educational Application for Medival Art History'
+  },
+  {
+    title: 'Datamago',
+    image: DatamagoImage,
+    excerpt: 'Machine learning platform for time series forecasting.'
   }
 ]
 
@@ -27,14 +47,15 @@ class ProjectsContainer extends Component {
   render() {
     return (
       <div className={containerStyles.collection}>
-        {myProjects.map(project => (
+        <div className={containerStyles.cards_body}>{myProjects.map(project => (
           <ProjectCard
             image={project.image}
             key={project.title}
             title={project.title}
             excerpt={project.excerpt}
           />
-        ))}
+        ))}</div>
+
       </div>
     );
   }
