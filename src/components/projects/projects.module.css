@@ -16,19 +16,23 @@
   }
 }
 
-.header {
+.header_wrapper {
   max-width: 25vw;
-  flex: 0 0 300px;
   padding: 1rem 0.75rem 3rem;
   border-radius: 5px 0 0 5px;
-  background-color: #3f4967;
-  color: #fff;
+  border-left: 1px solid rgba(63, 73, 103, 0.2);
+  border-top: 1px solid rgba(63, 73, 103, 0.2);
+  border-bottom: 1px solid rgba(63, 73, 103, 0.2);
+  color: #3f4967;
 }
 
-.body {
-  display: grid;
-  background: rgba(63, 73, 103, 0.1);
-  border-radius: 0 5px 5px 0;
+.header {
+  align-self: center;
+}
+
+.collection {
+  background: rgba(63, 73, 103, 0.06);
+  /* border-radius: 0 0 5px 0; */
 }
 
 .project {

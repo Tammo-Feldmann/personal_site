@@ -26,7 +26,7 @@ const myProjects = [
 class ProjectsContainer extends Component {
   render() {
     return (
-      <div className={containerStyles.body}>
+      <div className={containerStyles.collection}>
         {myProjects.map(project => (
           <ProjectCard
             image={project.image}
