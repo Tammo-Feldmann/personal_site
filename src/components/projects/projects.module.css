@@ -11,7 +11,7 @@
 
 .header_wrapper {
   max-width: 25vw;
-  /* flex: 0 0 300px; */
+  flex: 0 0 260px;
   padding: 1rem 0.75rem 3rem;
   border-radius: 5px 0 0 5px;
   border-left: 1px solid rgba(63, 73, 103, 0.2);

@@ -1,44 +1,29 @@
 import React, { Component } from 'react';
 import ProjectCard from './projectCard';
-import DatamagoImage from '../../images/dm-landing.png';
-import ABCya from '../../images/ABCyaScreen.png';
-import Byzantine from '../../images/Byzantine.png';
+// import DatamagoImage from '../../images/dm-landing.png';
+// import ABCya from '../../images/ABCyaScreen.png';
+// import Byzantine from '../../images/Byzantine.png';
 import containerStyles from "./projects.module.css";
 
 const myProjects = [
   {
     title: 'Datamago',
-    image: DatamagoImage,
+    image: "dm",
     excerpt: 'Machine learning platform for time series forecasting.'
   },
   {
-    title: 'ABCya',
-    image: ABCya,
+    title: 'adi',
+    image: "adi",
     excerpt: '2D Animation for children.'
   },
   {
-    title: 'Byzantine Pairings',
-    image: Byzantine,
+    title: 'adiron',
+    image: "adi",
     excerpt: 'Educational Application for Medival Art History'
   },
   {
-    title: 'Datamago',
-    image: DatamagoImage,
-    excerpt: 'Machine learning platform for time series forecasting.'
-  },
-  {
-    title: 'ABCya',
-    image: ABCya,
-    excerpt: '2D Animation for children.'
-  },
-  {
-    title: 'Byzantine Pairings',
-    image: Byzantine,
-    excerpt: 'Educational Application for Medival Art History'
-  },
-  {
-    title: 'Datamago',
-    image: DatamagoImage,
+    title: 'Data',
+    image: "dm",
     excerpt: 'Machine learning platform for time series forecasting.'
   }
 ]

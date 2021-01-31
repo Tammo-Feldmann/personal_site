@@ -4,12 +4,12 @@ import CardStyle from './projects.module.css'
 
 class ProjectCard extends Component {
   render() {
-    const { title, excerpt } = this.props;
-
+    const { title, excerpt, image } = this.props;
+    console.log(image)
     return (
       <div className={CardStyle.project_card}>
         <div className={CardStyle.image}>
-          <ProjectImage className="project-image" fileName="Adirondacs.JPG" />
+          <ProjectImage className="project-image" file={image} />
         </div>
         <div className={CardStyle.card_header}>
           <div>
