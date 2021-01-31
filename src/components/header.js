@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
 import MainIcon from "./main-icon";
-
 import { graphql, StaticQuery } from "gatsby";
 import styled from "styled-components";
 import BackgroundImage from 'gatsby-background-image'

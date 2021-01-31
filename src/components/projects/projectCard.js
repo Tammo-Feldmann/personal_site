@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Sankey from '../../components/header'
+import Header from '../../components/header'
 import CardStyle from './projects.module.css'
 
 class ProjectCard extends Component {
@@ -9,8 +9,7 @@ class ProjectCard extends Component {
     return (
       <div className={CardStyle.project_card}>
         <div className={CardStyle.image}>
-
-          <Sankey />
+          <Header />
         </div>
         <div className={CardStyle.card_header}>
           <div>
