@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Header from '../../components/header'
+import ProjectImage from '../../components/projectImage'
 import CardStyle from './projects.module.css'
 
 class ProjectCard extends Component {
@@ -9,7 +9,7 @@ class ProjectCard extends Component {
     return (
       <div className={CardStyle.project_card}>
         <div className={CardStyle.image}>
-          <Header />
+          <ProjectImage className="project-image" fileName="Adirondacs.JPG" />
         </div>
         <div className={CardStyle.card_header}>
           <div>
