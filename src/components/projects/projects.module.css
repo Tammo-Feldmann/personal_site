@@ -13,10 +13,10 @@
   max-width: 25vw;
   flex: 0 0 260px;
   padding: 1rem 0.75rem 3rem;
-  border-radius: 5px 0 0 5px;
+  /* border-radius: 5px 0 0 5px;
   border-left: 1px solid rgba(63, 73, 103, 0.2);
   border-top: 1px solid rgba(63, 73, 103, 0.2);
-  border-bottom: 1px solid rgba(63, 73, 103, 0.2);
+  border-bottom: 1px solid rgba(63, 73, 103, 0.2); */
   color: #3f4967;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .collection {
-  background: rgba(63, 73, 103, 0.06);
+  /* background: rgba(63, 73, 103, 0.06); */
   padding: 1.5rem;
   flex: 1 1 auto;
 }
@@ -63,7 +63,10 @@
 
 .project_card {
   padding: 1rem;
-  background: rgba(63, 73, 103, 0.2);
+  background: rgba(63, 73, 103, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
 }
 
 .card_image {
