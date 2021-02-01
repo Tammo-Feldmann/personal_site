@@ -2,12 +2,12 @@
   display: grid;
   justify-content: center;
   color: white;
+  margin-left: 4rem;
 }
 .skills-section {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
   background-color: #3f4967;
-  padding: 9rem 6rem 4rem 6rem;
+  padding: 10% 15% 3% 15%;
 }
 .summary {
   align-self: center;

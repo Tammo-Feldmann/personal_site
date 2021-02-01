@@ -11,7 +11,7 @@ class SkillCard extends Component {
           border="None"
           style={{
             backgroundColor: "#3f4967",
-            width: "44rem",
+            maxWidth: "44rem",
             borderColor: "#3f4967",
           }}
         >
@@ -20,7 +20,7 @@ class SkillCard extends Component {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              padding: "2rem",
+              padding: "2rem 0",
             }}
           >
             <img
