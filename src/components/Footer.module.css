@@ -1,0 +1,7 @@
+.bottom_bar {
+  stroke: #f0f0f2;
+}
+
+.bottom_bar :hover {
+  stroke: #ffffff;
+}
