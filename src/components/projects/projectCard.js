@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import ProjectImage from './imageComponents/projectImage'
 import DataMagoImage from './imageComponents/dmImage'
 import CardStyle from './projects.module.css'
+import PseImage from './imageComponents/pseImage'
 
 //This is a bit of an odd way to map and switch these components. I did this because of the graphQL queries for lazy loading.
 //This could be done better. Maybe due for a refactor later. I tried thinking of a better way but didn't find one quickly. 
-const projectImages = { datamago: <DataMagoImage />, project: <ProjectImage /> }
+const projectImages = { datamago: <DataMagoImage />, project: <ProjectImage />, pse: <PseImage /> }
 
 class ProjectCard extends Component {
   render() {

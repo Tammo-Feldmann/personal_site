@@ -7,8 +7,8 @@ import containerStyles from "./projects.module.css";
 
 const myProjects = [
   {
-    title: 'Datamago',
-    image: "datamago",
+    title: 'Pacific Salmon Explorer',
+    image: "pse",
     excerpt: 'Machine learning platform for time series forecasting.'
   },
   {
