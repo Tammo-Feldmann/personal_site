@@ -8,22 +8,22 @@ import containerStyles from "./projects.module.css";
 const myProjects = [
   {
     title: 'Datamago',
-    image: "dm",
+    image: "datamago",
     excerpt: 'Machine learning platform for time series forecasting.'
   },
   {
     title: 'adi',
-    image: "adi",
+    image: "project",
     excerpt: '2D Animation for children.'
   },
   {
     title: 'adiron',
-    image: "adi",
+    image: "project",
     excerpt: 'Educational Application for Medival Art History'
   },
   {
     title: 'Data',
-    image: "dm",
+    image: "datamago",
     excerpt: 'Machine learning platform for time series forecasting.'
   }
 ]
