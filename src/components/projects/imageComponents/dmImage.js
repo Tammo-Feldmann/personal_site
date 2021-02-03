@@ -6,7 +6,7 @@ const ProjectImage = ({ className }) => (
   <StaticQuery
     query={graphql`
         query {
-          desktop: file(relativePath: { eq: "dm-landing.png" }) {
+          desktop: file(relativePath: { eq: "datamago.png" }) {
             childImageSharp {
               fluid(duotone: { highlight: "#FFFFFF", shadow: "#CCD5F1", opacity: 15 }, quality: 100, maxWidth: 960) {
                 ...GatsbyImageSharpFluid_withWebp

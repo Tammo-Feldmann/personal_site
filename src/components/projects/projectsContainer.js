@@ -9,23 +9,28 @@ const myProjects = [
   {
     title: 'Pacific Salmon Explorer',
     image: "pse",
-    excerpt: 'Machine learning platform for time series forecasting.'
+    excerpt: 'Large data exploration tool for the tracking of pacific samlmon status and health.'
   },
   {
-    title: 'adi',
-    image: "project",
-    excerpt: '2D Animation for children.'
+    title: 'Movember Impact',
+    image: "movember",
+    excerpt: 'Interactive visualization for Movember impact.'
   },
   {
-    title: 'adiron',
-    image: "project",
-    excerpt: 'Educational Application for Medival Art History'
-  },
-  {
-    title: 'Data',
+    title: 'Datamago',
     image: "datamago",
     excerpt: 'Machine learning platform for time series forecasting.'
-  }
+  },
+  {
+    title: 'Lifelines',
+    image: "lifelines",
+    excerpt: 'Interactive Covid_19 visualization.'
+  },
+  {
+    title: 'ABCya',
+    image: "abcya",
+    excerpt: 'Paint and 2D Animation applications for children.'
+  },
 ]
 
 class ProjectsContainer extends Component {
