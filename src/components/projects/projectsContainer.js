@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import ProjectCard from './projectCard';
-// import DatamagoImage from '../../images/dm-landing.png';
-// import ABCya from '../../images/ABCyaScreen.png';
-// import Byzantine from '../../images/Byzantine.png';
 import containerStyles from "./projects.module.css";
 
 const myProjects = [
@@ -15,6 +12,16 @@ const myProjects = [
     title: 'Movember Impact',
     image: "movember",
     excerpt: 'Interactive visualization for Movember impact.'
+  },
+  {
+    title: 'Movember Impact',
+    image: "movember",
+    excerpt: 'Interactive visualization for Movember impact.'
+  },
+  {
+    title: 'AVAC Prep Watch',
+    image: "avac",
+    excerpt: 'Interactive visualization for the global use of pre-exposure HIV prevention drugs.'
   },
   {
     title: 'Datamago',
