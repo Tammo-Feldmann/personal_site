@@ -13,11 +13,7 @@ const myProjects = [
     image: "movember",
     excerpt: 'Interactive visualization for Movember impact.'
   },
-  {
-    title: 'Movember Impact',
-    image: "movember",
-    excerpt: 'Interactive visualization for Movember impact.'
-  },
+
   {
     title: 'AVAC Prep Watch',
     image: "avac",
@@ -38,6 +34,11 @@ const myProjects = [
     image: "abcya",
     excerpt: 'Paint and 2D Animation applications for children.'
   },
+  {
+    title: 'Hyper-Indexicality',
+    image: "hyperindex",
+    excerpt: 'Visualization of narrative dynamics.'
+  }
 ]
 
 class ProjectsContainer extends Component {
