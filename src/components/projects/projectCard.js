@@ -20,22 +20,20 @@ class ProjectCard extends Component {
         <div className={CardStyle.image}>
           {projectImages[image]}
         </div>
-        <div className={CardStyle.card_header}>
-          <div>
-            <h4 className="card-header">
-              {title}
-            </h4>
-            <div className="card-body">
-              {excerpt}
-            </div>
-          </div>
-          <div className={CardStyle.stackWrap}>
-            <div className={CardStyle.stackItem}>JavaScript</div>
-            <div className={CardStyle.stackItem}>Firebase</div>
-            <div className={CardStyle.stackItem}>Jest</div>
-            <div className={CardStyle.stackItem}>Cypress</div>
-          </div>
+
+        <h4 className="card-header">
+          {title}
+        </h4>
+        <div className="card-body">
+          {excerpt}
         </div>
+        <div className={CardStyle.stackWrap}>
+          <div className={CardStyle.stackItem}>JavaScript</div>
+          <div className={CardStyle.stackItem}>Firebase</div>
+          <div className={CardStyle.stackItem}>Jest</div>
+          <div className={CardStyle.stackItem}>Cypress</div>
+        </div>
+
       </div>
     );
   }
