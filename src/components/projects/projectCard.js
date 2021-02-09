@@ -18,12 +18,14 @@ const projectImages = {
 
 class ProjectCard extends Component {
   render() {
-    const { title, excerpt, image } = this.props;
+    const { title, excerpt, image, link } = this.props;
     return (
       <div className={CardStyle.project_card}>
-        <div className={CardStyle.image}>
-          {projectImages[image]}
-        </div>
+        <a className={CardStyle.link} href={link} rel="noreferrer" target="_blank">
+          <div className={CardStyle.image}>
+            {projectImages[image]}
+          </div>
+        </a>
 
         <h4 className="card-header">
           {title}
