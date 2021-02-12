@@ -3,6 +3,7 @@ const { Component } = React;
 
 class Polygon extends Component {
   render() {
+    //TODO: Make this component reusable with props and move out its styling to clean up
     return (
       <div className='polygon-two' style={{
         position: `absolute`,
