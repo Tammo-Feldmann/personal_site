@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ProjectImage from './imageComponents/projectImage'
 import DataMagoImage from './imageComponents/dmImage'
-import CardStyle from './projects.module.css'
+import styles from './projects.module.css'
 import PseImage from './imageComponents/pseImage'
 import MovemberImage from './imageComponents/movemberImage'
 import Lifelines from './imageComponents/lifelinesImage'
@@ -20,9 +20,9 @@ class ProjectCard extends Component {
   render() {
     const { title, excerpt, image, link } = this.props;
     return (
-      <div className={CardStyle.project_card}>
-        <a className={CardStyle.link} href={link} rel="noreferrer" target="_blank">
-          <div className={CardStyle.image}>
+      <div className={styles.project_card}>
+        <a className={styles.link} href={link} rel="noreferrer" target="_blank">
+          <div className={styles.image}>
             {projectImages[image]}
           </div>
         </a>
@@ -33,11 +33,11 @@ class ProjectCard extends Component {
         <div className="card-body">
           {excerpt}
         </div>
-        <div className={CardStyle.stackWrap}>
-          <div className={CardStyle.stackItem}>JavaScript</div>
-          <div className={CardStyle.stackItem}>Firebase</div>
-          <div className={CardStyle.stackItem}>Jest</div>
-          <div className={CardStyle.stackItem}>Cypress</div>
+        <div className={styles.stackWrap}>
+          <div className={styles.stackItem}>JavaScript</div>
+          <div className={styles.stackItem}>Firebase</div>
+          <div className={styles.stackItem}>Jest</div>
+          <div className={styles.stackItem}>Cypress</div>
         </div>
 
       </div>

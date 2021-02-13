@@ -27,7 +27,7 @@ class Bottom extends Component {
                 width: `80px`, height: `34px`, borderRadius: `160px 160px 0 0`,
               }}>
               <svg width="32" height="16" viewBox="0 0 77 52" fill="none">
-                <path d="M74.0464 49.788L37.7444 4.179L2.96096 49.788" stroke-width="10" />
+                <path d="M74.0464 49.788L37.7444 4.179L2.96096 49.788" strokeWidth="10" />
               </svg>
             </div>
           </div>

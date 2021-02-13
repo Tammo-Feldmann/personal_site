@@ -28,7 +28,9 @@
   margin-top: 1rem;
 }
 
-@media (max-width: 800px) {
+/* *** Begin Tablet Size *** */
+
+@media (max-width: 1024px) {
   .skills-section {
     display: inline-block;
     padding: 0rem 1rem 0rem 1rem;
@@ -65,8 +67,25 @@
   font-weight: 300;
 }
 
-@media (max-width: 600px) {
+/* *** Begin Mobile Size *** */
+
+@media (max-width: 414px) {
   .container {
-    padding: 1rem 1rem 0rem 0rem;
+    padding: 0;
+    margin: 0;
+  }
+  .skills-section {
+    display: block;
+    padding: 0;
+  }
+  .summary {
+    padding: 130px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    max-width: 80%;
   }
 }
